@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './components/Home';
 import Nav from './components/Nav';
 import Contact from './Contact';
+import Projects from './Projects';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <Nav />
         <Switch>
           <Home path="/" exact component={Home} style={{ width: '80vw' }} />
-          {/* <Route path="/projects" component={Projects} /> */}
+          <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
+
         </Switch>
       </div>
     </Router >

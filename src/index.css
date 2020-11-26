@@ -96,3 +96,11 @@ height:10vh !important;
 .overlay{
   background-color: transparent;
 }
+.Contact{
+  background-image: url("./components//IMG_20200229_161323\ \(1\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-li{
+  color: white;
+}

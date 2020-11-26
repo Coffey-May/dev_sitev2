@@ -21,7 +21,7 @@ import '../index.css'
 
 export default function Home() {
     return (
-        <div style={{ height: '80vh' }} >
+        <div style={{ height: '80vh' }} id="page1" >
 
 
             <div id="main-content-image" className="content-wrapper">
@@ -49,7 +49,7 @@ export default function Home() {
                    SOFTWARE DEVELOPER</h1>
 
                     <AnchorLink className="text" style={{
-                        marginBottom: '10vh',
+                        // marginBottom: '10vh',
                         color: 'white', textDecoration: 'none',
                         border: '1px solid white',
                         padding: '1rem',
