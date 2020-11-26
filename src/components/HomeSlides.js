@@ -18,7 +18,7 @@ const slides = [
 
 export default function HomeSlides() {
     return (
-        <div style={{ height: '10vh' }}>
+        <div style={{ height: '65vh' }}>
 
 
 

@@ -40,7 +40,7 @@ export default function Home() {
 
                     </div>
 
-                    {/* <HomeSlides /> */}
+
 
 
                     <h1>COFFEY  MAY
