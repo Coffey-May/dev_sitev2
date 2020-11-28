@@ -23,6 +23,7 @@ display:flex;
 }
 .content-wrapper2{
   background: linear-gradient(rgba(217, 249, 252, 0.849), rgba(230, 206, 250, 0.849)),url('../src//components/pexels-photo-3184454.jpeg');
+
 }
 #main-content{
   width:100vw;
@@ -104,3 +105,17 @@ height:10vh !important;
 .contact-li{
   color: white;
 }
+/* .sun2{
+  width: 4.5em;
+  height: 4.5em;
+  background: radial-gradient( transparent,transparent), url('./components/sun2gif.gif');
+  opacity: .2;
+  background-size: contain;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 8px rgb(47, 21, 90) inset;
+  margin:0 auto;
+} */
+
+/* #weather_card{
+ border-radius: 99rem;
+} */

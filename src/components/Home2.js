@@ -23,26 +23,29 @@ export default function Home2() {
 
                 <div id=" main-content2" style={{ border: '1px solid black', height: '80vh' }} className="content-wrapper2">
                     <h3>ABOUT ME</h3>
-                    <div style={{ border: '1px solid black', padding: '1em', width: '70vw', height: '65vh', margin: '0 auto', backgroundColor: 'rgba(255,255,255,0.5)' }}>
-                        <p style={{ fontSize: '2.5vw' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat quas exercitationem explicabo architecto eligendi sint, ex omnis dolor est mollitia numquam atque id odio dicta eos illum aliquid accusamus pariatur nostrum! Maiores non voluptas at alias doloremque nulla, asperiores nesciunt dicta doloribus rem, neque sint obcaecati repudiandae. Repellat, quibusdam?</p>
+                    <div style={{ textAlign: 'left', border: '1px solid black', padding: '1em', width: '95vw', height: '74vh', margin: '0 auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+                        <p style={{ color: 'white', fontSize: '2.5vw' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat quas exercitationem explicabo architecto eligendi sint, ex omnis dolor est mollitia numquam atque id odio dicta eos illum aliquid accusamus pariatur nostrum! Maiores non voluptas at alias doloremque nulla, asperiores nesciunt dicta doloribus rem, neque sint obcaecati repudiandae. Repellat, quibusdam?</p>
 
 
                     </div>
 
-                    <AnchorLink className="text" style={{
-                        color: 'black', textDecoration: 'none', border: '1px solid black',
-                        padding: '1rem',
-                        borderRadius: '99rem'
+
+                </div>
+
+                <footer id="footer2" style={{ border: '1px solid black', height: '12vh', backgroundColor: 'black', color: 'white' }}>
+                    <FaCopyright /> COPYRIGHT2020
+                <br />
+                    <AnchorLink className="#" style={{
+                        color: 'white', textDecoration: 'none',
+                        //  border: '1px solid white',
+                        // padding: '.10em',
+                        // borderRadius: '99rem',
+                        // marginTop: '2rem'
                     }} href='#page1'>
                         Return to top
                     </AnchorLink>
-                </div>
-
-                <footer id="footer2" style={{ border: '1px solid black', height: '10vh', backgroundColor: 'black', color: 'white' }}>
 
 
-                    <br />
-                    <FaCopyright /> COPYRIGHT2020
                 </footer>
             </div>
         </Parallax >
