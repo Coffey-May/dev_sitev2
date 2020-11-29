@@ -14,6 +14,15 @@ import WeatherAPI from "./WeatherAPI"
 // import Contact from './Contact';
 import '../App.css';
 import '../index.css'
+require('dotenv').config();
+console.log(process.env)
+
+
+const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
+
+
+
+
 
 
 export default function Home() {
