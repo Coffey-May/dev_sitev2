@@ -7,7 +7,8 @@ import { DiBootstrap, DiDatabase, DiDotnet, DiNpm, DiVisualstudio, DiSass } from
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Home2 from './Home2';
-import WeatherAPI from "./WeatherAPI"
+import WeatherAPI from "./WeatherAPI";
+import WeatherComponent from "./WeatherComponent";
 
 
 // import HomeSlides from './HomeSlides';
@@ -72,8 +73,9 @@ export default function Home() {
                     <br />
 
 
-                    <div id="weather_card"  >
-                        <WeatherAPI />
+                    <div >
+                        {/* <WeatherAPI /> */}
+                        <WeatherComponent />
                     </div>
 
 
