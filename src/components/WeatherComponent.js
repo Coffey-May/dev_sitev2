@@ -8,7 +8,7 @@ console.log(process.env)
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 
-//Whether component
+
 class WeatherComponent extends React.Component {
 
 
