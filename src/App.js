@@ -12,6 +12,8 @@ import Signup from "./Signup"
 import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
+import Dashboard from "./Dashboard"
+
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
 
+            <PrivateRoute exact path="/dashboard" component={Dashboard} />
             <PrivateRoute path="/update-profile" component={UpdateProfile} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />

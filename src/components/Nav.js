@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-
-
+// import Login from "../Login"
 import '../App.css';
+import Dashboard from '../Dashboard';
 
 
 
@@ -20,6 +20,8 @@ function Nav() {
                         </div>
                         <div style={{ display: "flex", flexDirection: 'row', width: '20vw', justifyContent: 'space-between' }}>
 
+                            <Dashboard />
+
                             <NavLink to="/" style={{ textDecoration: 'none', color: 'white' }} className="nav-link" >
                                 {/* <li className="nav-link"></li> */}
                                 <li> <h5 style={{ fontFamily: 'sans-serif', padding: '2px' }} >Home </h5></li>
@@ -33,6 +35,11 @@ function Nav() {
                                 <li> <h5 style={{ fontFamily: 'sans-serif', padding: '2px' }} >Contact </h5></li>
 
                             </NavLink>
+                            <NavLink to="/login" style={{ textDecoration: 'none', color: 'white' }} className="nav-link">
+                                <li> <h5 style={{ fontFamily: 'sans-serif', padding: '2px' }} >Login </h5></li>
+
+                            </NavLink>
+
 
                         </div>
                     </div>
