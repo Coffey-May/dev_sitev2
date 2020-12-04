@@ -7,7 +7,7 @@ import { DiBootstrap, DiDatabase, DiDotnet, DiNpm, DiVisualstudio, DiSass } from
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Home2 from './Home2';
-import WeatherAPI from "./WeatherAPI";
+// import WeatherAPI from "./WeatherAPI";
 import WeatherComponent from "./WeatherComponent";
 
 
@@ -16,7 +16,7 @@ import WeatherComponent from "./WeatherComponent";
 import '../App.css';
 import '../index.css'
 require('dotenv').config();
-console.log(process.env)
+
 
 
 const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;

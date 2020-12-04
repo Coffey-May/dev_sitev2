@@ -10,6 +10,8 @@ export default function Login() {
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
+    const { currentUser } = useAuth()
+
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -17,8 +19,11 @@ export default function Login() {
         try {
             setError("")
             setLoading(true)
+
             await login(emailRef.current.value, passwordRef.current.value)
             history.push("/")
+            // console.log(currentUser.email)
+
         } catch {
             setError("Failed to log in")
         }
@@ -32,14 +37,14 @@ export default function Login() {
                 <Card.Body>
                     <h2 className="text-center mb-4">Log In</h2>
                     {error && <Alert variant="danger">{error}</Alert>}
-                    <Form onSubmit={handleSubmit}>
+                    <Form onSubmit={handleSubmit} autoComplete="on">
                         <Form.Group id="email">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control type="email" ref={emailRef} required />
+                            <Form.Control autoComplete="on" type="email" ref={emailRef} required />
                         </Form.Group>
                         <Form.Group id="password">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" ref={passwordRef} required />
+                            <Form.Control autoComplete="on" type="password" ref={passwordRef} required />
                         </Form.Group>
                         <Button disabled={loading} className="w-100" type="submit">
                             Log In

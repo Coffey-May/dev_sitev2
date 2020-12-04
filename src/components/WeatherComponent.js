@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Form from "./Form";
 import Weather from "./Weather";
 
 
 require('dotenv').config();
-console.log(process.env)
+
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 

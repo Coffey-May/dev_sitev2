@@ -1,13 +1,30 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-// import Login from "../Login"
+import { useAuth } from "../contexts/AuthContext"
 import '../App.css';
 import Dashboard from '../Dashboard';
 
 
 
 
-function Nav() {
+
+
+
+const Nav = () => {
+    const { currentUser } = useAuth()
+    if (currentUser === null) {
+        var link =
+            <NavLink to="/login" style={{ textDecoration: 'none', color: 'white' }} className="nav-link">
+                <li> <h5 style={{ fontFamily: 'sans-serif', padding: '2px' }} >Login </h5></li>
+
+            </NavLink>
+    } else if (currentUser != null) {
+        link = <Dashboard />
+        console.log("nope")
+    }
+
+
+
     return (
         <div id="page1">
             <nav className="Nav" id="Nav" >
@@ -20,7 +37,7 @@ function Nav() {
                         </div>
                         <div style={{ display: "flex", flexDirection: 'row', width: '20vw', justifyContent: 'space-between' }}>
 
-                            <Dashboard />
+
 
                             <NavLink to="/" style={{ textDecoration: 'none', color: 'white' }} className="nav-link" >
                                 {/* <li className="nav-link"></li> */}
@@ -35,10 +52,12 @@ function Nav() {
                                 <li> <h5 style={{ fontFamily: 'sans-serif', padding: '2px' }} >Contact </h5></li>
 
                             </NavLink>
-                            <NavLink to="/login" style={{ textDecoration: 'none', color: 'white' }} className="nav-link">
+
+                            {link}
+                            {/* <NavLink to="/login" style={{ textDecoration: 'none', color: 'white' }} className="nav-link">
                                 <li> <h5 style={{ fontFamily: 'sans-serif', padding: '2px' }} >Login </h5></li>
 
-                            </NavLink>
+                            </NavLink> */}
 
 
                         </div>
