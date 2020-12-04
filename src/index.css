@@ -73,8 +73,9 @@ h1{
   margin-bottom:3vh;
 }
 .slider, .slide-current{
-  margin-top: 17vh;
-height:10vh !important;
+  /* margin-top: 10vh; */
+
+/* height:80vh ; */
 }
 #footer{
   background-color: black;
