@@ -36,7 +36,7 @@ export default function Home() {
                 <main id="main-content" >
                     <div style={{ marginTop: '14vh' }}>
 
-                        <Marquee gradient={false} speed={70} >
+                        <Marquee gradient={false} speed={100} >
 
                             <FaHtml5 size={50} />HTML5<FaCss3 size={50} />CSS3<FaJs size={50} />JavaScript<br />ES6<FaReact size={50} />ReactJS<FaGit size={50} />Version Control
                             <FaNodeJs size={50} /> Node JS<DiBootstrap style={{ marginTop: '-1.5vh' }} size={70} />Bootstrap<DiDatabase style={{ marginTop: '-1.5vh' }} size={70} />SQL

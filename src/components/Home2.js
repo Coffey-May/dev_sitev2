@@ -7,7 +7,7 @@ import { FaCopyright } from 'react-icons/fa';
 
 
 
-
+const img1 = 'src/components/Gray Simple Minimalist Resume (1).pdf'
 
 
 export default function Home2() {
@@ -31,6 +31,7 @@ export default function Home2() {
                             My Initial interest in working with data has to do with the nature of visual language.
                             Initially, as an oil painter, I became interested in the relationship between culture and its represntaion via paint.
                         Similarly, technology is impacting society and similar ways as paintings once did.    </p>
+                        {/* <a style={{ paddingLeft: '0', textAlign: 'center', textDecoration: 'none', marginLeft: '23.5vw' }} href={img1} >Download<br />Resume</a> */}
 
 
                     </div>
