@@ -12,7 +12,7 @@ const img1 = 'src/components/Gray Simple Minimalist Resume (1).pdf'
 
 export default function Home2() {
     return (
-        <Parallax speed={10}>
+        <Parallax speed={8}>
 
             <div id="page2" >
 
@@ -30,7 +30,7 @@ export default function Home2() {
                             This site, built in ReactJS, demonstrates and outlines my stack, abilities, and skills.
                             My Initial interest in working with data has to do with the nature of visual language.
                             Initially, as an oil painter, I became interested in the relationship between culture and its represntaion via paint.
-                        Similarly, technology is impacting society and similar ways as paintings once did.    </p>
+                        Similarly, technology is impacting society in similar ways as paintings once did.    </p>
                         {/* <a style={{ paddingLeft: '0', textAlign: 'center', textDecoration: 'none', marginLeft: '23.5vw' }} href={img1} >Download<br />Resume</a> */}
 
 

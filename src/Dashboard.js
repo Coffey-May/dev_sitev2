@@ -31,7 +31,7 @@ export default function Dashboard() {
 
 
 
-                <h5 onClick={handleLogout} style={{ cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px' }} >Log Out </h5>
+                <li onClick={handleLogout} style={{ margin: '0 auto', cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px' }} >Log Out </li>
 
 
             </div>
@@ -40,7 +40,7 @@ export default function Dashboard() {
             {/* <h5 style={{ cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px' }} className="text-center mb-4">Profile</h5> */}
             {/* {error && <Alert variant="danger">{error}</Alert>} */}
             {/* <strong>Email:</strong> {currentUser.email} */}
-            <Link style={{ cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px' }} to="/update-profile" className="btn btn-primary w-100 mt-3">
+            <Link style={{ cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px', textDecoration: 'none' }} to="/update-profile" className="btn btn-primary w-100 mt-3">
                 Profile
           </Link>
             {/* </Card.Body>

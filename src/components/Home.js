@@ -36,13 +36,13 @@ export default function Home() {
                 <main id="main-content" >
                     <div style={{ marginTop: '14vh' }}>
 
-                        <Marquee gradient={false} speed={100} >
+                        <Marquee style={{ fontWeight: 'bolder', fontSize: '1.35em' }} gradient={false} speed={100} >
 
-                            <FaHtml5 size={50} />HTML5<FaCss3 size={50} />CSS3<FaJs size={50} />JavaScript<br />ES6<FaReact size={50} />ReactJS<FaGit size={50} />Version Control
-                            <FaNodeJs size={50} /> Node JS<DiBootstrap style={{ marginTop: '-1.5vh' }} size={70} />Bootstrap<DiDatabase style={{ marginTop: '-1.5vh' }} size={70} />SQL
-                            <DiDotnet style={{ marginTop: '-1.5vh' }} size={70} />DOTNET<DiNpm style={{ marginTop: '-1.5vh' }} size={70} />NPM
+                            <FaHtml5 size={50} /><p> &nbsp;•HTML5•&nbsp;</p><FaCss3 size={50} /><p>&nbsp;•CSS3•&nbsp;</p><FaJs size={50} /><p>&nbsp;•JavaScript•&nbsp;<br />ES6</p><FaReact size={50} /><p>&nbsp;•ReactJS•&nbsp;</p><FaGit size={50} /><p>•Version• Control</p>
+                            <FaNodeJs size={50} /><p>&nbsp;•Node• JS&nbsp;</p><DiBootstrap style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Bootstrap•&nbsp;</p><DiDatabase style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•SQL•&nbsp;</p>
+                            <DiDotnet style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•DOTNET•&nbsp;</p><DiNpm style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•NPM•&nbsp;</p>
 
-                            <DiVisualstudio style={{ marginTop: '-1.5vh' }} size={70} />Visual Studio<DiSass style={{ marginTop: '-1.5vh' }} size={70} />Sass
+                            <DiVisualstudio style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Visual•&nbsp;<br />&nbsp;Studio</p><DiSass style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Sass•&nbsp;</p>
 
                         </Marquee>
 
