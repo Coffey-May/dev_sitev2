@@ -3,6 +3,7 @@ import Form from "./Form";
 import Weather from "./Weather";
 
 
+
 require('dotenv').config();
 
 const API_KEY = process.env.REACT_APP_API_KEY;
@@ -10,7 +11,6 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 
 
 class WeatherComponent extends React.Component {
-
 
     state = {
         temperature: undefined,
@@ -60,7 +60,7 @@ class WeatherComponent extends React.Component {
                                 <div className="col-xs-5 title-container">
 
                                 </div>
-                                <div className="col-xs-7 form-container">
+                                <div >
                                     <Form getWeather={this.getWeather} />
 
                                     <Weather

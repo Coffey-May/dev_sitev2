@@ -23,8 +23,14 @@ export default function Home2() {
 
                 <div id=" main-content2" style={{ border: '1px solid black', height: '80vh' }} className="content-wrapper2">
                     <h3>ABOUT ME</h3>
-                    <div style={{ textAlign: 'left', border: '1px solid black', padding: '1em', width: '95vw', height: '74vh', margin: '0 auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
-                        <p style={{ color: 'white', fontSize: '2.5vw' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat quas exercitationem explicabo architecto eligendi sint, ex omnis dolor est mollitia numquam atque id odio dicta eos illum aliquid accusamus pariatur nostrum! Maiores non voluptas at alias doloremque nulla, asperiores nesciunt dicta doloribus rem, neque sint obcaecati repudiandae. Repellat, quibusdam?</p>
+                    <div style={{ textAlign: 'left', border: '1px solid black', padding: '1em', width: '95vw', height: '74vh', margin: '0 auto', backgroundColor: 'rgba(0,0,0,0.6)' }}>
+                        <p style={{ fontWeight: '900', color: 'white', fontSize: '1.35em', width: '80vw', margin: '0 auto' }}>
+                            &nbsp; &nbsp; &nbsp; &nbsp; Hello! My name is Coffey May.
+                            I am a Full Stack software developer.
+                            This site, built in ReactJS, demonstrates and outlines my stack, abilities, and skills.
+                            My Initial interest in working with data has to do with the nature of visual language.
+                            Initially, as an oil painter, I became interested in the relationship between culture and its represntaion via paint.
+                        Similarly, technology is impacting society and similar ways as paintings once did.    </p>
 
 
                     </div>

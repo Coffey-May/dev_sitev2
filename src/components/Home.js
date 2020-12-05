@@ -67,17 +67,6 @@ export default function Home() {
                         LEARN MORE
                 </AnchorLink>
 
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-
-
-
-                    {/* <WeatherAPI /> */}
-                    {/* <WeatherComponent /> */}
-
-
 
                 </main>
 
