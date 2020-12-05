@@ -13,6 +13,7 @@ import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import Dashboard from "./Dashboard"
+import WeatherComponent from "./components/WeatherComponent"
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
             <Route path="/forgot-password" component={ForgotPassword} />
+            <Route path="/weather" component={WeatherComponent} />
 
           </Switch>
         </div>

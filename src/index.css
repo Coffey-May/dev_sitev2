@@ -123,3 +123,8 @@ h1{
  display: flex;flex-direction: row;
  justify-content: space-around;
 }
+#projectBG{
+  background-size: cover;
+  background-image: url('./components/cloudsgif.gif');
+  background-repeat: no-repeat;
+}

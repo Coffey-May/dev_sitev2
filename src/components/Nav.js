@@ -20,7 +20,7 @@ const Nav = () => {
             </NavLink>
     } else if (currentUser != null) {
         link = <Dashboard />
-        console.log("nope")
+
     }
 
 
@@ -35,7 +35,7 @@ const Nav = () => {
                             <li> <h5 style={{ fontFamily: 'sans-serif', border: '2px solid white', padding: '2px' }} >CM </h5></li>
                             <li><h5 style={{ marginTop: '.25vh', fontFamily: 'sans-serif', padding: '2px' }}> Full Stack Software Developer</h5></li>
                         </div>
-                        <div style={{ display: "flex", flexDirection: 'row', width: '20vw', justifyContent: 'space-between' }}>
+                        <div style={{ display: "flex", flexDirection: 'row', width: '50vw', justifyContent: 'space-between' }}>
 
 
 

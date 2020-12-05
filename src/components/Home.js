@@ -73,10 +73,10 @@ export default function Home() {
                     <br />
 
 
-                    <div >
-                        {/* <WeatherAPI /> */}
-                        <WeatherComponent />
-                    </div>
+
+                    {/* <WeatherAPI /> */}
+                    {/* <WeatherComponent /> */}
+
 
 
                 </main>
