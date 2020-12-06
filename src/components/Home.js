@@ -9,6 +9,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Home2 from './Home2';
 // import WeatherAPI from "./WeatherAPI";
 import WeatherComponent from "./WeatherComponent";
+import { Spring } from "react-spring/renderprops";
 
 
 // import HomeSlides from './HomeSlides';
@@ -26,52 +27,68 @@ const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 
 
 
+
+
+
 export default function Home() {
     return (
+
+
+
 
         <div style={{ height: '80vh' }} id="page1" >
 
 
-            <div id="main-content-image" className="content-wrapper">
-                <main id="main-content" >
-                    <div style={{ marginTop: '14vh' }}>
+            <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                config={{ delay: 700, duration: 1000 }}
+            >
+                {props => (
+                    <div style={props}>
 
-                        <Marquee style={{ fontWeight: 'bolder', fontSize: '1.35em' }} gradient={false} speed={100} >
+                        <div id="main-content-image" className="content-wrapper">
+                            <main id="main-content" >
+                                <div style={{ marginTop: '14vh' }}>
 
-                            <FaHtml5 size={50} /><p> &nbsp;•HTML5•&nbsp;</p><FaCss3 size={50} /><p>&nbsp;•CSS3•&nbsp;</p><FaJs size={50} /><p>&nbsp;•JavaScript•&nbsp;<br />ES6</p><FaReact size={50} /><p>&nbsp;•ReactJS•&nbsp;</p><FaGit size={50} /><p>•Version• Control</p>
-                            <FaNodeJs size={50} /><p>&nbsp;•Node• JS&nbsp;</p><DiBootstrap style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Bootstrap•&nbsp;</p><DiDatabase style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•SQL•&nbsp;</p>
-                            <DiDotnet style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•DOTNET•&nbsp;</p><DiNpm style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•NPM•&nbsp;</p>
+                                    <Marquee style={{ fontWeight: 'bolder', fontSize: '1.35em' }} gradient={false} speed={100} >
 
-                            <DiVisualstudio style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Visual•&nbsp;<br />&nbsp;Studio</p><DiSass style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Sass•&nbsp;</p>
+                                        <FaHtml5 size={50} /><p> &nbsp;•HTML5•&nbsp;</p><FaCss3 size={50} /><p>&nbsp;•CSS3•&nbsp;</p><FaJs size={50} /><p>&nbsp;•JavaScript•&nbsp;<br />ES6</p><FaReact size={50} /><p>&nbsp;•ReactJS•&nbsp;</p><FaGit size={50} /><p>•Version• Control</p>
+                                        <FaNodeJs size={50} /><p>&nbsp;•Node• JS&nbsp;</p><DiBootstrap style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Bootstrap•&nbsp;</p><DiDatabase style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•SQL•&nbsp;</p>
+                                        <DiDotnet style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•DOTNET•&nbsp;</p><DiNpm style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•NPM•&nbsp;</p>
 
-                        </Marquee>
+                                        <DiVisualstudio style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Visual•&nbsp;<br />&nbsp;Studio</p><DiSass style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Sass•&nbsp;</p>
 
-                    </div>
+                                    </Marquee>
+
+                                </div>
 
 
 
 
-                    <h1>COFFEY  MAY
+                                <h1>COFFEY  MAY
                     <br />
-                        <hr style={{ width: '75vw', margin: '0 auto' }} />
+                                    <hr style={{ width: '85vw', margin: '0 auto' }} className="animated" />
                    SOFTWARE DEVELOPER</h1>
 
-                    <AnchorLink className="text" style={{
-                        // marginBottom: '10vh',
-                        color: 'white', textDecoration: 'none',
-                        border: '1px solid white',
-                        padding: '1rem',
-                        borderRadius: '99rem'
-                    }}
-                        href='#page2'>
-                        LEARN MORE
+                                <AnchorLink className="text" style={{
+                                    // marginBottom: '10vh',
+                                    color: 'white', textDecoration: 'none',
+                                    border: '1px solid white',
+                                    padding: '1rem',
+                                    borderRadius: '99rem'
+                                }}
+                                    href='#page2'>
+                                    LEARN MORE
                 </AnchorLink>
 
 
-                </main>
+                            </main>
 
-            </div>
-
+                        </div>
+                    </div>
+                )}
+            </Spring>
 
             <footer id="footer" >
                 <h1>hey</h1>
