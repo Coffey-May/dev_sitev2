@@ -22,9 +22,9 @@ export default function Home2() {
                 </header>
 
                 <div id=" main-content2" style={{ border: '1px solid black', height: '80vh' }} className="content-wrapper2">
-                    <h3>ABOUT ME</h3>
+                    <h3 style={{ margin: '0 auto' }}>ABOUT ME</h3>
                     <div style={{ textAlign: 'left', border: '1px solid black', padding: '1em', width: '95vw', height: '74vh', margin: '0 auto', backgroundColor: 'rgba(0,0,0,0.6)' }}>
-                        <p style={{ fontWeight: '900', color: 'white', fontSize: '1.35em', width: '80vw', margin: '0 auto' }}>
+                        <p style={{ fontWeight: '900', color: 'white', fontSize: '1.35em', width: '70vw', margin: '0 auto' }}>
                             &nbsp; &nbsp; &nbsp; &nbsp; Hello! My name is Coffey May.
                             I am a Full Stack software developer.
                             This site, built in ReactJS, demonstrates and outlines my stack, abilities, and skills.
@@ -48,7 +48,7 @@ export default function Home2() {
                         // padding: '.10em',
                         // borderRadius: '99rem',
                         // marginTop: '2rem'
-                    }} href='#page1'>
+                    }} href='#Nav'>
                         Return to top
                     </AnchorLink>
 
