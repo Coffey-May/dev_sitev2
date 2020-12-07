@@ -42,13 +42,13 @@ export default function Home2() {
                 <footer id="footer2" style={{ border: '1px solid black', height: '12vh', backgroundColor: 'black', color: 'white' }}>
                     <FaCopyright /> COPYRIGHT2020
                 <br />
-                    <AnchorLink className="#" style={{
+                    <AnchorLink style={{
                         color: 'white', textDecoration: 'none',
                         //  border: '1px solid white',
                         // padding: '.10em',
                         // borderRadius: '99rem',
                         // marginTop: '2rem'
-                    }} href='#Nav'>
+                    }} href='#navId'>
                         Return to top
                     </AnchorLink>
 

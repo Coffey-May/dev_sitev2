@@ -33,18 +33,17 @@ display:flex;
   width:40vw;
   height:80vh;
 }
-#Nav{
-  height:10vh;
-}
+
  #footer, #header{
   height:10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-#Nav{
+#navId{
   color:white;
   background-color: black;
+  height:10vh;
   /* display: flex;
   flex-direction: row;
   justify-content: space-between; */
