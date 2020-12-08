@@ -20,21 +20,13 @@ const Nav = () => {
                 <li style={{ color: 'white', fontWeight: 'bolder' }} href="#"><span className="glyphicon glyphicon-log-in"></span> Login</li>
             </NavLink>
 
-
-
-
             <NavLink to="/signup" style={{ paddingTop: '2px', marginLeft: '2vw', textDecoration: 'none', color: 'white' }} className="nav-link">
                 <li style={{ color: 'white', fontWeight: 'bolder' }}><span className="glyphicon glyphicon-user"></span> Sign Up</li>
             </NavLink>
         </>
-
     } else if (currentUser != null) {
         link = <Dashboard />
-
     }
-
-
-
     return (
 
 
@@ -51,7 +43,7 @@ const Nav = () => {
                     </button>
 
                     <div style={{ paddingLeft: '2vw', marginTop: '2.5vh', display: "flex", flexDirection: 'row' }}>
-                        <p style={{ fontFamily: 'sans-serif', border: '2px solid white', padding: '2px' }} >CM </p>
+                        <p style={{ fontFamily: 'sans-serif', border: '2px solid white', padding: '2px' }} ><NavLink style={{ color: 'white', textDecoration: 'none', fontWeight: 'bolder' }} to="/">CM </NavLink></p>
                         <p style={{ marginTop: '.25vh', fontFamily: 'sans-serif', padding: '2px' }}> &nbsp;&nbsp; Full Stack Software Developer&nbsp;&nbsp;    </p>
                     </div>
                 </div>

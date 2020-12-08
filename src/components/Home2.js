@@ -1,14 +1,10 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import '../index.css';
 import Parallax from "react-rellax";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FaCopyright } from 'react-icons/fa';
-
-
-
-
-const img1 = 'src/components/Gray Simple Minimalist Resume (1).pdf'
-
+import Resume from '/Users/coffeymay/workspace/dev_sitev2/src/PDFS/Gray Simple Minimalist Resume (1).pdf'
 
 export default function Home2() {
     return (
@@ -17,13 +13,16 @@ export default function Home2() {
             <div id="page2" >
 
 
-                <header style={{ border: '1px solid black', height: '10vh', backgroundColor: 'black  ', color: 'white' }} >
+                <header style={{ height: '10vh', backgroundColor: 'black  ', color: 'white' }} >
 
                 </header>
 
-                <div id=" main-content2" style={{ border: '1px solid black', height: '80vh' }} className="content-wrapper2">
-                    <h3 style={{ margin: '0 auto' }}>ABOUT ME</h3>
-                    <div style={{ textAlign: 'left', border: '1px solid black', padding: '1em', width: '95vw', height: '74vh', margin: '0 auto', backgroundColor: 'rgba(0,0,0,0.6)' }}>
+                <div id=" main-content2" className="content-wrapper2">
+                    <div style={{ height: '2vh' }}>
+                    </div>
+                    <div style={{ marginBottom: '-2vh', textAlign: 'left', padding: '1em', width: '95vw', height: '74vh', margin: '0 auto', backgroundColor: 'rgba(0,0,0,0.6)' }}>
+                        <h2 style={{ color: 'white', margin: '0 auto', fontWeight: 'bolder', textAlign: 'center' }}>ABOUT ME</h2>
+                        <hr />
                         <p style={{ fontWeight: '900', color: 'white', fontSize: '1.35em', width: '70vw', margin: '0 auto' }}>
                             &nbsp; &nbsp; &nbsp; &nbsp; Hello! My name is Coffey May.
                             I am a Full Stack software developer.
@@ -33,13 +32,39 @@ export default function Home2() {
                         Similarly, technology is impacting society in similar ways as paintings once did.    </p>
                         {/* <a style={{ paddingLeft: '0', textAlign: 'center', textDecoration: 'none', marginLeft: '23.5vw' }} href={img1} >Download<br />Resume</a> */}
 
-
+                        <hr />
+                        <a styel={{ ZIndex: '99', padding: '3rem' }} className="glow-button button resume-btn bg-transparent"
+                            href={Resume} target="blank"><h2 style={{
+                                // marginBottom: '10vh',
+                                color: 'white', textDecoration: 'none',
+                                border: '1px solid white',
+                                padding: '1rem',
+                                margin: '0 auto',
+                                borderRadius: '99rem',
+                                textAlign: 'center',
+                                width: '70vw',
+                                fontWeight: 'bolder'
+                            }}>Download Resume</h2></a>
+                        <div style={{ height: '2vh' }}>
+                        </div>
+                        <NavLink to="/projects" className="nav-link">
+                            <h2 style={{
+                                marginLeft: '2vw', fontFamily: 'sans-serif', padding: '2px', color: 'white', textDecoration: 'none',
+                                border: '1px solid white',
+                                padding: '1rem',
+                                margin: '0 auto',
+                                borderRadius: '99rem',
+                                textAlign: 'center',
+                                width: '70vw'
+                            }} >Projects </h2>
+                        </NavLink>
                     </div>
-
-
+                    <div style={{ height: '2vh' }}>
+                    </div>
                 </div>
 
                 <footer id="footer2" style={{ border: '1px solid black', height: '12vh', backgroundColor: 'black', color: 'white' }}>
+                    <br />
                     <FaCopyright /> COPYRIGHT2020
                 <br />
                     <AnchorLink style={{

@@ -18,7 +18,7 @@ export default function HomeSlides() {
     return (
         <div id="projectBG" style={{ height: '80vh', width: '100vw', margin: '0 auto' }}>
 
-            <WeatherComponent />
+            {/* <WeatherComponent /> */}
             {/* <h1>Hello</h1> */}
             {/* 
             <Slider speed={300}>

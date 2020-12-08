@@ -1,36 +1,30 @@
 import React from 'react'
-// import { NavLink } from "react-router-dom";
 import Marquee from "react-fast-marquee";
-
 import { FaHtml5, FaCss3, FaJs, FaReact, FaGit, FaNodeJs } from 'react-icons/fa';
 import { DiBootstrap, DiDatabase, DiDotnet, DiNpm, DiVisualstudio, DiSass } from 'react-icons/di';
-
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Home2 from './Home2';
 // import WeatherAPI from "./WeatherAPI";
 import WeatherComponent from "./WeatherComponent";
 import { Spring } from "react-spring/renderprops";
-
-
+import { useAuth } from "../contexts/AuthContext"
 // import HomeSlides from './HomeSlides';
 // import Contact from './Contact';
 import '../App.css';
 import '../index.css'
 require('dotenv').config();
 
-
-
 const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 
-
-
-
-
-
-
-
-
 export default function Home() {
+    const { currentUser } = useAuth();
+    console.log(currentUser)
+    var footerMessage = ''
+    if (currentUser === null) {
+        footerMessage = <h4>Welcome, log in for access to more features</h4>
+    } else if (currentUser != null) {
+        footerMessage = <h4>Welcome, {currentUser.email} </h4>
+    }
     return (
 
 
@@ -91,7 +85,7 @@ export default function Home() {
             </Spring>
 
             <footer id="footer" >
-                <h1>hey</h1>
+                {footerMessage}
             </footer>
             <Home2 />
         </div >

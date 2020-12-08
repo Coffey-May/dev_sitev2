@@ -1,14 +1,15 @@
 import React from 'react';
-import HomeSlides from './components/HomeSlides';
+// import HomeSlides from './components/HomeSlides';
 import { FaCopyright } from 'react-icons/fa';
 
 export default function Projects() {
     return (
-        <div>
-            <div >
-                {/* <h1>Hello</h1> */}
-                <HomeSlides />
-
+        <>
+            <div id="colorBG">
+                <div style={{ height: '80vh' }} >
+                    {/* <h1>Hello</h1> */}
+                    {/* <HomeSlides /> */}
+                </div>
             </div>
             <footer id="footer2" style={{ border: '1px solid black', height: '10vh', backgroundColor: 'black', color: 'white' }}>
 
@@ -16,6 +17,7 @@ export default function Projects() {
                 <br />
                 <FaCopyright /> COPYRIGHT2020
 </footer>
-        </div>
+        </>
+
     )
 }
