@@ -13,15 +13,13 @@ function Contact() {
                 <div>
 
                     <div style={{ height: '80vh', color: `#fff`, margin: '0', backgroundColor: 'black', opacity: '0.6', justifyContent: 'center' }}>
-                        <h1 style={{ color: 'white', margin: '0 auto', fontWeight: 'bolder', textAlign: 'center' }}>Contact</h1>
-                        <hr style={{ margin: '0 auto' }} />
-                        <h2 style={{
-                            letterSpacing: '.1rem',
+                        <h1 style={{ color: 'white', margin: '0 auto', paddingTop: '2vh', fontWeight: 'bolder', textAlign: 'center' }}>Contact</h1>
+                        {/* <hr style={{ margin: '0 auto' }} /> */}
+                        <hr />
+                        <h2 style={{ fontWeight: '900', color: 'white', fontSize: '3vh', width: '70vw', margin: '0 auto' }}>
+                            If you would like more information regarding my services and availabilty for hire, contact me at the e-mail link below.
+                           Also, feel free to follow me on social media for more painting and software development related content. </h2>
 
-                            fontWeight: 'lighter', padding: '1rem', margin: '0 auto', width: '70vw', textAlign: 'center'
-                        }}>If you would like more information regarding purchasing or commissioning of paintings or software development, contact me at the e-mail link below.
-                           Also follow me on social media for more painting and software development related content. </h2>
-                        {/* <div style={{ width: '20vw', height: '20vh' }} ></div> */}
                     </div>
 
                 </div >

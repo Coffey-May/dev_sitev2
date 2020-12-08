@@ -23,14 +23,14 @@ export default function Dashboard() {
     return (
         <>
 
-            <div className="w-100 text-center mt-2">
+            <div className="chi w-100 text-center mt-2">
                 {/* <Button variant="link" onClick={handleLogout}>
                     Log Out
                     
         </Button> */}
 
 
-                <li onClick={handleLogout} style={{ marginLeft: '2vw', cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px' }}><span className="glyphicon glyphicon-log-out"></span> Log Out</li>
+                <li className="chi" onClick={handleLogout} style={{ marginLeft: '2vw', cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px' }}><span className=" chi glyphicon glyphicon-log-out"></span> Log Out</li>
                 {/* <li onClick={handleLogout} style={{ paddingLeft: '2vw', margin: '0 auto', cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px' }} >Log Out </li> */}
 
 
@@ -44,7 +44,7 @@ export default function Dashboard() {
 
 
             <Link style={{ marginLeft: '2vw', cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px', textDecoration: 'none', fontWeight: 'bolder' }} to="/update-profile" >
-                <li ><span className="glyphicon glyphicon-user"></span> Profile</li>
+                <li className="chi"><span className=" chi glyphicon glyphicon-user"></span> Profile</li>
             </Link>
             {/* </Card.Body>
             </Card> */}

@@ -39,7 +39,7 @@ export default function Login() {
     return (
         <>
             <div id="projectBG" style={{ height: '80vh' }}>
-                <div style={{ height: '20vh' }}></div>
+                <div style={{ height: '15vh' }}></div>
                 <div id="projectBG2" style={{ color: 'white', width: '60vw', margin: '0 auto', padding: '2rem', backgroundColor: 'rgba(0,0,0, 8.5)' }}>
                     <Card>
                         <Card.Body>
@@ -58,17 +58,17 @@ export default function Login() {
                                     <Form.Label>Password</Form.Label>
                                     <Form.Control autoComplete="on" type="password" ref={passwordRef} required />
                                 </Form.Group>
-                                <Button disabled={loading} className="w-100" type="submit">
+                                <Button disabled={loading} className=" chi w-100" type="submit">
                                     Log In
             </Button>
                             </Form>
-                            <div className="w-100 text-center mt-3">
-                                <Link to="/forgot-password">Forgot Password?</Link>
+                            <div className="chi w-100 text-center mt-3">
+                                <Link className="chi" to="/forgot-password">Forgot Password?</Link>
                             </div>
                         </Card.Body>
                     </Card>
-                    <div className="w-100 text-center mt-2">
-                        Need an account? <Link to="/signup">Sign Up</Link>
+                    <div className="chi w-100 text-center mt-2">
+                        Need an account? <Link className="chi" to="/signup">Sign Up</Link>
                     </div>
                 </div>
             </div>

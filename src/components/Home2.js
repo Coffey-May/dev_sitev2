@@ -33,13 +33,16 @@ export default function Home2() {
                         <hr />
                         <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap' }}>
                             <div>
-                                <p style={{ fontWeight: '900', color: 'white', fontSize: '2vh', width: '60vw', margin: '0 auto' }}>
-                                    &nbsp; &nbsp; &nbsp; &nbsp; Hello! My name is Coffey May.
-                                    I am a Full Stack software developer.
-                                    This site, built in ReactJS, demonstrates and outlines my stack, abilities, and skills.
-                                    My Initial interest in working with data has to do with the nature of visual language.
-                                    Initially, as an oil painter, I became interested in the relationship between culture and its represntaion via paint.
+                                <div style={{ display: 'flex', msFlexDirection: 'row', flexWrap: 'wrap' }}>
+                                    <p style={{ fontWeight: '900', color: 'white', fontSize: '2vh', width: '60vw', margin: '0 auto' }}>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; Hello! My name is Coffey May.
+                                        I am a Full Stack software developer.
+                                        This site, built in ReactJS, demonstrates and outlines my stack, abilities, and skills.
+                                        My Initial interest in working with data has to do with the nature of visual language.
+                                        Initially, as an oil painter, I became interested in the relationship between culture and its represntaion via paint.
                         Similarly, technology is impacting society in similar ways as paintings once did.    </p>
+                                    <div className="deezNuts" style={{ width: '8rem', height: '8rem', marginRight: '3vw' }} ></div>
+                                </div>
                                 {/* <a style={{ paddingLeft: '0', textAlign: 'center', textDecoration: 'none', marginLeft: '23.5vw' }} href={img1} >Download<br />Resume</a> */}
                             </div>
                             <hr />

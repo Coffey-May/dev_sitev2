@@ -70,7 +70,7 @@ color:white;
 background-color: rgba(252, 252, 252, 0.007);
 }
 h1{
-  margin-top:12vh;
+  margin-top:12.5vh;
   letter-spacing: .5em;
   margin-bottom:3vh;
 }
@@ -100,9 +100,16 @@ h1{
 .overlay{
   background-color: transparent;
 }
+.deezNuts{
+   background-image: url("./components//IMG_20200229_161323\ \(1\).jpg");
+   background-size: cover;
+   
+   background-repeat: no-repeat;
+   border-radius: 50%;
+}
 .Contact{
-
-  background-image: url("./components//IMG_20201206_153507.jpg");
+  background: linear-gradient(rgba(5, 87, 83, 0.616), rgba(12, 6, 90, 0.582), rgba(81, 4, 100, 0.555)),url("./components//IMG_20201206_153507.jpg");
+  /* background-image: url("./components//IMG_20201206_153507.jpg"); */
   /* background-image: url("./components//IMG_20200229_161323\ \(1\).jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -137,8 +144,27 @@ h1{
 background-color: black;
 }
 .glow-button:hover:active {
-  color: rgb(255, 251, 245);
+  /* color: rgb(255, 251, 245); */
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.87);
+}
+.chi:hover{
+  /* color: #FFFFFF; */
+  background-color: rgb(20, 27, 32);
+text-shadow: #971455c5 0px 0px 20px, #ce1b74af 0px 0px 30px, #bd1569bb 0px 0px 40px, #b31664be 0px 0px 50px, #b1045bbe 0px 0px 75px;
+
+}
+.chi{
+  text-decoration: none;
+}
+.chi :active{
+  color: #FFFFFF;
+  background-color: rgb(0, 0, 0);
+text-shadow:  #971455c5 0px 0px 20px, #ce1b74af 0px 0px 30px, #bd1569bb 0px 0px 40px, #b31664be 0px 0px 50px, #b1045bbe 0px 0px 75px;
+}
+.chi:hover{
+  color: #FFFFFF;
+  background-color: rgb(20, 27, 32);
+text-shadow: #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
 #colorBG {
   background: linear-gradient(270deg, #036a7ad7, #025823b6, #7e4503be, #6e0575af);

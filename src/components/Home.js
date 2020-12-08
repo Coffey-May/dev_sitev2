@@ -36,7 +36,7 @@ export default function Home() {
             <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
-                config={{ delay: 700, duration: 1000 }}
+                config={{ delay: 100, duration: 1000 }}
             >
                 {props => (
                     <div style={props}>
