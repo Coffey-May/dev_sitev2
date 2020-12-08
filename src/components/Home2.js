@@ -20,44 +20,60 @@ export default function Home2() {
                 <div id=" main-content2" className="content-wrapper2">
                     <div style={{ height: '2vh' }}>
                     </div>
-                    <div style={{ marginBottom: '-2vh', textAlign: 'left', padding: '1em', width: '95vw', height: '74vh', margin: '0 auto', backgroundColor: 'rgba(0,0,0,0.6)' }}>
-                        <h2 style={{ color: 'white', margin: '0 auto', fontWeight: 'bolder', textAlign: 'center' }}>ABOUT ME</h2>
+                    <div style={{
+                        marginBottom: '-2vh',
+                        textAlign: 'left',
+                        padding: '1em',
+                        width: '95vw',
+                        height: '74vh',
+                        margin: '0 auto',
+                        background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
+                    }}>
+                        <h2 style={{ color: 'white', margin: '0 auto', fontWeight: 'bolder', textAlign: 'center', fontSize: '3vh' }}>ABOUT ME</h2>
                         <hr />
-                        <p style={{ fontWeight: '900', color: 'white', fontSize: '1.35em', width: '70vw', margin: '0 auto' }}>
-                            &nbsp; &nbsp; &nbsp; &nbsp; Hello! My name is Coffey May.
-                            I am a Full Stack software developer.
-                            This site, built in ReactJS, demonstrates and outlines my stack, abilities, and skills.
-                            My Initial interest in working with data has to do with the nature of visual language.
-                            Initially, as an oil painter, I became interested in the relationship between culture and its represntaion via paint.
+                        <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap' }}>
+                            <div>
+                                <p style={{ fontWeight: '900', color: 'white', fontSize: '2vh', width: '60vw', margin: '0 auto' }}>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; Hello! My name is Coffey May.
+                                    I am a Full Stack software developer.
+                                    This site, built in ReactJS, demonstrates and outlines my stack, abilities, and skills.
+                                    My Initial interest in working with data has to do with the nature of visual language.
+                                    Initially, as an oil painter, I became interested in the relationship between culture and its represntaion via paint.
                         Similarly, technology is impacting society in similar ways as paintings once did.    </p>
-                        {/* <a style={{ paddingLeft: '0', textAlign: 'center', textDecoration: 'none', marginLeft: '23.5vw' }} href={img1} >Download<br />Resume</a> */}
+                                {/* <a style={{ paddingLeft: '0', textAlign: 'center', textDecoration: 'none', marginLeft: '23.5vw' }} href={img1} >Download<br />Resume</a> */}
+                            </div>
+                            <hr />
+                            <div>
 
-                        <hr />
-                        <a styel={{ ZIndex: '99', padding: '3rem' }} className="glow-button button resume-btn bg-transparent"
-                            href={Resume} target="blank"><h2 style={{
-                                // marginBottom: '10vh',
-                                color: 'white', textDecoration: 'none',
-                                border: '1px solid white',
-                                padding: '1rem',
-                                margin: '0 auto',
-                                borderRadius: '99rem',
-                                textAlign: 'center',
-                                width: '70vw',
-                                fontWeight: 'bolder'
-                            }}>Download Resume</h2></a>
-                        <div style={{ height: '2vh' }}>
+                                <a styel={{ ZIndex: '99', padding: '3rem' }} className="glow-button button resume-btn bg-transparent"
+                                    href={Resume} target="blank"><h4 style={{
+                                        // marginBottom: '10vh',
+                                        color: 'white', textDecoration: 'none',
+                                        fontSize: '2vw',
+                                        border: '1px solid white',
+                                        padding: '1rem',
+                                        margin: '0 auto',
+                                        borderRadius: '99rem',
+                                        textAlign: 'center',
+                                        width: '30vw',
+                                        fontWeight: 'bolder'
+                                    }}>Download Resume</h4></a>
+                                <div style={{ height: '2vh' }}></div>
+
+                                <NavLink to="/projects" className="nav-link">
+                                    <h4 style={{
+                                        marginLeft: '2vw', fontFamily: 'sans-serif', color: 'white', textDecoration: 'none',
+                                        border: '1px solid white',
+                                        fontSize: '2vw',
+                                        padding: '1rem',
+                                        margin: '0 auto',
+                                        borderRadius: '99rem',
+                                        textAlign: 'center',
+                                        width: '30vw'
+                                    }} >Projects </h4>
+                                </NavLink>
+                            </div>
                         </div>
-                        <NavLink to="/projects" className="nav-link">
-                            <h2 style={{
-                                marginLeft: '2vw', fontFamily: 'sans-serif', padding: '2px', color: 'white', textDecoration: 'none',
-                                border: '1px solid white',
-                                padding: '1rem',
-                                margin: '0 auto',
-                                borderRadius: '99rem',
-                                textAlign: 'center',
-                                width: '70vw'
-                            }} >Projects </h2>
-                        </NavLink>
                     </div>
                     <div style={{ height: '2vh' }}>
                     </div>

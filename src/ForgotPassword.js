@@ -32,7 +32,7 @@ export default function ForgotPassword() {
         <>
             <div id="projectBG" style={{ height: '80vh' }}>
                 <div style={{ height: '20vh' }}></div>
-                <div id="projectBG2" style={{ color: 'white', width: '60vw', margin: '0 auto', padding: '2rem', backgroundColor: 'rgba(0,0,0, 0.7)' }}>
+                <div id="projectBG2" style={{ color: 'white', width: '60vw', margin: '0 auto', padding: '2rem', backgroundColor: 'rgba(0,0,0, 8.5)' }}>
                     <Card>
                         <Card.Body>
                             <h2 className="text-center mb-4">Password Reset</h2>

@@ -12,7 +12,7 @@ function Contact() {
             <div className="Contact">
                 <div>
 
-                    <div style={{ height: '80vh', color: `#fff`, margin: '0', backgroundColor: 'black', opacity: '0.90', justifyContent: 'center' }}>
+                    <div style={{ height: '80vh', color: `#fff`, margin: '0', backgroundColor: 'black', opacity: '0.6', justifyContent: 'center' }}>
                         <h1 style={{ color: 'white', margin: '0 auto', fontWeight: 'bolder', textAlign: 'center' }}>Contact</h1>
                         <hr style={{ margin: '0 auto' }} />
                         <h2 style={{
@@ -21,8 +21,9 @@ function Contact() {
                             fontWeight: 'lighter', padding: '1rem', margin: '0 auto', width: '70vw', textAlign: 'center'
                         }}>If you would like more information regarding purchasing or commissioning of paintings or software development, contact me at the e-mail link below.
                            Also follow me on social media for more painting and software development related content. </h2>
-
+                        {/* <div style={{ width: '20vw', height: '20vh' }} ></div> */}
                     </div>
+
                 </div >
             </div>
             <footer id="footer2" style={{ border: '1px solid black', height: '10vh', backgroundColor: 'black', color: 'white' }}>

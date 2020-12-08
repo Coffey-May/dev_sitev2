@@ -18,7 +18,7 @@ const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 
 export default function Home() {
     const { currentUser } = useAuth();
-    console.log(currentUser)
+
     var footerMessage = ''
     if (currentUser === null) {
         footerMessage = <h4>Welcome, log in for access to more features</h4>

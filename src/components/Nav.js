@@ -43,8 +43,10 @@ const Nav = () => {
                     </button>
 
                     <div style={{ paddingLeft: '2vw', marginTop: '2.5vh', display: "flex", flexDirection: 'row' }}>
-                        <p style={{ fontFamily: 'sans-serif', border: '2px solid white', padding: '2px' }} ><NavLink style={{ color: 'white', textDecoration: 'none', fontWeight: 'bolder' }} to="/">CM </NavLink></p>
-                        <p style={{ marginTop: '.25vh', fontFamily: 'sans-serif', padding: '2px' }}> &nbsp;&nbsp; Full Stack Software Developer&nbsp;&nbsp;    </p>
+
+                        <p style={{ fontFamily: 'sans-serif', border: '2px solid white', padding: '2px' }} ><NavLink style={{ fontWeight: 'bolder', color: 'white', textDecoration: 'none', fontWeight: 'bolder' }} to="/">CM </NavLink></p>
+                        <p style={{ fontFamily: 'sans-serif', padding: '2px' }} ><NavLink style={{ fontWeight: 'bolder', color: 'white', textDecoration: 'none', fontWeight: 'bolder' }} to="/"> &nbsp;&nbsp; Full Stack Software Developer&nbsp;&nbsp;</NavLink></p>
+                        {/* <p style={{ marginTop: '.25vh', fontFamily: 'sans-serif', padding: '2px' }}> &nbsp;&nbsp; Full Stack Software Developer&nbsp;&nbsp;    </p> */}
                     </div>
                 </div>
                 <div className="collapse navbar-collapse" id="myNavbar">
