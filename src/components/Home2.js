@@ -48,8 +48,8 @@ export default function Home2() {
                             <hr />
                             <div>
 
-                                <a styel={{ ZIndex: '99', padding: '3rem' }} className="glow-button button resume-btn bg-transparent"
-                                    href={Resume} target="blank"><h4 style={{
+                                <a className=" chi" style={{ ZIndex: '99', padding: '3rem' }}
+                                    href={Resume} target="blank"><h4 className=" chi" style={{
                                         // marginBottom: '10vh',
                                         color: 'white', textDecoration: 'none',
                                         fontSize: '2vw',
@@ -63,17 +63,18 @@ export default function Home2() {
                                     }}>Download Resume</h4></a>
                                 <div style={{ height: '2vh' }}></div>
 
-                                <NavLink to="/projects" className="nav-link">
-                                    <h4 style={{
-                                        marginLeft: '2vw', fontFamily: 'sans-serif', color: 'white', textDecoration: 'none',
-                                        border: '1px solid white',
-                                        fontSize: '2vw',
-                                        padding: '1rem',
-                                        margin: '0 auto',
-                                        borderRadius: '99rem',
-                                        textAlign: 'center',
-                                        width: '30vw'
-                                    }} >Projects </h4>
+                                <NavLink to="/projects" className=" chi nav-link">
+                                    <h4 className=" chi"
+                                        style={{
+                                            marginLeft: '2vw', fontFamily: 'sans-serif', color: 'white', textDecoration: 'none',
+                                            border: '1px solid white',
+                                            fontSize: '2vw',
+                                            padding: '1rem',
+                                            margin: '0 auto',
+                                            borderRadius: '99rem',
+                                            textAlign: 'center',
+                                            width: '30vw'
+                                        }} >Projects </h4>
                                 </NavLink>
                             </div>
                         </div>
@@ -86,7 +87,7 @@ export default function Home2() {
                     <br />
                     <FaCopyright /> COPYRIGHT2020
                 <br />
-                    <AnchorLink style={{
+                    <AnchorLink className="chi" style={{
                         color: 'white', textDecoration: 'none',
                         //  border: '1px solid white',
                         // padding: '.10em',

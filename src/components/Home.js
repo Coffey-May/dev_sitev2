@@ -66,7 +66,7 @@ export default function Home() {
                                     <hr style={{ width: '85vw', margin: '0 auto' }} className="animated" />
                    SOFTWARE DEVELOPER</h1>
 
-                                <AnchorLink className="text" style={{
+                                <AnchorLink className="chi text" style={{
                                     // marginBottom: '10vh',
                                     color: 'white', textDecoration: 'none',
                                     border: '1px solid white',

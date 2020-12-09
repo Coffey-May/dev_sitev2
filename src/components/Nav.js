@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext"
 import '../App.css';
+import "../index.css"
 import Dashboard from '../Dashboard';
 
 
@@ -37,9 +38,9 @@ const Nav = () => {
             <div style={{ color: 'white' }} className="container-fluid">
                 <div className="navbar-header">
                     <button style={{ marginTop: '2.5vh' }} type="button" className="chi navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span style={{ color: 'white' }} className="icon-bar"></span>
-                        <span style={{ color: 'white' }} className="icon-bar"></span>
-                        <span style={{ color: 'white' }} className="icon-bar"></span>
+                        <span style={{ color: 'white' }} className="chi icon-bar"></span>
+                        <span style={{ color: 'white' }} className="chi icon-bar"></span>
+                        <span style={{ color: 'white' }} className="chi icon-bar"></span>
                     </button>
 
                     <div className="chi" style={{ paddingLeft: '2vw', marginTop: '2.5vh', display: "flex", flexDirection: 'row' }}>

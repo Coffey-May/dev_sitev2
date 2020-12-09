@@ -2,6 +2,7 @@ import React from "react";
 
 import { FaFacebook, FaGithub, FaEnvelope, FaInstagram, FaLinkedin, FaCopyright } from 'react-icons/fa';
 import './App.css';
+import './index.css'
 
 
 
@@ -19,18 +20,18 @@ function Contact() {
                         <h2 style={{ fontWeight: '900', color: 'white', fontSize: '3vh', width: '70vw', margin: '0 auto' }}>
                             If you would like more information regarding my services and availabilty for hire, contact me at the e-mail link below.
                            Also, feel free to follow me on social media for more painting and software development related content. </h2>
-
+                        {/* <div style={{ width: '20vw', height: '20vh' }} ></div> */}
                     </div>
 
                 </div >
             </div>
             <footer id="footer2" style={{ border: '1px solid black', height: '10vh', backgroundColor: 'black', color: 'white' }}>
                 <ol style={{ listStyle: 'none', display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', color: `#fff`, backgroundColor: 'black', opacity: '0.8', marginBottom: '0', marginTop: '2vh' }}>
-                    <a rel="noreferrer" target="_blank" href="mailto: jcoffeymay6@gmail.com"><li className="contact-li "><FaEnvelope size={25} /></li></a>
-                    <a rel="noreferrer" target="_blank" href="https://github.com/Coffey-May"><li className=" contact-li"><FaGithub size={25} /></li></a>
-                    <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/jonathan-coffey-may/"> <li className="contact-li"><FaLinkedin size={25} /></li></a>
-                    <a rel="noreferrer" target="_blank" href="https://www.instagram.com/coffeymay1/"><li className="contact-li"><FaInstagram size={25} /></li></a>
-                    <a rel="noreferrer" target="_blank" href="https://m.facebook.com/coffey.may.7"><li className="contact-li"><FaFacebook size={25} /></li></a>
+                    <a className="chi" rel="noreferrer" target="_blank" href="mailto: jcoffeymay6@gmail.com"><li className="contact-li "><FaEnvelope size={25} /></li></a>
+                    <a className="chi" rel="noreferrer" target="_blank" href="https://github.com/Coffey-May"><li className=" contact-li"><FaGithub size={25} /></li></a>
+                    <a className="chi" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/jonathan-coffey-may/"> <li className="contact-li"><FaLinkedin size={25} /></li></a>
+                    <a className="chi" rel="noreferrer" target="_blank" href="https://www.instagram.com/coffeymay1/"><li className="contact-li"><FaInstagram size={25} /></li></a>
+                    <a className="chi" rel="noreferrer" target="_blank" href="https://m.facebook.com/coffey.may.7"><li className="contact-li"><FaFacebook size={25} /></li></a>
                 </ol>
                 <FaCopyright /> COPYRIGHT2020
 </footer>

@@ -149,24 +149,23 @@ background-color: black;
   color: rgb(255, 251, 245);
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.87);
 }
-.chi:hover{
-  /* color: #FFFFFF; */
-  background-color: rgb(20, 27, 32);
+/* .chi:hover{
+
 text-shadow: #971455c5 0px 0px 20px, #ce1b74af 0px 0px 30px, #bd1569bb 0px 0px 40px, #b31664be 0px 0px 50px, #b1045bbe 0px 0px 75px;
 
-}
+} */
 .chi{
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 .chi :active{
   color: #FFFFFF;
-  background-color: rgb(0, 0, 0);
-text-shadow:  #971455c5 0px 0px 20px, #ce1b74af 0px 0px 30px, #bd1569bb 0px 0px 40px, #b31664be 0px 0px 50px, #b1045bbe 0px 0px 75px;
+  /* background-color: rgb(0, 0, 0); */
+text-shadow:  #971455c5 0px 0px 10px, #ce1b74af 0px 0px 15px, #bd1569bb 0px 0px 20px, #b31664be 0px 0px 25px, #b1045bbe 0px 0px 38px;
 }
 .chi:hover{
   color: #FFFFFF;
-  background-color: rgb(20, 27, 32);
-text-shadow: #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+  /* background-color: rgb(20, 27, 32); */
+text-shadow: #FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 38px;
 }
 #colorBG {
   background: linear-gradient(270deg, #036a7ad7, #025823b6, #7e4503be, #6e0575af);
@@ -191,4 +190,7 @@ text-shadow: #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
+}
+#projects-div-main{
+  background-color: rgba(255,255,255,0.8);
 }
