@@ -9,7 +9,7 @@ import { FaCopyright } from 'react-icons/fa';
 export default function Login() {
     const emailRef = useRef()
     const passwordRef = useRef()
-    const userNameRef = useRef()
+
     const { login } = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
@@ -25,9 +25,9 @@ export default function Login() {
             setLoading(true)
 
             await login(emailRef.current.value, passwordRef.current.value)
+            // history.push("/")
+            history.push("/username")
 
-            history.push("/")
-            // console.log(currentUser.email)
 
         } catch {
             setError("Failed to log in")

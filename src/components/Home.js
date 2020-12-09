@@ -23,7 +23,8 @@ export default function Home() {
     if (currentUser === null) {
         footerMessage = <h4>Welcome, log in for access to more features</h4>
     } else if (currentUser != null) {
-        footerMessage = <h4>Welcome, {currentUser.email} </h4>
+        footerMessage = <h4>Welcome, {currentUser.name}</h4>
+
     }
     return (
 
