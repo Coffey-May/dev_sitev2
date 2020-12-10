@@ -16,6 +16,8 @@ require('dotenv').config();
 
 const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 
+
+
 export default function Home() {
     const { currentUser } = useAuth();
 
@@ -23,8 +25,9 @@ export default function Home() {
     if (currentUser === null) {
         footerMessage = <h4>Welcome, log in for access to more features</h4>
     } else if (currentUser != null) {
-        footerMessage = <h4>Welcome, {currentUser.name}</h4>
+        footerMessage = <><h4>Welcome, {currentUser.name} | {currentUser.email}</h4>
 
+        </>
     }
     return (
 

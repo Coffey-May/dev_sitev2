@@ -34,10 +34,14 @@ export default function HomeSlides() {
                 {slides.map((slide, index) => <div style={{ height: '80vh', color: 'white', padding: '2em' }} key={index}>
 
                     <h2 style={{ marginTop: '10vh' }}>{slide.title}</h2>
-                    <img style={{ height: '4em', width: '4em' }} src={slide.image} alt="" />
+                    <img style={{ height: '10em', width: '10em', backgroundSize: 'cover' }} src={slide.image} alt="" />
                     {/* <div>{slide.image}</div> */}
                     <div style={{ width: '65vw', margin: '0 auto' }}> <h3>{slide.description}</h3> </div>
-                    <a style={{ height: '20px' }} href={slide.link}> {slide.link}</a>
+                    <h3>
+                        <button>
+                            <a style={{ color: 'black', height: '20px' }} href={slide.link}>View</a>
+                        </button>
+                    </h3>
 
 
 

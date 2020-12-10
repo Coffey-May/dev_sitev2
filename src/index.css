@@ -170,6 +170,11 @@ text-shadow:  #971455c5 0px 0px 10px, #ce1b74af 0px 0px 15px, #bd1569bb 0px 0px 
   /* background-color: rgb(20, 27, 32); */
 text-shadow: #FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 38px;
 }
+#slide-div{
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
+
 #colorBG {
   background: linear-gradient(270deg, #036a7ad7, #025823b6, #7e4503be, #6e0575af);
   background-size: 800% 800%;
