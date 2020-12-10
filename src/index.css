@@ -76,10 +76,13 @@ h1{
   letter-spacing: .5em;
   margin-bottom:3vh;
 }
-.slider, .slide-current{
-  /* margin-top: 10vh; */
+.slider{
+  height:100vh !important;
+}
+.slid{
 
-/* height:80vh ; */
+width:100vw;
+height:80vh ;
 }
 #footer{
   background-color: black;
