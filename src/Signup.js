@@ -12,6 +12,7 @@ export default function Signup() {
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
+    // const usernameRef = useRef()
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -20,11 +21,16 @@ export default function Signup() {
             return setError("Passwords do not match")
         }
 
+
+
         try {
+
             setError("")
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-            history.push("/dashboard")
+            // history.push("/dashboard")
+            // history.push("/")
+            history.push("/username")
         } catch {
             console.log(setError("Failed to create an account"))
         }
@@ -40,8 +46,9 @@ export default function Signup() {
                     <Card>
                         <Card.Body>
                             <h2 className="text-center mb-4">Sign Up</h2>
-                            {error && <Alert variant="danger">{error}</Alert>}
+                            {error && <Alert style={{ color: 'white' }} variant="danger">{error}</Alert>}
                             <Form onSubmit={handleSubmit}>
+
                                 <Form.Group id="email">
                                     <Form.Label>Email</Form.Label>
                                     <Form.Control type="email" ref={emailRef} required />
