@@ -21,6 +21,17 @@ function Contact() {
                             If you would like more information regarding my services and availabilty for hire, contact me at the e-mail link below.
                            Also, feel free to follow me on social media for more painting and software development related content. </h2>
                         {/* <div style={{ width: '20vw', height: '20vh' }} ></div> */}
+                        <ul className="chi" style={{ fontWeight: '900', margin: '0 auto', cursor: 'pointer', color: 'yellow', listStyle: 'none', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+                            <h3 style={{ textShadow: '#FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 38px' }}>
+                                <li>FAQ</li>
+                            </h3>
+                            <h3 style={{ textShadow: '#FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 38px' }}>
+                                <li>HISTORY</li>
+                            </h3>
+                            <h3 style={{ textShadow: '#FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 38px' }}>
+                                <li>BLOG &  </li>
+                            </h3>
+                        </ul>
                     </div>
 
                 </div >
