@@ -62,8 +62,8 @@ class WeatherComponent extends React.Component {
                                     <div className="col-xs-5 title-container">
 
                                     </div>
-                                    <div >
-                                        <Form getWeather={this.getWeather} />
+                                    <div style={{ height: '60vh' }}>
+
 
                                         <Weather
                                             temperature={this.state.temperature}
@@ -77,6 +77,7 @@ class WeatherComponent extends React.Component {
                                     </div>
 
                                 </div>
+                                <Form getWeather={this.getWeather} />
                             </div>
                         </div>
                     </div>
