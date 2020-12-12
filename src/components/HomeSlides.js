@@ -21,7 +21,7 @@ let pic3 = Pic3
 
 const slides = [
     { title: 'Painting Gallery', image: `${pic1}`, image2: `${pic2}`, image3: `${pic3}`, description: 'This Project was built using ReactJS. It showcases my oil paintings by dynamically populating a list of cards with detail modals.  This project also impliments NodeJS, Routing, and Several NPM packages to achieve Parallax effect, and UI composition.', link: 'http://coffeymayart.com/' },
-    { title: 'Comment secton', image: `${pic1}`, image2: `${pic1}`, image3: `${pic1}`, description: 'This feature allows a logged in User the affordances to perform full CRUD operations on a social media style comment thread ', link: `${link1}` },
+    { title: 'Weather Search', image: `${pic1}`, image2: `${pic1}`, image3: `${pic1}`, description: 'This feature allows a logged in User the affordances to perform api calls to the national weather service, in order to get up to date weather information', link: `${link1}` },
     { title: 'Comment secton', image: `${pic1}`, image2: `${pic1}`, image3: `${pic1}`, description: 'This feature allows a logged in User the affordances to perform full CRUD operations on a social media style comment thread ', link: `${link1}` }
 
 ];

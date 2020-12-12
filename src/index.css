@@ -174,7 +174,21 @@ text-shadow: #FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #
   background-color: rgba(0, 0, 0, 0.685);
 }
 
-
+.weather-div{
+background-image: linear-gradient(rgba(236, 245, 117, 0.438),rgba(41, 112, 44, 0.548)),url('./components/weathergif.gif');
+height:80vh; 
+background-repeat: no-repeat;
+background-size: cover;
+padding:2em;
+}
+.weather-wrapper{
+height:72vh;
+background-color: rgba(0, 0, 0, 0.733);
+}
+.weather__info{
+  z-index: 1;
+  color:white;
+}
 #colorBG {
   background: linear-gradient(270deg, #036a7ad7, #025823b6, #7e4503be, #6e0575af);
   background-size: 800% 800%;

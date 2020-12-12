@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "./Form";
 import Weather from "./Weather";
+import { FaCopyright } from 'react-icons/fa';
 
 
 
@@ -52,31 +53,41 @@ class WeatherComponent extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="wrapper">
-                    <div className="main">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-xs-5 title-container">
+            <>
+                <div className="weather-div">
+                    <div className="weather-wrapper">
+                        <div className="main">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-xs-5 title-container">
 
-                                </div>
-                                <div >
-                                    <Form getWeather={this.getWeather} />
+                                    </div>
+                                    <div >
+                                        <Form getWeather={this.getWeather} />
 
-                                    <Weather
-                                        temperature={this.state.temperature}
-                                        humidity={this.state.humidity}
-                                        city={this.state.city}
-                                        country={this.state.country}
-                                        description={this.state.description}
-                                        error={this.state.error}
-                                    />
+                                        <Weather
+                                            temperature={this.state.temperature}
+                                            humidity={this.state.humidity}
+                                            city={this.state.city}
+                                            country={this.state.country}
+                                            description={this.state.description}
+                                            error={this.state.error}
+                                        />
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <footer id="footer2" style={{ border: '1px solid black', height: '10vh', backgroundColor: 'black', color: 'white' }}>
+
+
+                    <br />
+                    <FaCopyright /> COPYRIGHT2020
+</footer>
+            </>
         );
     }
 };
