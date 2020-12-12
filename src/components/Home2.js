@@ -26,6 +26,7 @@ export default function Home2() {
                         padding: '1em',
                         width: '95vw',
                         height: '74vh',
+                        overflow: 'scroll',
                         margin: '0 auto',
                         background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
                     }}>
@@ -76,6 +77,18 @@ export default function Home2() {
                                             width: '30vw'
                                         }} >Projects </h4>
                                 </NavLink>
+                                <hr />
+                                <ul className="chi" style={{ fontWeight: '900', margin: '0 auto', cursor: 'pointer', color: 'yellow', listStyle: 'none', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+                                    <h3 style={{ textShadow: '#FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 38px' }}>
+                                        <li>FAQ</li>
+                                    </h3>
+                                    <h3 style={{ textShadow: '#FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 38px' }}>
+                                        <li>HISTORY</li>
+                                    </h3>
+                                    <h3 style={{ textShadow: '#FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 38px' }}>
+                                        <li>BLOG &  </li>
+                                    </h3>
+                                </ul>
                             </div>
                         </div>
                     </div>

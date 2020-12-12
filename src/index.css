@@ -123,17 +123,28 @@ height:80vh ;
   color: white;
 }
 .sun2{
-  width: 4.5em;
-  height: 4.5em;
-  background: radial-gradient( rgba(248, 101, 2, 0.74)
-  ,transparent), url('./components/sun2gif.gif');
+  width: 13em;
+  height: 13em;
+  background: radial-gradient(transparent,rgba(148, 49, 3, 0.726))
+  , url('./components/sun2gif.gif');
   opacity: 1;
   background-size: contain;
-  border-radius: 50%;
-  box-shadow: 0 0 5px 5px rgb(47, 21, 90) inset;
+  border-radius: 65%;
+  box-shadow: 0 0 1px 1px rgba(176, 177, 134, 0.664) inset;  
+  transform: translate(15%, 15%);
+  /* margin:0 auto; */
+  padding-top: 2em;
+}
+.sun-2-container{
+  width: 17em;
+  height: 17em;
+  
+  background: radial-gradient(transparent,black,rgb(0, 0, 0));
+
+
+ 
   margin:0 auto;
 }
-
 #weather_card{
  /* border-radius: 99rem;  */
  display: flex;flex-direction: row;
@@ -152,13 +163,9 @@ background-color: black;
   color: rgb(255, 251, 245);
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.87);
 }
-/* .chi:hover{
 
-text-shadow: #971455c5 0px 0px 20px, #ce1b74af 0px 0px 30px, #bd1569bb 0px 0px 40px, #b31664be 0px 0px 50px, #b1045bbe 0px 0px 75px;
-
-} */
 .chi{
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 .chi :active{
   color: #FFFFFF;
@@ -183,14 +190,17 @@ padding:2em;
 }
 .weather-wrapper{
 height:72vh;
-background:linear-gradient(rgba(0, 0, 0, 0.521),rgba(128, 128, 128, 0.582), rgba(255, 255, 255, 0.507))
+background:linear-gradient(rgba(0, 0, 0, 0.658),rgba(128, 128, 128, 0.658), rgba(255, 255, 255, 0.644))
 }
 .weather__info{
   z-index: 1;
-  color:white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.685);
+  width:60vw;
+  margin:0 auto;
 }
 #colorBG {
-  background: linear-gradient(270deg, #036a7ad7, #025823b6, #7e4503be, #6e0575af);
+  background: linear-gradient(270deg, #0697add7, #04963cb6, #a85c04be, #94089eaf);
   background-size: 800% 800%;
 
   -webkit-animation: AnimationName 22s ease infinite;

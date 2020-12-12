@@ -40,9 +40,9 @@ export default function HomeSlides() {
 
                     <h2 style={{ marginTop: '0vh' }}>{slide.title}</h2>
 
-                    <img id="project-pic" style={{ height: '15em', width: '25em', margin: '1em' }} src={slide.image} alt="image of art website" />
-                    <img id="project-pic" style={{ height: '15em', width: '25em', margin: '1em' }} src={slide.image2} alt="image of art website" />
-                    <img id="project-pic" style={{ height: '15em', width: '25em', margin: '1em' }} src={slide.image3} alt="image of art website" />
+                    <img id="project-pic" style={{ border: '13px solid white', height: '18em', width: '30em', margin: '1em' }} src={slide.image} alt="image of art website" />
+                    <img id="project-pic" style={{ border: '13px solid white', height: '18em', width: '30em', margin: '1em' }} src={slide.image2} alt="image of art website" />
+                    <img id="project-pic" style={{ border: '13px solid white', height: '18em', width: '30em', margin: '1em' }} src={slide.image3} alt="image of art website" />
                     <div style={{ width: '65vw', margin: '0 auto' }}>
                         <h3>{slide.description}</h3>
                     </div>
