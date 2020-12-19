@@ -122,7 +122,7 @@ height:80vh ;
 .contact-li{
   color: white;
 }
-.sun2{
+/* .sun2{
   width: 13em;
   height: 13em;
   background: radial-gradient(transparent,rgba(148, 49, 3, 0.726))
@@ -132,10 +132,19 @@ height:80vh ;
   border-radius: 65%;
   box-shadow: 0 0 1px 1px rgba(176, 177, 134, 0.664) inset;  
   transform: translate(15%, 15%);
-  /* margin:0 auto; */
+  margin:0 auto;
   padding-top: 2em;
+} */
+
+.weather-pic{
+/* width:10rem; */
+/* height:20vh; */
+
+/* background-size: inherit; */
+
+
 }
-.sun-2-container{
+/* .sun-2-container{
   width: 17em;
   height: 17em;
   
@@ -144,7 +153,7 @@ height:80vh ;
 
  
   margin:0 auto;
-}
+} */
 #weather_card{
  /* border-radius: 99rem;  */
  display: flex;flex-direction: row;
@@ -196,7 +205,7 @@ background:linear-gradient(rgba(0, 0, 0, 0.658),rgba(128, 128, 128, 0.658), rgba
   z-index: 1;
   color: white;
   background-color: rgba(0, 0, 0, 0.685);
-  width:60vw;
+  width:80vw;
   margin:0 auto;
   margin-top: 4vh;
  
