@@ -17,7 +17,7 @@ class WeatherComponent extends React.Component {
         const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
         let data = res.json()
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 this.setState({
                     temperature: data.main.temp,
                     city: data.name,
@@ -30,7 +30,7 @@ class WeatherComponent extends React.Component {
     }
     componentDidMount() {
         this.getWeatherData();
-        console.log('hi')
+        // console.log('hi')
     }
 
     state = {
@@ -50,7 +50,7 @@ class WeatherComponent extends React.Component {
         const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
         const data = await api_call.json();
 
-        console.log(data)
+        // console.log(data)
 
         if (city && country) {
             this.setState({
