@@ -13,6 +13,28 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 
 class WeatherComponent extends React.Component {
 
+
+    constructor() {
+        super();
+
+        this.state = {
+            jsonReturnedValue: null
+        }
+    }
+
+    componentDidMount() {
+        let city = "Nashville"
+        let country = "US"
+        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`)
+            .then(response => response.json())
+            .then(json => {
+                this.setState({ jsonReturnedValue: json });
+            });
+        console.log("deez nuts")
+    }
+
+
+
     state = {
         temperature: undefined,
         city: undefined,
@@ -22,6 +44,9 @@ class WeatherComponent extends React.Component {
         error: undefined
     }
 
+
+
+
     getWeather = async (e) => {
         e.preventDefault();
         const city = e.target.elements.city.value;
@@ -29,6 +54,7 @@ class WeatherComponent extends React.Component {
         const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
         const data = await api_call.json();
         console.log(data)
+
         if (city && country) {
             this.setState({
                 temperature: data.main.temp,
@@ -50,6 +76,7 @@ class WeatherComponent extends React.Component {
         }
 
     }
+
 
     render() {
         return (
@@ -94,3 +121,6 @@ class WeatherComponent extends React.Component {
 };
 
 export default WeatherComponent;
+
+
+

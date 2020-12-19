@@ -198,6 +198,10 @@ background:linear-gradient(rgba(0, 0, 0, 0.658),rgba(128, 128, 128, 0.658), rgba
   background-color: rgba(0, 0, 0, 0.685);
   width:60vw;
   margin:0 auto;
+  margin-top: 4vh;
+ 
+
+  height:60vh;
 }
 #colorBG {
   background: linear-gradient(270deg, #0697add7, #04963cb6, #a85c04be, #94089eaf);
