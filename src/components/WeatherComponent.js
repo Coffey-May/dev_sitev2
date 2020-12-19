@@ -10,32 +10,31 @@ require('dotenv').config();
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 
-
 class WeatherComponent extends React.Component {
 
 
-    constructor() {
-        super();
-
-        this.state = {
-            jsonReturnedValue: null
-        }
-    }
-
-    componentDidMount() {
-        let city = "Nashville"
-        let country = "US"
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`)
-            .then(response => response.json())
-            .then(json => {
-                this.setState({ jsonReturnedValue: json });
+    async getWeatherData() {
+        const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
+        let data = res.json()
+            .then(data => {
+                console.log(data)
+                this.setState({
+                    temperature: data.main.temp,
+                    city: data.name,
+                    country: data.sys.country,
+                    humidity: data.main.humidity,
+                    description: data.weather[0].description,
+                    error: undefined,
+                })
             });
-        console.log("deez nuts")
     }
-
-
+    componentDidMount() {
+        this.getWeatherData();
+        console.log('hi')
+    }
 
     state = {
+
         temperature: undefined,
         city: undefined,
         country: undefined,
@@ -44,15 +43,13 @@ class WeatherComponent extends React.Component {
         error: undefined
     }
 
-
-
-
     getWeather = async (e) => {
         e.preventDefault();
         const city = e.target.elements.city.value;
         const country = e.target.elements.country.value;
         const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
         const data = await api_call.json();
+
         console.log(data)
 
         if (city && country) {
@@ -81,6 +78,7 @@ class WeatherComponent extends React.Component {
     render() {
         return (
             <>
+
                 <div className="weather-div">
                     <div className="weather-wrapper">
                         <div className="main">
