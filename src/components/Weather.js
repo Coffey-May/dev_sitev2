@@ -29,8 +29,8 @@ function imageFilter(x) {
 const Weather = props => (
 
 
-    <div style={{ display: "flex", FlexDirection: 'row', flexWrap: 'wrap', overflow: '  scroll' }} className="weather__info">
-        <div style={{ margin: '2em', width: '30vw' }}>
+    <div style={{ fontSize: '1vh', display: "flex", FlexDirection: 'row', flexWrap: 'wrap', overflow: '  scroll' }} className="weather__info">
+        <div style={{ paddingTop: '2em', width: '30vw', margin: '0 auto' }}>
             <h2 style={{ margin: '0 auto' }}>Currently</h2>
             <hr />
             {

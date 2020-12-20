@@ -122,38 +122,7 @@ height:80vh ;
 .contact-li{
   color: white;
 }
-/* .sun2{
-  width: 13em;
-  height: 13em;
-  background: radial-gradient(transparent,rgba(148, 49, 3, 0.726))
-  , url('./components/sun2gif.gif');
-  opacity: 1;
-  background-size: contain;
-  border-radius: 65%;
-  box-shadow: 0 0 1px 1px rgba(176, 177, 134, 0.664) inset;  
-  transform: translate(15%, 15%);
-  margin:0 auto;
-  padding-top: 2em;
-} */
 
-.weather-pic{
-/* width:10rem; */
-/* height:20vh; */
-
-/* background-size: inherit; */
-
-
-}
-/* .sun-2-container{
-  width: 17em;
-  height: 17em;
-  
-  background: radial-gradient(transparent,black,rgb(0, 0, 0));
-
-
- 
-  margin:0 auto;
-} */
 #weather_card{
  /* border-radius: 99rem;  */
  display: flex;flex-direction: row;
@@ -203,17 +172,49 @@ padding:2em;
 height:72vh;
 background:linear-gradient(rgba(0, 0, 0, 0.658),rgba(128, 128, 128, 0.658), rgba(255, 255, 255, 0.644))
 }
+.weatherInput{
+  background-color: rgba(0, 0, 0, 0.685);
+  width:78vw;
+  margin:0 auto;
+  /* padding:2vh; */
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+   
+}
 .weather__info{
   z-index: 1;
   color: white;
   background-color: rgba(0, 0, 0, 0.685);
-  width:80vw;
+  width:78vw;
   margin:0 auto;
   margin-top: 4vh;
  
 
-  height:60vh;
+  height:50vh;
 }
+.form-btn {
+  background: transparent; 
+ /* text-decoration: none; */
+ width: 130px;
+ height: 40px;
+ border:none;
+ 
+
+}
+input,input:focus{
+   border-style: none; 
+  background: transparent; 
+  outline: none;
+   color:white;
+   width:27vw;
+   height:3vh;  
+   /* margin-top:4vh; */
+   border-bottom: 1px solid white;
+   font-size: 2.5vh;
+   font-weight: bolder;
+  }
 #colorBG {
   background: linear-gradient(270deg, #0697add7, #04963cb6, #a85c04be, #94089eaf);
   background-size: 800% 800%;
@@ -240,4 +241,62 @@ background:linear-gradient(rgba(0, 0, 0, 0.658),rgba(128, 128, 128, 0.658), rgba
 }
 #projects-div-main{
   background-color: rgba(255,255,255,0.8);
+}
+.svg .button {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  /* margin: 20px; */
+  overflow: hidden;
+ 
+}
+.svg .button rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  stroke-width: 4px;
+  stroke-dashoffset: 400px;
+  stroke: olivedrab;
+}
+
+.svg .button span {
+  color: olivedrab;
+  width: 130px;
+  height: 40px;
+  display: inline-block;
+  /* text-align: center; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 40px;
+  transition: all .2s linear;
+}
+
+.svg .button span:hover {
+  color: #fff;
+  background: olivedrab;
+  transition: all 1s cubic-bezier(1.25s 0, 1.15, 1, 1);
+  transition-delay: .5s;
+}
+
+.svg .button:nth-child(1):hover rect {
+  animation: draw1 .75s linear forwards;
+}
+@keyframes draw1 {
+  0% {
+      stroke-dasharray: 300;
+      stroke-dashoffset: 700;
+      stroke-width: 4px;
+  }
+  75% {
+      stroke-dasharray: 900;
+      stroke-width: 1px;
+  }
+  100% {
+      stroke-dasharray: 900;
+      stroke-width: 1px;
+  }
 }

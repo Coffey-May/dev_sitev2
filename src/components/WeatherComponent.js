@@ -104,6 +104,7 @@ class WeatherComponent extends React.Component {
                 error: ""
             });
 
+
             console.log(data.weather[0].description)
             imageFilter(data.weather[0].description)
         } else {
@@ -143,10 +144,11 @@ class WeatherComponent extends React.Component {
                                             description={this.state.description}
                                             error={this.state.error}
                                         />
+                                        <Form getWeather={this.getWeather} />
                                     </div>
 
                                 </div>
-                                <Form getWeather={this.getWeather} />
+
                             </div>
                         </div>
                     </div>
