@@ -46,7 +46,7 @@ function Contact() {
                             <a rel="noreferrer" target="_blank" href="https://m.facebook.com/coffey.may.7"><li style={{ marginLeft: '-3rem' }} className="contact-li"><FaFacebook size={50} /></li></a>
 
                         </ul>
-                        <p ><FaCopyright /> COPYRIGHT2020</p>
+                        <p ><FaCopyright /> COPYRIGHT{new Date().getFullYear()}</p>
 
 
                     </footer>

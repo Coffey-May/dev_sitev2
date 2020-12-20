@@ -44,8 +44,8 @@ function Contact() {
                     <a className="chi" rel="noreferrer" target="_blank" href="https://www.instagram.com/coffeymay1/"><li className="contact-li"><FaInstagram size={25} /></li></a>
                     <a className="chi" rel="noreferrer" target="_blank" href="https://m.facebook.com/coffey.may.7"><li className="contact-li"><FaFacebook size={25} /></li></a>
                 </ol>
-                <FaCopyright /> COPYRIGHT2020
-</footer>
+                <FaCopyright /> COPYRIGHT{new Date().getFullYear()}
+            </footer>
         </>
 
 

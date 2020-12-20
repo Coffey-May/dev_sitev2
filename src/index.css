@@ -191,7 +191,9 @@ text-shadow: #FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #
 }
 
 .weather-div{
-background-image: linear-gradient(rgba(255, 238, 142, 0.637),rgba(114, 136, 72, 0.637),rgba(27, 58, 36, 0.61)),url('./components/weathergif.gif');
+background-image: linear-gradient(rgba(255, 238, 142, 0.637),rgba(114, 136, 72, 0.637),rgba(27, 58, 36, 0.61))
+/* ,url('./components/weathergif.gif') */
+;
 height:80vh; 
 background-repeat: no-repeat;
 background-size: cover;

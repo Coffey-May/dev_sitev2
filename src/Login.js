@@ -74,8 +74,8 @@ export default function Login() {
             </div>
             <footer id="footer2" style={{ border: '1px solid black', height: '10vh', backgroundColor: 'black', color: 'white' }}>
                 <br />
-                <FaCopyright /> COPYRIGHT2020
-</footer>
+                <FaCopyright /> COPYRIGHT{new Date().getFullYear()}
+            </footer>
         </>
     )
 }

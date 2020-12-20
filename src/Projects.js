@@ -17,8 +17,8 @@ export default function Projects() {
 
 
                 <br />
-                <FaCopyright /> COPYRIGHT2020
-</footer>
+                <FaCopyright /> COPYRIGHT{new Date().getFullYear()}
+            </footer>
         </>
 
     )

@@ -98,8 +98,8 @@ export default function Home2() {
 
                 <footer id="footer2" style={{ border: '1px solid black', height: '12vh', backgroundColor: 'black', color: 'white' }}>
                     <br />
-                    <FaCopyright /> COPYRIGHT2020
-                <br />
+                    <FaCopyright /> COPYRIGHT{new Date().getFullYear()}
+                    <br />
                     <AnchorLink className="chi" style={{
                         color: 'white', textDecoration: 'none',
                         //  border: '1px solid white',
