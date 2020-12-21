@@ -25,13 +25,18 @@ function imageFilter(x) {
     }
 
 }
+var today = new Date();
+var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+// var today = new Date();
+// var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var time = new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
 
 const Weather = props => (
 
 
     <div style={{ fontSize: '1vh', display: "flex", FlexDirection: 'row', flexWrap: 'wrap', overflow: '  scroll' }} className="weather__info">
         <div style={{ paddingTop: '2em', width: '30vw', margin: '0 auto' }}>
-            <h2 style={{ margin: '0 auto' }}>Currently</h2>
+            <h2 style={{ margin: '0 auto' }}>Currently: {time}<br />{date} </h2>
             <hr />
             {
                 props.city && props.country &&

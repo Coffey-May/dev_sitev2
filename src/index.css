@@ -176,7 +176,7 @@ background:linear-gradient(rgba(0, 0, 0, 0.658),rgba(128, 128, 128, 0.658), rgba
   background-color: rgba(0, 0, 0, 0.685);
   width:78vw;
   margin:0 auto;
-  /* padding:2vh; */
+  padding:2vh;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -211,6 +211,7 @@ input,input:focus{
    width:27vw;
    height:3vh;  
    /* margin-top:4vh; */
+   padding:2.5vh;
    border-bottom: 1px solid white;
    font-size: 2.5vh;
    font-weight: bolder;

@@ -5,7 +5,7 @@ const Form = props => (
         <input type="text" name="city" placeholder="City..." />
         <input type="text" name="country" placeholder="Country..." />
 
-        <div class="svg">
+        <div className="svg">
             <button className="form-btn">
                 <a style={{ margin: '0 auto' }} className="button" href="#">
                     <svg>

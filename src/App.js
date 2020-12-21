@@ -15,6 +15,7 @@ import UpdateProfile from "./UpdateProfile"
 import Dashboard from "./Dashboard"
 import UserName from "./UserName"
 import WeatherComponent from "./components/WeatherComponent"
+import ToDoApp from "./components/ToDo/TodoApp"
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
             <Route path="/username" component={UserName} />
             <Route path="/forgot-password" component={ForgotPassword} />
             <Route path="/weather" component={WeatherComponent} />
+            <Route path="/todo" component={ToDoApp} />
 
           </Switch>
         </div>
