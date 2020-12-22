@@ -2,7 +2,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+ 
 
   
 }
@@ -223,6 +223,10 @@ input,input:focus{
   -webkit-animation: AnimationName 22s ease infinite;
   -moz-animation: AnimationName 22s ease infinite;
   animation: AnimationName 22s ease infinite;
+}
+.completed{
+  text-decoration: line-through;
+  opacity:.5;
 }
 
 @-webkit-keyframes AnimationName {
