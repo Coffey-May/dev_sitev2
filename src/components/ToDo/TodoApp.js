@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ToDoForm from './TodoForm'
 import ToDoList from './ToDoList'
 import { FaCopyright } from 'react-icons/fa';
-
+//
 const TodoApp = () => {
     const [inputText, setInputText] = useState('')
     const [todos, setTodos] = useState([])

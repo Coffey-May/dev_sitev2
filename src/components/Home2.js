@@ -78,7 +78,7 @@ export default function Home2() {
                                         }} >Projects </h4>
                                 </NavLink>
                                 <hr />
-                                <ul className="chi" style={{ fontWeight: '900', margin: '0 auto', cursor: 'pointer', color: 'yellow', listStyle: 'none', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+                                {/* <ul className="chi" style={{ fontWeight: '900', margin: '0 auto', cursor: 'pointer', color: 'yellow', listStyle: 'none', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-around' }}>
                                     <h3 style={{ textShadow: '#FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 38px' }}>
                                         <li>FAQ</li>
                                     </h3>
@@ -88,7 +88,7 @@ export default function Home2() {
                                     <h3 style={{ textShadow: '#FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 38px' }}>
                                         <li>BLOG &  </li>
                                     </h3>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                     </div>
