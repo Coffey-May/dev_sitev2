@@ -26,7 +26,7 @@ const ToDoForm = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
                 <input value={inputText} onChange={setInputTextHandler} type="text" />
                 <button onClick={submitTodoHandler}>Add</button>
                 <select onChange={statusHandler} name="" id="">
-                    <option value="completed">All</option>
+                    <option value="all">All</option>
                     <option value="completed">Completed</option>
                     <option value="incomplete">Incomplete</option>
                 </select>
