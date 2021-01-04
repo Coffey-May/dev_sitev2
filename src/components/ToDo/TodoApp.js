@@ -57,7 +57,8 @@ const TodoApp = () => {
                 </button>
             </div>
         )
-    } else if (currentUser != null) {
+    } else if (currentUser != null && localStorage.getItem("todo_user")
+    ) {
         return (
 
             <div>

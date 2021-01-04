@@ -9,12 +9,10 @@ import { FaCopyright } from 'react-icons/fa';
 export default function Login() {
     const emailRef = useRef()
     const passwordRef = useRef()
-
     const { login } = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
-    const { currentUser } = useAuth()
 
 
     async function handleSubmit(e) {
@@ -25,14 +23,16 @@ export default function Login() {
             setLoading(true)
 
             await login(emailRef.current.value, passwordRef.current.value)
-            // history.push("/")
-            history.push("/username")
-
-
+            let pass = passwordRef.current.value
+            if (passwordRef.current.value === pass) {
+                localStorage.setItem("todo_user", emailRef.current.value)
+                console.log(localStorage.getItem("todo_user"))
+            }
+            history.push("/")
+            // history.push("/username")
         } catch {
             setError("Failed to log in")
         }
-
         setLoading(false)
     }
 
@@ -46,10 +46,6 @@ export default function Login() {
                             <h2 style={{ margin: '0 auto' }} className="text-center mb-4">Log In</h2>
                             {error && <Alert variant="danger">{error}</Alert>}
                             <Form onSubmit={handleSubmit} autoComplete="on">
-                                {/* <Form.Group id="email">
-                            <Form.Label>User Name</Form.Label>
-                            <Form.Control autoComplete="on" type="text" ref={userNameRef} required />
-                        </Form.Group> */}
                                 <Form.Group id="email">
                                     <Form.Label>Email</Form.Label>
                                     <Form.Control autoComplete="on" type="email" ref={emailRef} required />
