@@ -4,6 +4,7 @@ import ToDoList from './ToDoList'
 import { FaCopyright } from 'react-icons/fa';
 import { useAuth } from "../../contexts/AuthContext"
 import { NavLink } from "react-router-dom";
+import "./ToDo.css"
 //
 const TodoApp = () => {
     const { currentUser } = useAuth();
@@ -51,10 +52,12 @@ const TodoApp = () => {
         return (
             <div>
                 <h4>Welcome, please log in to use this feature</h4>
-                <button>Log In
-                    <NavLink to="/login" style={{ paddingTop: '2px', marginLeft: '2vw', textDecoration: 'none', color: 'white' }} className="chi nav-link">
+                {/* <button>Log In */}
+                <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button>
+                <NavLink to="/login" style={{ paddingTop: '2px', marginLeft: '2vw', textDecoration: 'none', color: 'white' }} className="chi nav-link">
+                    Log In
                     </NavLink>
-                </button>
+                {/* </button> */}
             </div>
         )
     } else if (currentUser != null && localStorage.getItem("todo_user")
