@@ -51,13 +51,13 @@ const TodoApp = () => {
     if (currentUser === null) {
         return (
             <div>
-                <h4>Welcome, please log in to use this feature</h4>
-                {/* <button>Log In */}
-                <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button>
-                <NavLink to="/login" style={{ paddingTop: '2px', marginLeft: '2vw', textDecoration: 'none', color: 'white' }} className="chi nav-link">
-                    Log In
-                    </NavLink>
-                {/* </button> */}
+                <h2>Please log in to use this feature</h2>
+
+
+                <NavLink to="/login" style={{ paddingTop: '2px', textDecoration: 'none', color: 'white' }} className="chi nav-link">
+                    <button class="glow-on-hover" type="button">Log In</button>
+                </NavLink>
+
             </div>
         )
     } else if (currentUser != null && localStorage.getItem("todo_user")
