@@ -5,7 +5,7 @@ import { FaCopyright } from 'react-icons/fa';
 import { useAuth } from "../../contexts/AuthContext"
 import { NavLink } from "react-router-dom";
 import "./ToDo.css"
-//
+//Todo Component
 const TodoApp = () => {
     const { currentUser } = useAuth();
     const [inputText, setInputText] = useState('')
