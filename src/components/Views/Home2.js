@@ -7,6 +7,8 @@ import Resume from '/Users/coffeymay/workspace/dev_sitev2/src/PDFS/Gray Simple M
 
 //Home Page 2 Component
 
+const h2Style = { color: 'white', margin: '0 auto', fontWeight: 'bolder', textAlign: 'center', fontSize: '3vh' }
+
 export default function Home2() {
     return (
         <Parallax speed={8}>
@@ -26,7 +28,7 @@ export default function Home2() {
                         margin: '0 auto',
                         background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
                     }}>
-                        <h2 style={{ color: 'white', margin: '0 auto', fontWeight: 'bolder', textAlign: 'center', fontSize: '3vh' }}>ABOUT ME</h2>
+                        <h2 style={h2Style}>ABOUT ME</h2>
                         <hr />
                         <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap' }}>
                             <div>
@@ -38,7 +40,7 @@ export default function Home2() {
                                         My Initial interest in working with data has to do with the nature of visual language.
                                         Initially, as an oil painter, I became interested in the relationship between culture and its represntaion via paint.
                                         Similarly, technology is impacting society in similar ways as paintings once did.    </p>
-                                    <div className="deezNuts" style={{ width: '8rem', height: '8rem', marginRight: '3vw' }} ></div>
+                                    <div className="picOfMe" style={{ width: '8rem', height: '8rem', marginRight: '3vw' }} ></div>
                                 </div>
                             </div>
                             <hr />
