@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ToDoForm from './TodoForm'
 import ToDoList from './ToDoList'
 import { FaCopyright } from 'react-icons/fa';
-import { useAuth } from "../../contexts/AuthContext"
+import { useAuth } from "../../Contexts/AuthContext"
 import { NavLink } from "react-router-dom";
 import "./ToDo.css"
 //Todo Component 

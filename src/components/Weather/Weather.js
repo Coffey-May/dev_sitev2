@@ -1,5 +1,5 @@
 import React from "react";
-import { AuthProvider } from "../contexts/AuthContext";
+import { AuthProvider } from "../../Contexts/AuthContext";
 import Pic from './weathergif.gif'
 import Pic2 from './cloudygif.gif'
 import Pic3 from './raingif.gif'

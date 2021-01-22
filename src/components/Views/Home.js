@@ -4,14 +4,10 @@ import { FaHtml5, FaCss3, FaJs, FaReact, FaGit, FaNodeJs } from 'react-icons/fa'
 import { DiBootstrap, DiDatabase, DiDotnet, DiNpm, DiVisualstudio, DiSass } from 'react-icons/di';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Home2 from './Home2';
-// import WeatherAPI from "./WeatherAPI";
-import WeatherComponent from "./WeatherComponent";
 import { Spring } from "react-spring/renderprops";
-import { useAuth } from "../contexts/AuthContext"
-// import HomeSlides from './HomeSlides';
-// import Contact from './Contact';
-import '../App.css';
-import '../index.css'
+import { useAuth } from "../../Contexts/AuthContext"
+// import '../App.css';
+// import '../index.css'
 require('dotenv').config();
 
 const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;

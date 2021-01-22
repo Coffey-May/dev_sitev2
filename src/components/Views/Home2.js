@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import '../index.css';
+// import '../index.css';
 import Parallax from "react-rellax";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FaCopyright } from 'react-icons/fa';

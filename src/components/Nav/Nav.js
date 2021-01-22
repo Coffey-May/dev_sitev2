@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import { useAuth } from "../contexts/AuthContext"
-import '../App.css';
-import "../index.css"
-import Dashboard from '../Dashboard';
+import { useAuth } from "../../Contexts/AuthContext"
+// import "../App.css";
+// import "../index.css";
+import Dashboard from '../Auth/Dashboard';
 
 
 
@@ -31,7 +31,7 @@ const Nav = () => {
     return (
 
 
-        <nav id="page1" className="Nav navbar navbar-inverse" id="navId" style={{
+        <nav id="page1 navId" className="Nav navbar navbar-inverse" style={{
             margin: '0', borderRadius: '0', position: 'relative',
             zIndex: '10000'
         }} >
@@ -45,8 +45,8 @@ const Nav = () => {
 
                     <div className="chi" style={{ paddingLeft: '2vw', marginTop: '2.5vh', display: "flex", flexDirection: 'row' }}>
 
-                        <p style={{ fontFamily: 'sans-serif', border: '2px solid white', padding: '2px' }} ><NavLink style={{ fontWeight: 'bolder', color: 'white', textDecoration: 'none', fontWeight: 'bolder' }} to="/">CM </NavLink></p>
-                        <p style={{ fontFamily: 'sans-serif', padding: '2px' }} ><NavLink style={{ fontWeight: 'bolder', color: 'white', textDecoration: 'none', fontWeight: 'bolder' }} to="/"> &nbsp;&nbsp; Full Stack Software Developer&nbsp;&nbsp;</NavLink></p>
+                        <p style={{ fontFamily: 'sans-serif', border: '2px solid white', padding: '2px' }} ><NavLink style={{ color: 'white', textDecoration: 'none', fontWeight: 'bolder' }} to="/">CM </NavLink></p>
+                        <p style={{ fontFamily: 'sans-serif', padding: '2px' }} ><NavLink style={{ fontWeight: 'bolder', color: 'white', textDecoration: 'none' }} to="/"> &nbsp;&nbsp; Full Stack Software Developer&nbsp;&nbsp;</NavLink></p>
                         {/* <p style={{ marginTop: '.25vh', fontFamily: 'sans-serif', padding: '2px' }}> &nbsp;&nbsp; Full Stack Software Developer&nbsp;&nbsp;    </p> */}
                     </div>
                 </div>

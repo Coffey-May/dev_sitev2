@@ -2,19 +2,19 @@ import React from 'react';
 import './App.css';
 // import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from './components/Home';
-import Nav from './components/Nav';
+import Home from './components/Views/Home';
+import Nav from './components/Nav/Nav';
 import Contact from './Contact';
-import Projects from './Projects';
-import { AuthProvider } from "./contexts/AuthContext";
-import Login from "./Login"
-import Signup from "./Signup"
-import PrivateRoute from "./PrivateRoute"
-import ForgotPassword from "./ForgotPassword"
-import UpdateProfile from "./UpdateProfile"
-import Dashboard from "./Dashboard"
-import UserName from "./UserName"
-import WeatherComponent from "./components/WeatherComponent"
+import Projects from './components/Views/Projects';
+import { AuthProvider } from "./Contexts/AuthContext";
+import Login from "./components/Auth/Login"
+import Signup from "./components/Auth/Signup"
+import PrivateRoute from "./components/Auth/PrivateRoute"
+import ForgotPassword from "./components/Auth/ForgotPassword"
+import UpdateProfile from "./components/Auth/UpdateProfile"
+import Dashboard from "./components/Auth/Dashboard"
+import UserName from "./components/Auth/UserName"
+import WeatherComponent from "./components/Weather/WeatherComponent"
 import ToDoApp from "./components/ToDo/TodoApp"
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-animated-slider';
-import WeatherComponent from "./WeatherComponent"
+import WeatherComponent from "../Weather/WeatherComponent"
 import { NavLink } from "react-router-dom";
 import 'react-animated-slider/build/horizontal.css';
 import { Link } from "react-router-dom";
