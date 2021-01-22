@@ -141,6 +141,7 @@ height:80vh ;
 #myNavbar{
 background-color: black;
 width:100vw;
+
 }
 .glow-button:hover:active {
   color: rgb(255, 251, 245);

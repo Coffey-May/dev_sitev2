@@ -4,7 +4,7 @@ import { useAuth } from "../../Contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 import { FaCopyright } from 'react-icons/fa';
 
-
+//Log In Component
 
 export default function Login() {
     const emailRef = useRef()

@@ -4,6 +4,8 @@ import { useAuth } from "../../Contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import { FaCopyright } from 'react-icons/fa';
 
+//Sign Up Component
+
 export default function Signup() {
     const emailRef = useRef()
     const passwordRef = useRef()
@@ -12,7 +14,6 @@ export default function Signup() {
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
-    // const usernameRef = useRef()
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -20,9 +21,6 @@ export default function Signup() {
         if (passwordRef.current.value !== passwordConfirmRef.current.value) {
             return setError("Passwords do not match")
         }
-
-
-
         try {
 
             setError("")

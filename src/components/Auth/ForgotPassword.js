@@ -4,6 +4,7 @@ import { useAuth } from "../../Contexts/AuthContext"
 import { Link } from "react-router-dom"
 import { FaCopyright } from 'react-icons/fa';
 
+// Forgot Password and Password Reset Component
 
 export default function ForgotPassword() {
     const emailRef = useRef()

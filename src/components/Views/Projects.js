@@ -2,6 +2,8 @@ import React from 'react';
 import HomeSlides from './HomeSlides';
 import { FaCopyright } from 'react-icons/fa';
 
+//Projects Component
+
 export default function Projects() {
     return (
         <>

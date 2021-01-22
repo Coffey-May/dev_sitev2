@@ -4,6 +4,8 @@ import { useAuth } from "../../Contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import { FaCopyright } from 'react-icons/fa';
 
+//Update Profile Component
+
 export default function UpdateProfile() {
     const emailRef = useRef()
     const passwordRef = useRef()

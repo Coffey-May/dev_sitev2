@@ -2,12 +2,14 @@ import React, { useState } from "react"
 import { useAuth } from "../../Contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 
+//Log Out and Profile Component
+
+const linkStyle = { marginLeft: '2vw', cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px', fontWeight: 'bolder' }
 
 export default function Dashboard() {
     const [error, setError] = useState("")
     const { currentUser, logout } = useAuth()
     const history = useHistory()
-
     async function handleLogout() {
         setError("")
 
@@ -18,25 +20,12 @@ export default function Dashboard() {
             setError("Failed to log out")
         }
     }
-
     return (
         <>
-
             <div className="chi w-100 text-center mt-2">
-                <li className="chi" onClick={handleLogout} style={{ marginLeft: '2vw', cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px' }}><span className=" chi glyphicon glyphicon-log-out"></span> Log Out</li>
-                {/* <li onClick={handleLogout} style={{ paddingLeft: '2vw', margin: '0 auto', cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px' }} >Log Out </li> */}
-
-
+                <li className="chi" onClick={handleLogout} style={linkStyle}><span className=" chi glyphicon glyphicon-log-out"></span> Log Out</li>
             </div>
-            {/* <Card>
-                <Card.Body> */}
-            {/* <h5 style={{ cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px' }} className="text-center mb-4">Profile</h5> */}
-            {/* {error && <Alert variant="danger">{error}</Alert>} */}
-            {/* <strong>Email:</strong> {currentUser.email} */}
-
-
-
-            <Link style={{ marginLeft: '2vw', cursor: 'pointer', color: 'white', fontFamily: 'sans-serif', padding: '2px', textDecoration: 'none', fontWeight: 'bolder' }} to="/update-profile" >
+            <Link style={linkStyle} to="/update-profile" >
                 <li className="chi"><span className=" chi glyphicon glyphicon-user"></span> Profile</li>
             </Link>
 
