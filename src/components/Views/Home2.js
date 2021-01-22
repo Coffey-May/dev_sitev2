@@ -106,7 +106,7 @@ export default function Home2() {
                         // padding: '.10em',
                         // borderRadius: '99rem',
                         // marginTop: '2rem'
-                    }} href='#navId'>
+                    }} href='#page1'>
                         Return to top
                     </AnchorLink>
 

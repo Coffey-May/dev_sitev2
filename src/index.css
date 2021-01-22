@@ -112,6 +112,10 @@ height:80vh ;
    background-repeat: no-repeat;
    border-radius: 50%;
 }
+.navbar-header{
+  background-color: black;
+
+}
 .Contact{
   background: linear-gradient(rgba(5, 87, 83, 0.616), rgba(12, 6, 90, 0.582), rgba(81, 4, 100, 0.555)),url("./components//IMG_20201206_153507.jpg");
   /* background-image: url("./components//IMG_20201206_153507.jpg"); */
@@ -136,6 +140,7 @@ height:80vh ;
 }
 #myNavbar{
 background-color: black;
+width:100vw;
 }
 .glow-button:hover:active {
   color: rgb(255, 251, 245);

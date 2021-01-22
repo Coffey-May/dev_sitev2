@@ -1,28 +1,20 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../../Contexts/AuthContext"
-// import "../App.css";
-// import "../index.css";
 import Dashboard from '../Auth/Dashboard';
 
-
-
-
-
-
-
+const authStyle = { paddingTop: '2px', marginLeft: '2vw', textDecoration: 'none', color: 'white' }
+const liStyle = { color: 'white', fontWeight: 'bolder' }
 
 const Nav = () => {
     const { currentUser } = useAuth()
     if (currentUser === null) {
         var link = <>
-            <NavLink to="/login" style={{ paddingTop: '2px', marginLeft: '2vw', textDecoration: 'none', color: 'white' }} className="chi nav-link">
-
-                <li style={{ color: 'white', fontWeight: 'bolder' }} href="#"><span className="glyphicon glyphicon-log-in"></span> Login</li>
+            <NavLink to="/login" style={authStyle} className="chi nav-link">
+                <li style={liStyle} href="#"><span className="glyphicon glyphicon-log-in"></span> Login</li>
             </NavLink>
-
-            <NavLink to="/signup" style={{ paddingTop: '2px', marginLeft: '2vw', textDecoration: 'none', color: 'white' }} className="chi nav-link">
-                <li style={{ color: 'white', fontWeight: 'bolder' }}><span className="glyphicon glyphicon-user"></span> Sign Up</li>
+            <NavLink to="/signup" style={authStyle} className="chi nav-link">
+                <li style={liStyle}><span className="glyphicon glyphicon-user"></span> Sign Up</li>
             </NavLink>
         </>
     } else if (currentUser != null) {
@@ -31,11 +23,11 @@ const Nav = () => {
     return (
 
 
-        <nav id="page1 navId" className="Nav navbar navbar-inverse" style={{
+        <nav id="page1 " className="Nav navbar navbar-inverse" style={{
             margin: '0', borderRadius: '0', position: 'relative',
             zIndex: '10000'
         }} >
-            <div style={{ color: 'white' }} className="container-fluid">
+            <div style={{ color: 'white' }} className="#">
                 <div className="navbar-header">
                     <button style={{ marginTop: '2.5vh' }} type="button" className="chi navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span style={{ color: 'white' }} className="chi icon-bar"></span>
