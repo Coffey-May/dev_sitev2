@@ -1,4 +1,5 @@
 /* Universal Styles */
+/* ---------------------------------------------- */
 *, html{
   margin:0;
   padding:0;
@@ -17,9 +18,10 @@ code {
     monospace;
 }
 
-/* Semantic and Block Level Styles */
 
-    /* Home Page Styles */
+
+/* Home Page Styles */
+/* ---------------------------------------------- */
 
 .content-wrapper{
 display:flex;
@@ -38,8 +40,20 @@ display:flex;
   flex-direction: row;
   justify-content: space-around;
 }
+#main-content-image{
+  padding:.5rem;
+  background: linear-gradient(rgba(5, 87, 83, 0.459), rgba(11, 6, 90, 0.555), rgba(81, 4, 100, 0.404)),url("./components/sun.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0;
+  color:white;
+}
 
-    /* Home Page 2 Styles */
+
+
+
+/* Home Page 2 Styles */
+/* ---------------------------------------------- */
 
 .content-wrapper2{
   background: linear-gradient(rgba(217, 249, 252, 0.849), rgba(230, 206, 250, 0.849)),url('../src//components/pexels-photo-3184454.jpeg');
@@ -54,17 +68,24 @@ display:flex;
   background-repeat: no-repeat;
   border-radius: 50%;
 }
-/* 
-#aside-content{
-  width:40vw;
-  height:80vh;
-} */
+#footer2{
+  height:10vh;
+}
+
+/* Navigation Bar Styles */
+  /* ---------------------------------------------- */
 
 #navId{
   color:white;
   background-color: black;
   height:10vh;
 }
+
+#myNavbar{
+  background-color: black;
+  width:100vw;
+  }
+
 .container{
   max-width: 80vw;
   padding: 0 2rem;
@@ -75,34 +96,15 @@ ul{
   flex-direction: row;
   width:80vw;
 }
-#main-content-image{
-  padding:.5rem;
-  background: linear-gradient(rgba(5, 87, 83, 0.459), rgba(11, 6, 90, 0.555), rgba(81, 4, 100, 0.404)),url("./components/sun.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-right: 0;
-  color:white;
-}
-#main-content,#aside-content{
-  background-color: rgba(252, 252, 252, 0.007);
-}
+
 h1{
   margin-top:12.5vh;
   letter-spacing: .5em;
   margin-bottom:3vh;
 }
-.slider{
-  height:80vh !important;
-}
-.slid{
-  width:100vw;
-  height:80vh ;
-}
 
 
-#footer2{
-  height:10vh;
-}
+
 .overlay{
   background-color: transparent;
 }
@@ -127,12 +129,10 @@ h1{
   background-image: url('./components/cloudsgif.gif');
   background-repeat: no-repeat;
 }
-#myNavbar{
-background-color: black;
-width:100vw;
-}
+
 
 /* Glow Button Effects */
+  /* ---------------------------------------------- */
 
 .glow-button:hover:active {
   color: rgb(255, 251, 245);
@@ -151,11 +151,9 @@ width:100vw;
 }
 
 
-#slide-div{
-  background-color: rgba(0, 0, 0, 0.685);
-}
 
 /* Weather Component Styles */
+  /* ---------------------------------------------- */
 
 .weather-div{
   background-image: linear-gradient(rgba(255, 238, 142, 0.637),rgba(114, 136, 72, 0.637),rgba(27, 58, 36, 0.61));
@@ -205,6 +203,34 @@ input,input:focus{
   font-size: 2.5vh;
   font-weight: bolder;
   }
+
+  /* To Do Styles */
+    /* ---------------------------------------------- */
+  
+
+  .completed{
+    text-decoration: line-through;
+    opacity:.5;
+  }
+
+  /* Projects Page Styles */
+  /* ---------------------------------------------- */
+.slider{
+    height:80vh !important;
+  }
+.slid{
+    width:100vw;
+    height:80vh ;
+  }
+
+#slide-div{
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
+#projects-div-main{
+  background-color: rgba(255,255,255,0.8);
+  }
+
 #colorBG {
   background: linear-gradient(270deg, #0697add7, #04963cb6, #a85c04be, #94089eaf);
   background-size: 800% 800%;
@@ -212,10 +238,7 @@ input,input:focus{
   -moz-animation: AnimationName 22s ease infinite;
   animation: AnimationName 22s ease infinite;
 }
-.completed{
-  text-decoration: line-through;
-  opacity:.5;
-}
+
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
@@ -231,9 +254,7 @@ input,input:focus{
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
-#projects-div-main{
-  background-color: rgba(255,255,255,0.8);
-}
+
 .svg .button {
   text-decoration: none;
   color: #fff;
