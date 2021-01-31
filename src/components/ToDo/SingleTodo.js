@@ -1,6 +1,9 @@
 import React from 'react'
 
 
+
+
+
 const SingleTodo = ({ text, todo, todos, setTodos }) => {
     const completedHandler = e => {
         e.preventDefault();
@@ -19,11 +22,13 @@ const SingleTodo = ({ text, todo, todos, setTodos }) => {
     }
     return (
         <div style={{ margin: '0 auto', textAlign: 'center' }}>
-            <li className={`todo-item ${todo.completed ? "completed" : ""}`}>{text}
+            <li style={{ color: 'white' }} sclassName={`todo-item ${todo.completed ? "completed" : ""}`}>
 
+                {text}
+                <button onClick={completedHandler}>Complete</button>
+                <button onClick={deleteHandler}>Delete</button>
             </li>
-            <button onClick={completedHandler}>Complete</button>
-            <button onClick={deleteHandler}>Delete</button>
+
         </div>
     )
 }

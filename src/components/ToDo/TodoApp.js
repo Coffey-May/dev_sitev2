@@ -67,7 +67,7 @@ const TodoApp = () => {
             <div>
 
                 <div style={{ height: '80vh', backgroundColor: 'gray' }} >
-                    <h1 style={{ margin: '0 auto', paddingTop: '10vh' }}>To Do Organizer</h1>
+                    <h1 style={{ margin: '0 auto', paddingTop: '10vh' }}>TASK MANAGER</h1>
                     <ToDoForm
                         todos={todos}
                         setTodos={setTodos}
