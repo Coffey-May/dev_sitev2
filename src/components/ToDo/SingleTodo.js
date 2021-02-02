@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-
+//Single To Do Component
 
 
 const SingleTodo = ({ text, todo, todos, setTodos }) => {
@@ -22,7 +22,7 @@ const SingleTodo = ({ text, todo, todos, setTodos }) => {
     }
     return (
         <div style={{ margin: '0 auto', textAlign: 'center' }}>
-            <li style={{ color: 'white' }} sclassName={`todo-item ${todo.completed ? "completed" : ""}`}>
+            <li style={{ color: 'white' }} className={`todo-item ${todo.completed ? "completed" : ""}`}>
 
                 {text}
                 <button onClick={completedHandler}>Complete</button>
