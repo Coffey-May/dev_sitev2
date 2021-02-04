@@ -4,9 +4,14 @@ import 'react-animated-slider/build/horizontal.css';
 
 //Projects Slider and controls
 
+
+
 import Pic from './Screen Shot 2020-12-10 at 4.40.52 PM.png'
 import Pic2 from './Screen Shot 2020-12-10 at 4.41.07 PM.png'
 import Pic3 from './Screen Shot 2020-12-10 at 4.41.27 PM.png'
+
+
+
 
 const imgStyle = { border: '13px solid white', height: '18em', width: '30em', margin: '1em' }
 let link1 = '/weather'
@@ -33,13 +38,16 @@ export default function HomeSlides() {
                     <div style={{ width: '65vw', margin: '0 auto' }}>
                         <h3>{slide.description}</h3>
                     </div>
-                    <h3>
-                        <button>
-                            <a target="blank" style={{ color: 'black', height: '20px' }} href={slide.link}>View</a>
-                        </button>
-                    </h3>
-                </div>)}
+
+
+                    <h6 className="btncontainer">
+                        <p className="animated-word">
+                            <a target="blank" style={{ textDecoration: 'none', color: 'black', height: '20px', marginTop: '3em' }} href={slide.link}>View</a>
+                        </p>
+                    </h6>
+                </div>
+                )}
             </Slider>
-        </div>
+        </div >
     )
 }

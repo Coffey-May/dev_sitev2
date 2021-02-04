@@ -7,7 +7,7 @@ import Pic4 from './snowgif.gif'
 import Pic5 from './foggif.gif'
 var image;
 function imageFilter(x) {
-    // console.log(x)
+
     if (x === "light rain" || x === "moderate rain" || x === "heavy intensity rain" || x === "very heavy rain" || x === "extreme rain" || x === "light intensity shower rain" || x === "freezing rain" || x === "shower rain" || x === "heavy intensity shower rain" || x === "	ragged shower rain" || x === "light intensity drizzle") {
         image = Pic3
     }
@@ -27,8 +27,7 @@ function imageFilter(x) {
 }
 var today = new Date();
 var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-// var today = new Date();
-// var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
 var time = new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
 
 const Weather = props => (
