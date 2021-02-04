@@ -17,10 +17,10 @@ function imageFilter(x) {
     else if (x === 'scattered clouds' || x === 'overcast clouds' || x === 'broken clouds' || x === 'few clouds') {
         image = Pic2
     }
-    else if (x === "light snow" || x === "Snow" || x === "heavy snow" || x === "Sleet" || x === "Light shower sleet" || x === "Shower sleet" || x === "Light rain and snow" || x === "Rain and snow" || x === "Light shower snow" || x === "Shower snow" || x === "Heavy shower snow") {
+    else if (x === "light snow" || x === "snow" || x === "heavy snow" || x === "sleet" || x === "light shower sleet" || x === "shower sleet" || x === "light rain and snow" || x === "rain and snow" || x === "light shower snow" || x === "shower snow" || x === "heavy shower snow") {
         image = Pic4
     }
-    else if (x === "mist" || x === "Smoke" || x === "Haze" || x === "fog" || x === "dust" || x === "volcanic ash" || x === "squalls" || x === "tornado" || x === "	sand/ dust whirls" || x === "sand") {
+    else if (x === "mist" || x === "smoke" || x === "haze" || x === "fog" || x === "dust" || x === "volcanic ash" || x === "squalls" || x === "tornado" || x === "	sand/ dust whirls" || x === "sand") {
         image = Pic5
     }
 
@@ -37,12 +37,19 @@ const Weather = props => (
         <div style={{ paddingTop: '2em', width: '30vw', margin: '0 auto' }}>
             <h2 style={{ margin: '0 auto' }}>Currently: {time}<br />{date} </h2>
             <hr />
+
             {
                 props.city && props.country &&
                 <h2 style={{ margin: '0 auto' }} className="weather__key"> Location:
 	 		<span className="weather__value"> {props.city}, {props.country}</span>
                 </h2>
             }
+            {/* {
+                props.city && props.country &&
+                <h2 style={{ margin: '0 auto' }} className="weather__key"> Time:
+	 		<span className="weather__value"> {props.time}</span>
+                </h2>
+            } */}
             {
                 props.temperature && <h3 style={{ margin: '0 auto' }} className="weather__key"> Temperature:
 	 		<span className="weather__value"> {props.temperature} °F	</span>
@@ -68,9 +75,9 @@ const Weather = props => (
 
                 <div className="sun-2-container">
                     <img
-                        // className="weather-pic"
+
                         style={{ padding: '2em', height: '100%', width: '40vw' }} src={image} alt="gif that shows weather condition" />
-                    {/* <div className="sun2"></div> */}
+
                 </div>
 
             }
@@ -79,7 +86,7 @@ const Weather = props => (
         </div>
 
         {
-            props.error && <p className="weather__error">{props.error}</p>
+            props.error && <h3 style={{ marginLeft: '3em' }} className="weather__error">{props.error}</h3>
         }
     </div>
 );
