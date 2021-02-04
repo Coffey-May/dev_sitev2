@@ -61,21 +61,21 @@
 
 .tilesWrap {
 	padding: 0;
-	margin: 50px auto;
+	/* margin: 50px auto; */
 	list-style: none;
 	text-align: center;
 }
 .tilesWrap li {
 	display: inline-block;
-	width: 20%;
-	min-width: 200px;
-	max-width: 230px;
-	padding: 80px 20px 40px;
+	width: 100%;
+	min-width: 250px;
+	max-width: 500px;
+	padding: 20px 20px 20px;
 	position: relative;
 	vertical-align: top;
 	margin: 10px;
 	font-family: 'helvetica', san-serif;
-	min-height: 25vh;
+	min-height: 20vh;
 	background: #262a2b;
 	border: 1px solid #252727;
 	text-align: left;
@@ -103,7 +103,7 @@
 .tilesWrap li button {
 	background: transparent;
 	border: 1px solid #b7b7b7;
-	padding: 10px 20px;
+	padding:7px 10px;
 	color: #b7b7b7;
 	border-radius: 3px;
 	position: relative;
@@ -112,6 +112,7 @@
 	opacity: 0;
 	cursor: pointer;
 	overflow: hidden;
+	margin-right: 5px;
 }
 .tilesWrap li button:before {
 	content: '';

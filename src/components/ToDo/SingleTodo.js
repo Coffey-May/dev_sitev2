@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-//Single To Do Component
+
 
 
 const SingleTodo = ({ text, todo, todos, setTodos }) => {
@@ -25,6 +25,7 @@ const SingleTodo = ({ text, todo, todos, setTodos }) => {
             <li style={{ color: 'white' }} className={`todo-item ${todo.completed ? "completed" : ""}`}>
 
                 {text}
+                <br />
                 <button onClick={completedHandler}>Complete</button>
                 <button onClick={deleteHandler}>Delete</button>
             </li>
