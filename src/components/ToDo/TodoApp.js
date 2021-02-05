@@ -12,6 +12,9 @@ const TodoApp = () => {
     const [todos, setTodos] = useState([])
     const [status, setStatus] = useState("all")
     const [filteredTodos, setFilteredTodos] = useState([])
+    const [editMessage, setEditMessage] = useState(false)
+    const [currentId, setCurrentId] = useState(0)
+
 
     useEffect(() => {
         getLocalTodos()
@@ -63,23 +66,35 @@ const TodoApp = () => {
     } else if (currentUser != null && localStorage.getItem("todo_user")
     ) {
         return (
-
             <div>
+                <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
 
-                <div style={{ height: '80vh', backgroundColor: 'gray' }} >
-                    <h1 style={{ margin: '0 auto', paddingTop: '10vh' }}>TASK MANAGER</h1>
-                    <ToDoForm
-                        todos={todos}
-                        setTodos={setTodos}
-                        inputText={inputText}
-                        setInputText={setInputText}
-                        setStatus={setStatus} />
-                    <ToDoList
-                        todos={todos}
-                        setTodos={setTodos}
-                        filteredTodos={filteredTodos} />
+                    <div style={{ width: '40vw', height: '80vh', backgroundColor: '#eb3495' }} >
+                        <h1 style={{ margin: '0 auto', paddingTop: '10vh' }}>TASK MANAGER</h1>
+                        <ToDoForm
+                            currentId={currentId}
+                            setCurrentId={setCurrentId}
+                            editMessage={editMessage}
+                            setEditMessage={setEditMessage}
+                            todos={todos}
+                            setTodos={setTodos}
+                            inputText={inputText}
+                            setInputText={setInputText}
+                            setStatus={setStatus} />
+                    </div>
+                    <div style={{ width: '60vw', height: '80vh', backgroundColor: 'gray' }}>
+                        <ToDoList
+                            currentId={currentId}
+                            setCurrentId={setCurrentId}
+                            editMessage={editMessage}
+                            setEditMessage={setEditMessage}
+                            inputText={inputText}
+                            setInputText={setInputText}
+                            todos={todos}
+                            setTodos={setTodos}
+                            filteredTodos={filteredTodos} />
+                    </div>
                 </div>
-
                 <footer id="footer2" style={{ border: '1px solid black', height: '10vh', backgroundColor: 'black', color: 'white' }}>
                     <br />
                     <FaCopyright /> COPYRIGHT{new Date().getFullYear()}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ToDoForm = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
+const ToDoForm = ({ currentId, setCurrentId, editMessage, setEditMessage, inputText, setInputText, todo, todos, setTodos, setStatus }) => {
 
     const setInputTextHandler = e => {
         e.preventDefault()
@@ -9,11 +9,24 @@ const ToDoForm = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
 
     const submitTodoHandler = e => {
         e.preventDefault();
-        setTodos([
-            ...todos,
-            { text: inputText, completed: false, id: Math.random() * 5000 }
-        ])
-        setInputText("")
+
+        if (inputText === '') {
+            alert("Please fill out the text field to continue...")
+        }
+        else if (editMessage === true) {
+
+            console.log('form:', currentId)
+
+            console.log('yoooooo!!!!!')
+
+        }
+        else if (inputText) {
+            setTodos([
+                ...todos,
+                { text: inputText, completed: false, id: Math.random() * 5000 }
+            ])
+            setInputText("")
+        }
     };
 
     const statusHandler = e => {
@@ -23,6 +36,7 @@ const ToDoForm = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
     return (
         <div>
             <form action="">
+
                 <input value={inputText} onChange={setInputTextHandler} type="text" />
                 <button onClick={submitTodoHandler}>Add</button>
                 <select onChange={statusHandler} name="" id="">

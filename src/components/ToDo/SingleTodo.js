@@ -4,7 +4,7 @@ import React from 'react'
 
 
 
-const SingleTodo = ({ text, todo, todos, setTodos }) => {
+const SingleTodo = ({ currentId, setCurrentId, editMessage, setEditMessage, inputText, setInputText, text, todo, todos, setTodos }) => {
     const completedHandler = e => {
         e.preventDefault();
         setTodos(todos.map((item) => {
@@ -20,13 +20,25 @@ const SingleTodo = ({ text, todo, todos, setTodos }) => {
         e.preventDefault();
         setTodos(todos.filter((el) => el.id !== todo.id))
     }
+    const editHandler = (e) => {
+        todos.map((item) => {
+            if (item.id === todo.id) {
+                setEditMessage(true)
+                setInputText(item.text)
+                setCurrentId(item.id)
+                console.log('single:', item.id)
+            }
+            return item
+        })
+    }
     return (
         <div style={{ margin: '0 auto', textAlign: 'center' }}>
-            <li style={{ color: 'white' }} className={`todo-item ${todo.completed ? "completed" : ""}`}>
+            <li style={{ width: '60vw', color: 'white' }} className={`todo-item ${todo.completed ? "completed" : ""}`}>
 
-                {text}
+                <h3 style={{ letterSpacing: '.75em', margin: '0 auto' }}>{text}</h3>
                 <br />
                 <button onClick={completedHandler}>Complete</button>
+                <button onClick={editHandler}>Edit</button>
                 <button onClick={deleteHandler}>Delete</button>
             </li>
 

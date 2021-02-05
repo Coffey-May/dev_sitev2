@@ -30,13 +30,21 @@ var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getD
 
 var time = new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
 
+const onClose = () => {
+    window.opener = null;
+    window.open("", "_self");
+    window.close();
+};
+
 const Weather = props => (
 
 
     <div style={{ fontSize: '1vh', display: "flex", FlexDirection: 'row', flexWrap: 'wrap', overflow: '  scroll' }} className="weather__info">
+
         <div style={{ paddingTop: '2em', width: '30vw', margin: '0 auto' }}>
             <h2 style={{ margin: '0 auto' }}>Currently: {time}<br />{date} </h2>
             <hr />
+
 
             {
                 props.city && props.country &&
@@ -88,6 +96,7 @@ const Weather = props => (
         {
             props.error && <h3 style={{ marginLeft: '3em' }} className="weather__error">{props.error}</h3>
         }
+        <button style={{ fontWeight: '200', margin: '1em', width: '3em', height: '3em', color: 'black' }} onClick={onClose}>X</button>
     </div>
 );
 
