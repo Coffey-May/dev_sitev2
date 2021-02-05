@@ -67,10 +67,17 @@ const TodoApp = () => {
     ) {
         return (
             <div>
-                <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+                <div id="mondrian" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
 
-                    <div style={{ width: '40vw', height: '80vh', backgroundColor: '#eb3495' }} >
-                        <h1 style={{ margin: '0 auto', paddingTop: '10vh' }}>TASK MANAGER</h1>
+                    <div id="form-bg" style={{ width: '30vw', height: '44vh', margin: '2em' }} >
+                        <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', width: '20px' }}>
+                            <div style={{ height: '10px', width: '10px', backgroundColor: 'yellow' }}></div>
+                            <div style={{ height: '10px', width: '10px', backgroundColor: 'red' }}></div>
+                            <div style={{ height: '10px', width: '10px', backgroundColor: 'blue' }}></div>
+                            <div style={{ height: '10px', width: '10px', backgroundColor: 'white' }}></div>
+                        </div>
+                        <h2 style={{ margin: '0 auto', paddingTop: '5vh' }}>𝕋𝔸𝕊𝕂 𝕄𝔸ℕ𝔸𝔾𝔼ℝ</h2>
+
                         <ToDoForm
                             currentId={currentId}
                             setCurrentId={setCurrentId}
@@ -82,7 +89,7 @@ const TodoApp = () => {
                             setInputText={setInputText}
                             setStatus={setStatus} />
                     </div>
-                    <div style={{ width: '60vw', height: '80vh', backgroundColor: 'black' }}>
+                    <div style={{ width: '60vw', height: '80vh' }}>
                         <ToDoList
                             currentId={currentId}
                             setCurrentId={setCurrentId}

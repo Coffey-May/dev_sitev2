@@ -16,7 +16,8 @@ import Pic6 from './Screen Shot 2021-02-04 at 12.52.31 PM.png'
 
 
 
-const imgStyle = { border: '13px solid white', height: '18em', width: '30em', margin: '1em' }
+
+const imgStyle = { border: '13px solid #f5fff8', height: '18em', width: '30em', margin: '1em', boxShadow: ' 5px 10px 18px #0b0e29' }
 let link1 = '/weather'
 let link2 = '/todo'
 let pic1 = Pic

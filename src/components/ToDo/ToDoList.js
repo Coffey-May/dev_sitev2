@@ -6,7 +6,7 @@ const ToDoList = ({ currentId, setCurrentId, editMessage, setEditMessage, inputT
     return (
 
         <div>
-            <ol className="tilesWrap" style={{ display: 'flex', flexDirection: 'column', marginLeft: '2em' }}>
+            <ol className="tilesWrap" style={{ overflow: 'scroll', display: 'flex', flexDirection: 'column', marginLeft: '2em' }}>
                 {filteredTodos.map(todo => (<SingleTodo currentId={currentId} setCurrentId={setCurrentId} editMessage={editMessage} setEditMessage={setEditMessage} inputText={inputText} setInputText={setInputText} todo={todo} todos={todos} setTodos={setTodos} text={todo.text} key={todo.id} />))}
             </ol>
         </div>

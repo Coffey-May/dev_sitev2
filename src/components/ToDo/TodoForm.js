@@ -45,11 +45,17 @@ const ToDoForm = ({ currentId, setCurrentId, editMessage, setEditMessage, inputT
     }
     return (
         <div>
+
             <form action="">
 
-                <input value={inputText} onChange={setInputTextHandler} type="text" />
-                <button onClick={submitTodoHandler}>Add</button>
-                <select onChange={statusHandler} name="" id="">
+
+                <input value={inputText} onChange={setInputTextHandler} type="text" placeholder="Task?" />
+
+                <button className="button1" onClick={submitTodoHandler}>Add</button>
+                <br /><br />
+                <h4 style={{ color: 'white' }}>𝔽𝕚𝕝𝕥𝕖𝕣 𝕥𝕒𝕤𝕜𝕤 𝕓𝕪 𝕔𝕠𝕞𝕡𝕝𝕖𝕥𝕚𝕠𝕟 𝕤𝕥𝕒𝕥𝕦𝕤.</h4>
+                <select className="select-css" onChange={statusHandler} name="" id="">
+                    <option value="all ">Filter options   ⟱</option>
                     <option value="all ">All</option>
                     <option value="completed">Completed</option>
                     <option value="incomplete">Incomplete</option>
