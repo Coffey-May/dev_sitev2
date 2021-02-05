@@ -17,8 +17,18 @@ const ToDoForm = ({ currentId, setCurrentId, editMessage, setEditMessage, inputT
 
             console.log('form:', currentId)
 
-            console.log('yoooooo!!!!!')
+            setTodos(todos.map((item) => {
+                if (item.id === currentId) {
+                    return {
+                        ...item, text: inputText
+                    }
+                }
 
+                return item
+            }))
+
+            setInputText('')
+            setEditMessage(false)
         }
         else if (inputText) {
             setTodos([
