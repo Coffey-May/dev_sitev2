@@ -32,10 +32,10 @@ const SingleTodo = ({ currentId, setCurrentId, editMessage, setEditMessage, inpu
         })
     }
     return (
-        <div style={{ margin: '0 auto', textAlign: 'center' }}>
+        <div class="gradient-border" id="box" style={{ margin: '0 auto', textAlign: 'center' }}>
             <li style={{ width: '60vw', color: 'white' }} className={`todo-item ${todo.completed ? "completed" : ""}`}>
 
-                <h3 style={{ letterSpacing: '.75em', margin: '0 auto' }}>{text}</h3>
+                <h1 style={{ letterSpacing: '.75em', margin: '0 auto' }}>{text}</h1>
                 <br />
                 <button onClick={completedHandler}>Complete</button>
                 <button onClick={editHandler}>Edit</button>

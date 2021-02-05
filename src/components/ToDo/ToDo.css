@@ -144,3 +144,20 @@
 	top: 0px;
 	opacity: 0.6;
 }
+
+#box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* width: 600px; */
+	height: 200px;
+	color: white;
+	font-family: 'Raleway';
+	font-size: 2.5rem;
+  }
+  .gradient-border {
+
+	background: #5cbcec;
+	
+
+  }

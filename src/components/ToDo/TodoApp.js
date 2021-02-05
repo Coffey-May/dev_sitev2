@@ -82,7 +82,7 @@ const TodoApp = () => {
                             setInputText={setInputText}
                             setStatus={setStatus} />
                     </div>
-                    <div style={{ width: '60vw', height: '80vh', backgroundColor: 'gray' }}>
+                    <div style={{ width: '60vw', height: '80vh', backgroundColor: 'black' }}>
                         <ToDoList
                             currentId={currentId}
                             setCurrentId={setCurrentId}
