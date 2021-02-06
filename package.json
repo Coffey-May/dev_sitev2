@@ -18,6 +18,7 @@
     "react-fast-marquee": "^1.0.7",
     "react-firebase-hooks": "^2.2.0",
     "react-icons": "^3.11.0",
+    "react-parallax-tilt": "^1.4.78",
     "react-rellax": "^1.0.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",

@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 
+
 //Projects Slider and controls
 
 
@@ -36,6 +37,7 @@ const slides = [
 ];
 export default function HomeSlides() {
     return (
+
         <div id="colorBG" style={{ height: '80vh', width: '100vw', margin: '0 auto' }}>
             <Slider speed={1500}>
                 {slides.map((slide, index) => <div style={{ overflow: 'scroll', height: '80vh', color: 'white', padding: '2em' }} key={index}>
@@ -57,5 +59,6 @@ export default function HomeSlides() {
                 )}
             </Slider>
         </div >
+
     )
 }

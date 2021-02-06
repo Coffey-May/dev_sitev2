@@ -7,6 +7,7 @@ import Home2 from './Home2';
 import { Spring } from "react-spring/renderprops";
 import { useAuth } from "../../Contexts/AuthContext";
 
+
 //Home Page Component
 
 export default function Home() {
@@ -30,7 +31,9 @@ export default function Home() {
                 {props => (
                     <div style={props}>
                         <div id="main-content-image" className="content-wrapper">
+
                             <main id="main-content" >
+
                                 <div style={{ marginTop: '14vh' }}>
                                     <Marquee style={{ fontWeight: 'bolder', fontSize: '1.35em' }} gradient={false} speed={100} >
                                         <FaHtml5 size={50} /><p> &nbsp;•HTML5•&nbsp;</p>
@@ -47,10 +50,13 @@ export default function Home() {
                                         <DiSass style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Sass•&nbsp;</p>
                                     </Marquee>
                                 </div>
+
                                 <h1>COFFEY  MAY
                     <br />
                                     <hr style={{ width: '85vw', margin: '0 auto' }} className="animated" />
                    SOFTWARE DEVELOPER</h1>
+
+
                                 <AnchorLink className="chi text" style={{
                                     color: 'white', textDecoration: 'none',
                                     border: '1px solid white',
@@ -60,7 +66,9 @@ export default function Home() {
                                     href='#page2'>
                                     LEARN MORE
                                 </AnchorLink>
+
                             </main>
+
                         </div>
                     </div>
                 )}
