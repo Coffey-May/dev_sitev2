@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 import Parallax from "react-rellax";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FaCopyright } from 'react-icons/fa';
-import Resume from '/Users/coffeymay/workspace/dev_sitev2/src/PDFS/Gray Simple Minimalist Resume (1).pdf';
+import Resume from '/Users/coffeymay/workspace/dev_sitev2/src/PDFS/Resume2021.pdf';
 
 //Home Page 2 Component
 
-const h2Style = { color: 'white', margin: '0 auto', fontWeight: 'bolder', textAlign: 'center', fontSize: '3vh' }
+const h2Style = { color: 'white', margin: '0 auto', fontSize: '2em', fontWeight: 'bolder', textAlign: 'center', padding: '3px' }
 
 export default function Home2() {
     return (
@@ -16,7 +16,7 @@ export default function Home2() {
                 <header style={{ height: '10vh', backgroundColor: 'black  ', color: 'white' }} >
                 </header>
                 <div id=" main-content2" className="content-wrapper2">
-                    <div style={{ height: '2vh' }}>
+                    <div style={{ height: '4vh' }}>
                     </div>
                     <div style={{
                         marginBottom: '-2vh',
@@ -29,25 +29,28 @@ export default function Home2() {
                         background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
                     }}>
                         <h2 style={h2Style}>ABOUT ME</h2>
-                        <hr />
+                        <hr style={{ margin: '10px' }} />
                         <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap' }}>
                             <div>
                                 <div style={{ display: 'flex', msFlexDirection: 'row', flexWrap: 'wrap' }}>
-                                    <p style={{ fontWeight: '900', color: 'white', fontSize: '2vh', width: '60vw', margin: '0 auto' }}>
-                                        &nbsp; &nbsp; &nbsp; &nbsp; Hello! My name is Coffey May.
-                                        I am a Full Stack software developer.
-                                        This site, built in ReactJS, demonstrates and outlines my stack, abilities, and skills.
-                                        My Initial interest in working with data has to do with the nature of visual language.
-                                        Initially, as an oil painter, I became interested in the relationship between culture and its represntaion via paint.
-                                        Similarly, technology is impacting society in similar ways as paintings once did.    </p>
-                                    <div className="picOfMe" style={{ width: '8rem', height: '8rem', marginRight: '3vw' }} ></div>
+                                    <p style={{ fontWeight: '900', color: 'white', fontSize: '2vh', width: '55vw', margin: '0 auto' }}>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; As a recent graduate of the Nashville Software School, I am
+                                        eager to apply my training as a Full Stack Software
+                                        Developer. As an entry-level or junior programmer, I hope to
+                                        hone, refine, and expand the skills that I have been
+                                        cultivating in the two years of experience that I have with
+                                        coding. I am also eager to join a team and further develop
+                                        my experience with agile methodologies, larger codebases,
+                                        and emerging technologies.
+                                    </p>
+                                    <div className="picOfMe" style={{ position: 'relative', width: '10rem', height: '10rem', marginRight: '3vw' }} ></div>
                                 </div>
                             </div>
-                            <hr />
+                            <hr style={{ margin: '10px' }} />
                             <div>
-                                <a className=" chi" style={{ ZIndex: '99', padding: '3rem' }}
+                                <a className=" chi" style={{ ZIndex: '99' }}
                                     href={Resume} target="blank"><h4 className=" chi" style={{
-                                        // marginBottom: '10vh',
+
                                         color: 'white', textDecoration: 'none',
                                         fontSize: '2vw',
                                         border: '1px solid white',
@@ -57,8 +60,8 @@ export default function Home2() {
                                         textAlign: 'center',
                                         width: '30vw',
                                         fontWeight: 'bolder'
-                                    }}>Download Resume</h4></a>
-                                <div style={{ height: '2vh' }}></div>
+                                    }}>Download Resume</h4></a><br />
+
                                 <NavLink to="/projects" className=" chi nav-link">
                                     <h4 className=" chi"
                                         style={{
