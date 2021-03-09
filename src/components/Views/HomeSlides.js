@@ -38,7 +38,7 @@ const slides = [
     { title: 'Painting Gallery', image: `${pic1}`, image2: `${pic2}`, image3: `${pic3}`, description: 'This Project was built using ReactJS. It showcases my oil paintings by dynamically populating a list of cards with detail modals.  This project also impliments NodeJS, Routing, and Several NPM packages to achieve Parallax effect, and UI composition.', link: 'http://coffeymayart.com/' },
     { title: 'Weather Search', image: `${pic4}`, image2: `${pic5}`, image3: `${pic6}`, description: 'This feature allows a logged in User the affordances to perform api calls to the national weather service, in order to get up to date weather information', link: `${link1}` },
     { title: 'To Do Organizer', image: `${pic7}`, image2: `${pic8}`, image3: `${pic9}`, description: 'This feature presents the user with a to do list application with add, edit, read,s and delete affordances.', link: `${link2}` },
-    { title: 'MERN Stack', image: `${pic1}`, image2: `${pic1}`, image3: `${pic1}`, description: 'ThisFull stack application demonstrates data persitence', link: `${link2}` }
+    { title: 'MERN Stack', image: `${pic1}`, image2: `${pic1}`, image3: `${pic1}`, description: 'ThisFull stack application demonstrates data persitence', link: 'https://coffey-may-coffey-may-merntime.zeet.app/' }
 
 ];
 export default function HomeSlides() {
