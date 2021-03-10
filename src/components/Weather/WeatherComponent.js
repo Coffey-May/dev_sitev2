@@ -2,12 +2,8 @@ import React from "react";
 import Form from "./Form";
 import Weather from "./Weather";
 import { FaCopyright } from 'react-icons/fa';
+import Pic2 from '../Weather/WeatherImages/cloudygif.gif';
 
-// import Pic from './weathergif.gif'
-import Pic2 from './cloudygif.gif'
-// import Pic3 from './raingif.gif'
-// import Pic4 from './snowgif.gif'
-// import Pic5 from './foggif.gif'
 
 require('dotenv').config();
 

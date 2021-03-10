@@ -1,3 +1,8 @@
+# Coffey May | Software Developer Portfolio Site
+
+> This project demonstrates my skills as a software developer, and allows a user to view a number of projects that I have built using a diverse tech stack. This site showcases the following: An eye for design and UI/UX consideration, the ability to dynamically render content, The affordance to perform CRUD operations, The affordance to Authenticate users and conditionally allow access to certain features, and the ability to integrate a backend database for persistant data storage. 
+<hr>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

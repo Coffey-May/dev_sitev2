@@ -42,7 +42,7 @@ display:flex;
 }
 #main-content-image{
   padding:.5rem;
-  background: linear-gradient(rgba(5, 87, 83, 0.459), rgba(11, 6, 90, 0.555), rgba(81, 4, 100, 0.404)),url("./components/sun.gif");
+  background: linear-gradient(rgba(5, 87, 83, 0.459), rgba(11, 6, 90, 0.555), rgba(81, 4, 100, 0.404)),url("./components//Views/images/sun.gif");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 0;
@@ -56,14 +56,15 @@ display:flex;
 /* ---------------------------------------------- */
 
 .content-wrapper2{
-  background: linear-gradient(rgba(217, 249, 252, 0.849), rgba(230, 206, 250, 0.849)),url('../src//components/pexels-photo-3184454.jpeg');
+  background: linear-gradient(rgba(217, 249, 252, 0.849), rgba(230, 206, 250, 0.849)),url('./components//Views/images/pexels-photo-3184454.jpeg');
 }
 #header2{
   background-color: white;
   height:'100vh'
 }
 .picOfMe{
-  background-image: url("./components//IMG_20200229_161323\ \(1\).jpg");
+  background-image: url("./components/Views/images//IMG_20200229_161323\ \(1\).jpg");
+  /* background-image: url("./components//IMG_20200229_161323\ \(1\).jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -113,7 +114,7 @@ h1{
   background-color: black;
 }
 .Contact{
-  background: linear-gradient(rgba(5, 87, 83, 0.616), rgba(12, 6, 90, 0.582), rgba(81, 4, 100, 0.555)),url("./components//IMG_20201206_153507.jpg");
+  background: linear-gradient(rgba(5, 87, 83, 0.616), rgba(12, 6, 90, 0.582), rgba(81, 4, 100, 0.555)),url("./components//Views/Contact//ContactImages/IMG_20201206_153507.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -126,7 +127,7 @@ h1{
 }
 #projectBG{
   background-size: cover;
-  background-image: url('./components/cloudsgif.gif');
+  background-image: url('./components/Auth/AuthImages/cloudsgif.gif');
   background-repeat: no-repeat;
 }
 

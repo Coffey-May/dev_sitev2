@@ -1,9 +1,9 @@
 import React from "react";
-import Pic from './weathergif.gif'
-import Pic2 from './cloudygif.gif'
-import Pic3 from './raingif.gif'
-import Pic4 from './snowgif.gif'
-import Pic5 from './foggif.gif'
+import Pic from '../Weather/WeatherImages/weathergif.gif'
+import Pic2 from '../Weather/WeatherImages/cloudygif.gif'
+import Pic3 from '../Weather/WeatherImages/raingif.gif'
+import Pic4 from '../Weather/WeatherImages/snowgif.gif'
+import Pic5 from '../Weather/WeatherImages/foggif.gif'
 var image;
 function imageFilter(x) {
 
@@ -51,12 +51,7 @@ const Weather = props => (
 	 		<span className="weather__value"> {props.city}, {props.country}</span>
                 </h2>
             }
-            {/* {
-                props.city && props.country &&
-                <h2 style={{ margin: '0 auto' }} className="weather__key"> Time:
-	 		<span className="weather__value"> {props.time}</span>
-                </h2>
-            } */}
+
             {
                 props.temperature && <h3 style={{ margin: '0 auto' }} className="weather__key"> Temperature:
 	 		<span className="weather__value"> {props.temperature} °F	</span>
@@ -76,22 +71,15 @@ const Weather = props => (
                 </h2>
             }
         </div>
-
         <div>
             {
-
                 <div className="sun-2-container">
                     <img
-
                         style={{ padding: '2em', height: '100%', width: '40vw' }} src={image} alt="gif that shows weather condition" />
-
                 </div>
-
             }
-
             {imageFilter(props.description)}
         </div>
-
         {
             props.error && <h3 style={{ marginLeft: '3em' }} className="weather__error">{props.error}</h3>
         }

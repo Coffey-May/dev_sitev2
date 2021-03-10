@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 // import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from './components/Views/Home';
+import Home from './components/Views/Home/Home';
 import Nav from './components/Nav/Nav';
-import Contact from './Contact';
-import Projects from './components/Views/Projects';
+import Contact from './components/Views/Contact/Contact';
+import Projects from './components/Views/Projects/Projects';
 import { AuthProvider } from "./Contexts/AuthContext";
 import Login from "./components/Auth/Login"
 import Signup from "./components/Auth/Signup"
