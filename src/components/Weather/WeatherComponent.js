@@ -4,7 +4,6 @@ import Weather from "./Weather";
 import { FaCopyright } from 'react-icons/fa';
 import Pic2 from '../Weather/WeatherImages/cloudygif.gif';
 
-
 require('dotenv').config();
 
 const API_KEY = process.env.REACT_APP_API_KEY;
@@ -30,9 +29,7 @@ function timeConverter(UNIX_timestamp) {
     return time;
 }
 
-
 class WeatherComponent extends React.Component {
-
 
     async getWeatherData() {
         const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
@@ -106,7 +103,6 @@ class WeatherComponent extends React.Component {
 
     }
 
-
     render() {
         return (
             <>
@@ -117,11 +113,8 @@ class WeatherComponent extends React.Component {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-xs-5 title-container">
-
                                     </div>
                                     <div style={{ height: '60vh' }}>
-
-
                                         <Weather
                                             time={this.state.time}
                                             temperature={this.state.temperature}
@@ -133,17 +126,13 @@ class WeatherComponent extends React.Component {
                                         />
                                         <Form getWeather={this.getWeather} />
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <footer id="footer2" style={{ border: '1px solid black', height: '10vh', backgroundColor: 'black', color: 'white' }}>
-
-
                     <br />
                     <FaCopyright /> COPYRIGHT{new Date().getFullYear()}
                 </footer>

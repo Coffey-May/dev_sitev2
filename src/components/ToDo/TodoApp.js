@@ -51,6 +51,12 @@ const TodoApp = () => {
         }
     }
 
+    const onClose = () => {
+        window.opener = null;
+        window.open("", "_self");
+        window.close();
+    };
+
     if (currentUser === null) {
         return (
             <div>
@@ -90,6 +96,7 @@ const TodoApp = () => {
                             setStatus={setStatus} />
                     </div>
                     <div style={{ width: '60vw', height: '80vh' }}>
+                        <button style={{ fontWeight: '200', margin: '1em', width: '3em', height: '3em', color: 'black' }} onClick={onClose}>X</button>
                         <ToDoList
                             currentId={currentId}
                             setCurrentId={setCurrentId}
