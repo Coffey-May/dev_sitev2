@@ -42,8 +42,10 @@ const Home2Content = () => {
 
                                 <div style={{ margin: '0 auto' }} >
                                     <a className=" chi" style={{ ZIndex: '99' }}
-                                        href={Resume} target="blank"><h4 className=" chi" style={{
-                                            color: 'white', textDecoration: 'none',
+                                        href={Resume} target="blank">
+                                        <h4 style={{
+                                            color: 'white',
+                                            textDecoration: 'none',
                                             fontSize: '2vw',
                                             border: '1px solid white',
                                             padding: '1rem',
@@ -54,17 +56,21 @@ const Home2Content = () => {
                                             fontWeight: 'bolder'
                                         }}>Download Resume</h4></a><br />
 
-                                    <NavLink to="/projects" className=" chi nav-link">
-                                        <h4 className=" chi"
+                                    <NavLink className=" chi" to="/projects" >
+                                        <h4
                                             style={{
-                                                marginLeft: '2vw', fontFamily: 'sans-serif', color: 'white', textDecoration: 'none',
+                                                // marginLeft: '2vw',
+                                                fontFamily: 'sans-serif',
+                                                color: 'white',
+                                                textDecoration: 'none',
                                                 border: '1px solid white',
                                                 fontSize: '2vw',
                                                 padding: '1rem',
                                                 margin: '0 auto',
                                                 borderRadius: '99rem',
                                                 textAlign: 'center',
-                                                width: '30vw'
+                                                width: '30vw',
+                                                fontWeight: 'bolder'
                                             }} >Projects </h4>
                                     </NavLink>
                                 </div>

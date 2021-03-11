@@ -23,8 +23,8 @@ let link2 = '/todo'
 const slides = [
     { title: 'Weather Search', image: `${pic4}`, image2: `${pic5}`, image3: `${pic6}`, description: 'This feature allows a logged in User the affordances to perform api calls to the national weather service, in order to get up to date weather information based on city and country.', link: `${link1}` },
     { title: 'MERN Stack', image: `${pic10}`, image2: `${pic11}`, image3: `${pic12}`, description: 'This Full stack application was built using NodeJS, and interacts with a MongoDB database.  State is managed Client side via Redux, after authentication via Google OAuth or local sign/signup is completed. This project performs crud opertations on posts made by users sharing travel locales or events. ', link: 'https://coffey-may-coffey-may-merntime.zeet.app/' },
-    { title: 'Painting Gallery', image: `${pic1}`, image2: `${pic2}`, image3: `${pic3}`, description: 'This Project was built using ReactJS. It showcases my oil paintings by dynamically populating a list of cards with detail modals.  This project also impliments Routing, and Several NPM packages to achieve Parallax effect, and UI composition.', link: 'http://coffeymayart.com/' },
-    { title: 'To Do Organizer', image: `${pic7}`, image2: `${pic8}`, image3: `${pic9}`, description: 'This feature presents the user with a to do list application with add, edit, read,s and delete affordances.', link: `${link2}` }
+    { title: 'Painting Gallery', image: `${pic1}`, image2: `${pic2}`, image3: `${pic3}`, description: 'This Project was built using ReactJS. It showcases my oil paintings by dynamically populating a list of cards with detail modals. This project also impliments Routing, and Several NPM packages to achieve Parallax effect, and UI composition.', link: 'http://coffeymayart.com/' },
+    { title: 'To Do Organizer', image: `${pic7}`, image2: `${pic8}`, image3: `${pic9}`, description: 'This feature presents the user with a to do list application with full CRUD functionailty and use of local storage.', link: `${link2}` }
 ];
 export default function HomeSlides() {
     return (
@@ -33,9 +33,9 @@ export default function HomeSlides() {
             <Slider speed={1500}>
                 {slides.map((slide, index) => <div style={{ overflow: 'scroll', height: '80vh', color: 'white', padding: '2em' }} key={index}>
                     <h2 style={{ marginTop: '0vh' }}>{slide.title}</h2>
-                    <img id="project-pic" style={imgStyle} src={slide.image} alt="image of art website" />
-                    <img id="project-pic" style={imgStyle} src={slide.image2} alt="image of art website" />
-                    <img id="project-pic" style={imgStyle} src={slide.image3} alt="image of art website" />
+                    <img id="project-pic" style={imgStyle} src={slide.image} alt="screenshot of computer application" />
+                    <img id="project-pic" style={imgStyle} src={slide.image2} alt="screenshot of computer application" />
+                    <img id="project-pic" style={imgStyle} src={slide.image3} alt="screenshot of computer application" />
                     <div style={{ width: '65vw', margin: '0 auto' }}>
                         <h3>{slide.description}</h3>
                     </div>

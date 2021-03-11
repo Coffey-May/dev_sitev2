@@ -6,8 +6,6 @@ import Home2Content from "./Home2Content";
 
 //Home Page 2 Component
 
-const h2Style = { color: 'white', margin: '0 auto', fontSize: '2em', fontWeight: 'bolder', textAlign: 'center', padding: '3px' }
-
 export default function Home2() {
     return (
         <Parallax speed={8}>
