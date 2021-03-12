@@ -38,7 +38,8 @@ class WeatherComponent extends React.Component {
                 'Accept': 'application/json'
             }
         })
-        res.json()
+
+        data = await res.json()
             .then(data => {
                 // console.log(data)
                 this.setState({
