@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import Resume from '/Users/coffeymay/workspace/dev_sitev2/src/PDFS/Resume2021.pdf';
+import Resume from '../../../PDFS/Resume2021.pdf';
 
 
 const h2Style = { color: 'white', margin: '0 auto', fontSize: '2em', fontWeight: 'bolder', textAlign: 'center', padding: '3px' }
