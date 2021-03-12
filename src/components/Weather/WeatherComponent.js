@@ -32,7 +32,12 @@ const url = 'http://api.openweathermap.org'
 class WeatherComponent extends React.Component {
 
     async getWeatherData() {
-        const res = await fetch(`/cors-proxy/${url}/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
+        const res = await fetch(`/cors-proxy/${url}/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
         res.json()
             .then(data => {
                 // console.log(data)
