@@ -28,11 +28,11 @@ function timeConverter(UNIX_timestamp) {
     var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec;
     return time;
 }
-
+let base_url = 'http://api.openweathermap.org/data/2.5/'
 class WeatherComponent extends React.Component {
 
     async getWeatherData() {
-        const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
+        const res = await fetch(`${base_url}weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
         res.json()
             .then(data => {
                 // console.log(data)
