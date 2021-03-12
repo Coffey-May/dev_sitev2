@@ -1,1 +1,7 @@
 /* /index.html 200
+
+  from = "/weather"
+  to = "http://api.openweathermap.org/data/2.5/weather"
+  status = 200
+  force = true
+
