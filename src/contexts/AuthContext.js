@@ -1,6 +1,16 @@
 import React, { useContext, useState, useEffect } from "react"
 import { auth } from "../Firebase"
 
+
+
+// REACT_APP_FIREBASE_API_KEY=AIzaSyDyqsspWLptlZr-kmodoarTEZkBtYWPebc
+// REACT_APP_AUTH_DOMAIN=auth-production-712a6.firebaseapp.com
+// REACT_APP_PROJECT_ID=auth-production-712a6
+// REACT_APP_STORAGE_BUCKET=auth-production-712a6.appspot.com
+// REACT_APP_MESSAGE_SENDER_ID=648178870492
+// REACT_APP_APPID=1:648178870492:web:aea029f4a20294f094ac19 
+
+
 const AuthContext = React.createContext()
 
 export function useAuth() {
