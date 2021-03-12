@@ -1,3 +1,6 @@
 /* /index.html 200
 
-/weather/* http://api.openweathermap.org/data/2.5/weather/:splat 200!
+  from = "/cors-proxy/*"
+  to = ":splat"
+  status = 200
+  force = true
