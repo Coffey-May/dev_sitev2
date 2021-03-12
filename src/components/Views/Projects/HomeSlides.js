@@ -17,8 +17,8 @@ import pic12 from '../images/Screen Shot 2021-03-11 at 11.53.32 AM.png';
 //Projects Slider and controls
 
 const imgStyle = { border: '13px solid #f5fff8', height: '18em', width: '30em', margin: '1em', boxShadow: ' 5px 10px 18px #0b0e29' }
-let link1 = 'https://coffeymaydev.com/weather'
-let link2 = 'https://coffeymaydev.com/todo'
+let link1 = '/weather'
+let link2 = '/todo'
 
 const slides = [
     { title: 'Weather Search', image: `${pic4}`, image2: `${pic5}`, image3: `${pic6}`, description: 'This feature allows a logged in User the affordances to perform api calls to the national weather service, in order to get up to date weather information based on city and country.', link: `${link1}` },
