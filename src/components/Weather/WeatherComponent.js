@@ -32,7 +32,7 @@ function timeConverter(UNIX_timestamp) {
 class WeatherComponent extends React.Component {
 
     async getWeatherData() {
-        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
+        const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
         res.json()
             .then(data => {
                 // console.log(data)
