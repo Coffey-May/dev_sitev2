@@ -6,14 +6,14 @@ const Form = props => (
         <input type="text" name="country" placeholder="Country..." />
 
         <div className="svg">
-            <button className="form-btn">
-                <a style={{ margin: '0 auto' }} className="button" href="#">
-                    <svg>
-                        <rect height="40" width="130"
-                            fill="transparent" />
-                    </svg>
-                    <span>Get Weather</span>
-                </a>
+            <button className="form-btn button" style={{ margin: '0 auto' }}>
+                {/* <a  className=""> */}
+                <svg>
+                    <rect height="40" width="130"
+                        fill="transparent" />
+                </svg>
+                <span>Get Weather</span>
+                {/* </a> */}
             </button>
         </div>
 

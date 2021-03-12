@@ -201,6 +201,7 @@ h1{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  height:15vh;
 }
 .weather__info{
   z-index: 1;
