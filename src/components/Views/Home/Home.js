@@ -1,7 +1,7 @@
 import React from 'react';
 import Home2 from '../Home2/Home2';
 import { Spring } from "react-spring/renderprops";
-import { useAuth } from "../../../Contexts/AuthContext";
+import { useAuth } from "../../../AuthContext";
 import HomeMarquis from "./HomeMarquis";
 import HomeTitle from "./HomeTitle";
 

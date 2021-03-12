@@ -5,7 +5,7 @@ import Home from './components/Views/Home/Home';
 import Nav from './components/Nav/Nav';
 import Contact from './components/Views/Contact/Contact';
 import Projects from './components/Views/Projects/Projects';
-import { AuthProvider } from "./Contexts/AuthContext";
+import { AuthProvider } from "./AuthContext";
 import Login from "./components/Auth/Login";
 import Signup from "./components/Auth/Signup";
 import PrivateRoute from "./components/Auth/PrivateRoute";

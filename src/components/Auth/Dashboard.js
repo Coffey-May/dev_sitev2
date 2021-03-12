@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useAuth } from "../../Contexts/AuthContext"
+import { useAuth } from "../../AuthContext"
 import { Link, useHistory } from "react-router-dom"
 
 //Log Out and Profile Component

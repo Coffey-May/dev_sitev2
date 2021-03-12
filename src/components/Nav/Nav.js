@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import { useAuth } from "../../Contexts/AuthContext"
+import { useAuth } from "../../AuthContext"
 import Dashboard from '../Auth/Dashboard';
 
 //Navigation Component

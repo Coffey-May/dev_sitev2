@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
-import { useAuth } from "../../Contexts/AuthContext"
+import { useAuth } from "../../AuthContext"
 import { Link } from "react-router-dom"
 import { FaCopyright } from 'react-icons/fa';
 

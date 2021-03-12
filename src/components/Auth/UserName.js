@@ -4,7 +4,7 @@ import { Form, Button, Card } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import { FaCopyright } from 'react-icons/fa';
 
-import { useAuth } from "../../Contexts/AuthContext";
+import { useAuth } from "../../AuthContext";
 
 
 
