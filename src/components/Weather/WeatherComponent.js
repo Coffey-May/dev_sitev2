@@ -29,10 +29,11 @@ function timeConverter(UNIX_timestamp) {
     return time;
 }
 const url = 'http://api.openweathermap.org'
+// /cors-proxy/
 class WeatherComponent extends React.Component {
 
     async getWeatherData() {
-        const res = await fetch(`/cors-proxy/${url}/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
+        const res = await fetch(`${url}/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
         console.log(res)
         res.json()
             .then(data => {
@@ -66,7 +67,7 @@ class WeatherComponent extends React.Component {
         e.preventDefault();
         const city = e.target.elements.city.value;
         const country = e.target.elements.country.value;
-        const api_call = await fetch(`/cors-proxy/${url}/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
+        const api_call = await fetch(`${url}/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
 
         const data = await api_call.json();
 
