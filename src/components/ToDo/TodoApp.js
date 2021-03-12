@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import ToDoForm from './TodoForm'
 import ToDoList from './ToDoList'
 import { FaCopyright } from 'react-icons/fa';
@@ -15,16 +15,7 @@ const TodoApp = () => {
     const [editMessage, setEditMessage] = useState(false)
     const [currentId, setCurrentId] = useState(0)
 
-
-    useEffect(() => {
-        getLocalTodos()
-    }, [])
-    useEffect(() => {
-        filterHandler()
-        saveLocalTodos()
-    }, [todos, status])
-
-    const filterHandler = e => {
+    const filterHandler = useCallback((e) => {
         switch (status) {
             case "completed":
                 setFilteredTodos(todos.filter((todo) => todo.completed === true))
@@ -36,11 +27,43 @@ const TodoApp = () => {
                 setFilteredTodos(todos)
                 break;
         }
-    };
+    }, [todos, status]);
 
-    const saveLocalTodos = () => {
+
+    const saveLocalTodos = useCallback(() => {
+
         localStorage.setItem("todos", JSON.stringify(todos))
-    }
+
+
+    }, [todos]);
+
+    useEffect(() => {
+        getLocalTodos()
+    }, [])
+    useEffect(() => {
+
+        filterHandler()
+
+        saveLocalTodos()
+    }, [todos, status, filterHandler, saveLocalTodos])
+
+    // const filterHandler = e => {
+    //     switch (status) {
+    //         case "completed":
+    //             setFilteredTodos(todos.filter((todo) => todo.completed === true))
+    //             break;
+    //         case "incomplete":
+    //             setFilteredTodos(todos.filter((todo) => todo.completed === false))
+    //             break;
+    //         default:
+    //             setFilteredTodos(todos)
+    //             break;
+    //     }
+    // };
+
+    // const saveLocalTodos = () => {
+    //     localStorage.setItem("todos", JSON.stringify(todos))
+    // }
 
     const getLocalTodos = () => {
         if (localStorage.getItem("todos") === null) {

@@ -8,7 +8,7 @@ const linkStyle = { marginLeft: '2vw', cursor: 'pointer', color: 'white', fontFa
 
 export default function Dashboard() {
     const [error, setError] = useState("")
-    const { currentUser, logout } = useAuth()
+    const { logout } = useAuth()
     const history = useHistory()
     async function handleLogout() {
         setError("")
@@ -22,9 +22,11 @@ export default function Dashboard() {
     }
     return (
         <>
+
             <div className="chi w-100 text-center mt-2">
-                <li className="chi" onClick={handleLogout} style={linkStyle}><span className=" chi glyphicon glyphicon-log-out"></span> Log Out</li>
+                <li className="chi" onClick={handleLogout} style={linkStyle}><span className=" chi glyphicon glyphicon-log-out"></span> Log Out </li>
             </div>
+            {error}
             <Link style={linkStyle} to="/update-profile" >
                 <li className="chi"><span className=" chi glyphicon glyphicon-user"></span> Profile</li>
             </Link>
