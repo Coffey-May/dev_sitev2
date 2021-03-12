@@ -32,13 +32,7 @@ const url = 'http://api.openweathermap.org'
 class WeatherComponent extends React.Component {
 
     async getWeatherData() {
-        const res = await fetch(`/cors-proxy/${url}/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`, {
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        })
-
+        const res = await fetch(`/cors-proxy/${url}/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
         res.json()
             .then(data => {
                 // console.log(data)
@@ -71,12 +65,7 @@ class WeatherComponent extends React.Component {
         e.preventDefault();
         const city = e.target.elements.city.value;
         const country = e.target.elements.country.value;
-        const api_call = await fetch(`/cors-proxy/${url}/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`, {
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        });
+        const api_call = await fetch(`/cors-proxy/${url}/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
         const data = await api_call.json();
 
         console.log(timeConverter(data.dt));
