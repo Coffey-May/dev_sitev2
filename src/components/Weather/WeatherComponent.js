@@ -28,7 +28,7 @@ function timeConverter(UNIX_timestamp) {
     var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec;
     return time;
 }
-const url = 'http://api.openweathermap.org'
+const url = 'https://api.openweathermap.org'
 class WeatherComponent extends React.Component {
     // /cors-proxy/
     async getWeatherData() {
