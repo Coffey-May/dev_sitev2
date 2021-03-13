@@ -72,13 +72,14 @@ const Weather = props => (
             }
         </div>
         <div>
+            {imageFilter(props.description)}
             {
                 <div className="sun-2-container">
                     <img
                         style={{ padding: '2em', height: '100%', width: '40vw' }} src={image} alt="gif that shows weather condition" />
                 </div>
             }
-            {imageFilter(props.description)}
+
         </div>
         {
             props.error && <h3 style={{ marginLeft: '3em' }} className="weather__error">{props.error}</h3>
