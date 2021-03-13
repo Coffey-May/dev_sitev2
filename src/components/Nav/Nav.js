@@ -45,7 +45,7 @@ const Nav = () => {
                     </div>
                 </div>
                 <div className="collapse navbar-collapse" id="myNavbar">
-                    <ul className="nav navbar-nav" style={{ marginTop: '2.5vh', width: '60vw', listStyle: 'none', justifyContent: 'flex-end' }}>
+                    <ul className="nav navbar-nav" style={{ fontSize: '1.25vw', marginTop: '2.5vh', width: '60vw', listStyle: 'none', justifyContent: 'flex-end' }}>
                         <NavLink to="/" style={navLinkStyle} className="chi nav-link" >
                             <li className="active" style={li2Style} ><span className="glyphicon glyphicon-home"></span> Home</li>
                         </NavLink>
