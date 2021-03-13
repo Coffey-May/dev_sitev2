@@ -16,7 +16,7 @@ import pic12 from '../images/Screen Shot 2021-03-11 at 11.53.32 AM.png';
 
 //Projects Slider and controls
 
-const imgStyle = { backgroundImage: 'contain', border: '5px solid #f5fff8', height: 'auto', width: '33vw', margin: '1rem', boxShadow: ' 5px 10px 18px #0b0e29' }
+const imgStyle = { backgroundImage: 'contain', border: '5px solid #f5fff8', height: '19vh', width: '27vw', margin: '1rem', boxShadow: ' 5px 10px 18px #0b0e29' }
 let link1 = '/weather'
 let link2 = '/todo'
 
@@ -37,7 +37,7 @@ export default function HomeSlides() {
                     <img id="project-pic" style={imgStyle} src={slide.image2} alt="screenshot of computer application" />
                     <img id="project-pic" style={imgStyle} src={slide.image3} alt="screenshot of computer application" />
                     <div style={{ width: '65vw', margin: '0 auto' }}>
-                        <h3 style={{ fontSize: '1em' }}>{slide.description}</h3>
+                        <h3 style={{ fontSize: '3em' }}>{slide.description}</h3>
                     </div>
                     <h6 className="btncontainer">
                         <p className="animated-word">
