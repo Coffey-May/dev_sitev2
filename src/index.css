@@ -64,7 +64,6 @@ display:flex;
 }
 .picOfMe{
   background-image: url("./components/Views/images//IMG_20200229_161323\ \(1\).jpg");
-  /* background-image: url("./components//IMG_20200229_161323\ \(1\).jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -120,7 +119,8 @@ h1{
   color: white;
 }
 #weather_card{
- display: flex;flex-direction: row;
+ display: flex;
+ flex-direction: row;
  justify-content: space-around;
 }
 #projectBG{
@@ -293,7 +293,7 @@ input,input:focus{
   display: inline-block;
   width: 130px;
   height: 40px;
-  overflow: hidden;
+  /* overflow: hidden; */
  }
 .svg .button rect {
   position: absolute;
