@@ -33,8 +33,8 @@ class WeatherComponent extends React.Component {
 
     async getWeatherData() {
         const res = await fetch(`/cors-proxy/${url}/data/2.5/weather?q=Nashville,US&appid=${API_KEY}&units=imperial`)
-        console.log(res)
-        res.json()
+        console.log(res.text())
+        res.text()
             .then(data => {
 
                 this.setState({
