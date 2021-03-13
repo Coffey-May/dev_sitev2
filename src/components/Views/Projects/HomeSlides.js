@@ -16,7 +16,7 @@ import pic12 from '../images/Screen Shot 2021-03-11 at 11.53.32 AM.png';
 
 //Projects Slider and controls
 
-const imgStyle = { backgroundImage: 'cover', border: '5px solid #f5fff8', height: '22vh', width: 'auto', margin: '1rem', boxShadow: ' 5px 10px 18px #0b0e29' }
+const imgStyle = { backgroundImage: 'cover', border: '5px solid #f5fff8', height: '22vh', width: '300px', margin: '1rem', boxShadow: ' 5px 10px 18px #0b0e29' }
 let link1 = '/weather'
 let link2 = '/todo'
 
