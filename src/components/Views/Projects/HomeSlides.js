@@ -31,7 +31,7 @@ export default function HomeSlides() {
 
         <div id="colorBG" style={{ height: '80vh', width: '100vw', margin: '0 auto' }}>
             <Slider speed={1500} style={{ overflow: 'scroll' }}>
-                {slides.map((slide, index) => <div style={{ overflow: 'scroll', height: '80vh', color: 'white', padding: '2em' }} key={index}>
+                {slides.map((slide, index) => <div style={{ zIndex: '1', overflow: 'scroll', height: '80vh', color: 'white', padding: '2em' }} key={index}>
                     <h2 style={{ marginTop: '0vh' }}>{slide.title}</h2>
                     <img id="project-pic" style={imgStyle} src={slide.image} alt="screenshot of computer application" />
                     <img id="project-pic" style={imgStyle} src={slide.image2} alt="screenshot of computer application" />
