@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-animated-slider';
-import 'react-animated-slider/build/horizontal.css';
+// import 'react-animated-slider/build/horizontal.css';
 import pic1 from '../images/Screen Shot 2020-12-10 at 4.40.52 PM.png';
 import pic2 from '../images/Screen Shot 2020-12-10 at 4.41.07 PM.png';
 import pic3 from '../images/Screen Shot 2020-12-10 at 4.41.27 PM.png';
@@ -16,7 +16,7 @@ import pic12 from '../images/Screen Shot 2021-03-11 at 11.53.32 AM.png';
 
 //Projects Slider and controls
 
-const imgStyle = { backgroundImage: 'contain', border: '1px solid black', height: 'auto', width: '30rem', margin: '1rem', boxShadow: ' 5px 10px 18px #0b0e29' }
+const imgStyle = { backgroundImage: 'contain', border: '1px solid black', height: 'auto', width: '30em', margin: '1rem', boxShadow: ' 5px 10px 18px #0b0e29' }
 let link1 = '/weather'
 let link2 = '/todo'
 
