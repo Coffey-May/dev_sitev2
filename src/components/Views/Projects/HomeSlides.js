@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-animated-slider';
-// import 'react-animated-slider/build/horizontal.css';
+import 'react-animated-slider/build/horizontal.css';
 import pic1 from '../images/Screen Shot 2020-12-10 at 4.40.52 PM.png';
 import pic2 from '../images/Screen Shot 2020-12-10 at 4.41.07 PM.png';
 import pic3 from '../images/Screen Shot 2020-12-10 at 4.41.27 PM.png';
