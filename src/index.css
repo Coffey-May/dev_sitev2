@@ -293,7 +293,7 @@ input,input:focus{
   display: inline-block;
   width: 130px;
   height: 40px;
-  /* overflow: hidden; */
+  overflow: hidden;
  }
 .svg .button rect {
   position: absolute;
