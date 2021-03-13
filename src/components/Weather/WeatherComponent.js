@@ -5,8 +5,8 @@ import { FaCopyright } from 'react-icons/fa';
 import Pic2 from '../Weather/WeatherImages/cloudygif.gif';
 
 require('dotenv').config();
-const API_KEY = 'adced04f1649ca9bd53f6267f3bd4317'
-// const API_KEY = process.env.REACT_APP_API_KEY; 
+
+const API_KEY = process.env.REACT_APP_API_KEY;
 var image = Pic2
 var sectionStyle = {
     background: "linear-gradient(rgba(255, 238, 142, 0.637), rgba(114, 136, 72, 0.637), rgba(27, 58, 36, 0.61)) ",
