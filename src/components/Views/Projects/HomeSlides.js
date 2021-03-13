@@ -29,7 +29,7 @@ const slides = [
 export default function HomeSlides() {
     return (
 
-        <div id="colorBG" style={{ overflow: 'scroll', height: '100%', width: '100vw', margin: '0 auto' }}>
+        <div id="colorBG" style={{ height: '80vh', width: '100vw', margin: '0 auto' }}>
             <Slider speed={1500}>
                 {slides.map((slide, index) => <div style={{ overflow: 'scroll', height: '80vh', color: 'white', padding: '2em' }} key={index}>
                     <h2 style={{ marginTop: '0vh' }}>{slide.title}</h2>
