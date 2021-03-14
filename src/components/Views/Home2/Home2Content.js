@@ -22,13 +22,14 @@ const Home2Content = () => {
                     margin: '0 auto',
                     background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
                 }}>
+
                     <h2 style={h2Style}>ABOUT ME</h2>
                     <hr style={{ margin: '10px' }} />
                     <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap' }}>
                         <div>
-                            <div style={{ height: '60vh', display: 'flex', msFlexDirection: 'row', flexWrap: 'wrap', margin: '0 auto', width: '80vw', justifyContent: 'space-between' }}>
+                            <div style={{ overflow: 'scroll', height: '60vh', display: 'flex', msFlexDirection: 'row', flexWrap: 'wrap', margin: '0 auto', width: '80vw', justifyContent: 'space-between' }}>
 
-                                <p style={{ paddingLeft: '2em', fontWeight: '900', color: 'white', fontSize: '2vh', width: '55vw' }}>
+                                <p style={{ paddingLeft: '2em', fontWeight: '900', color: 'white', fontSize: '4vh', }}>
                                     &nbsp; &nbsp; &nbsp; &nbsp; As a recent graduate of the Nashville Software School, I am
                                     eager to apply my training as a Full Stack Software
                                     Developer. As an entry-level or junior programmer, I hope to
@@ -38,7 +39,7 @@ const Home2Content = () => {
                                     my experience with agile methodologies, larger codebases,
                                     and emerging technologies.
                                     </p>
-                                <div className="picOfMe" style={{ position: 'relative', width: '13rem', height: '13rem' }} ></div>
+                                <div className="picOfMe" style={{ position: 'relative', width: '10em', height: '10em' }} ></div>
 
                                 <div style={{ margin: '0 auto' }} >
                                     <a className=" chi" style={{ ZIndex: '99' }}
@@ -59,8 +60,6 @@ const Home2Content = () => {
                                     <NavLink className=" chi" to="/projects" >
                                         <h4
                                             style={{
-                                                // marginLeft: '2vw',
-                                                fontFamily: 'sans-serif',
                                                 color: 'white',
                                                 textDecoration: 'none',
                                                 border: '1px solid white',

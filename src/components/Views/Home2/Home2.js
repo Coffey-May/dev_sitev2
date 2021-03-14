@@ -12,14 +12,17 @@ export default function Home2() {
             <div id="page2" >
                 <Home2Content />
                 <footer id="footer2" style={{ border: '1px solid black', height: '12vh', backgroundColor: 'black', color: 'white' }}>
-                    <br />
-                    <FaCopyright /> COPYRIGHT{new Date().getFullYear()}
-                    <br />
-                    <AnchorLink className="chi" style={{
-                        color: 'white', textDecoration: 'none',
-                    }} href='#navTop'>
-                        Return to top
+                    <h4>
+                        <br />
+                        <FaCopyright /> COPYRIGHT{new Date().getFullYear()}
+                        <br />
+
+                        <AnchorLink className="chi" style={{
+                            color: 'white', textDecoration: 'none',
+                        }} href='#navTop'>
+                            Return to top
                     </AnchorLink>
+                    </h4>
                 </footer>
             </div>
         </Parallax >
