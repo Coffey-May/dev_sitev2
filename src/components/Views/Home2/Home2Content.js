@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Resume from '../../../PDFS/Resume2021.pdf';
 
 
-const h2Style = { color: 'white', margin: '0 auto', fontSize: '2em', fontWeight: 'bolder', textAlign: 'center', padding: '3px' }
+const h1Style = { fontFamily: 'Poiret One, cursive', color: 'white', margin: '0 auto', fontWeight: 'bolder', textAlign: 'center', padding: '3px' }
 const Home2Content = () => {
     return (
         <div>
@@ -23,13 +23,13 @@ const Home2Content = () => {
                     background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
                 }}>
 
-                    <h2 style={h2Style}>ABOUT ME</h2>
+                    <h1 style={h1Style}>ABOUT ME</h1>
                     <hr style={{ margin: '10px' }} />
                     <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap' }}>
                         <div>
                             <div style={{ overflow: 'scroll', height: '60vh', display: 'flex', msFlexDirection: 'row', flexWrap: 'wrap', margin: '0 auto', width: '80vw', justifyContent: 'space-between' }}>
 
-                                <p style={{ paddingLeft: '2em', fontWeight: '900', color: 'white', fontSize: '4vh', }}>
+                                <p style={{ paddingLeft: '2em', fontWeight: '700', color: 'white', fontSize: '4vh', }}>
                                     &nbsp; &nbsp; &nbsp; &nbsp; As a recent graduate of the Nashville Software School, I am
                                     eager to apply my training as a Full Stack Software
                                     Developer. As an entry-level or junior programmer, I hope to
@@ -41,7 +41,7 @@ const Home2Content = () => {
                                     </p>
                                 <div className="picOfMe" style={{ position: 'relative', width: '10em', height: '10em' }} ></div>
 
-                                <div style={{ margin: '0 auto' }} >
+                                <div style={{ margin: '0 auto', fontFamily: 'Poiret One, cursive' }} >
                                     <a className=" chi" style={{ ZIndex: '99' }}
                                         href={Resume} target="blank">
                                         <h4 style={{

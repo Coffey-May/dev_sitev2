@@ -13,7 +13,7 @@ function Contact() {
                 <div>
 
                     <div style={{ height: '80vh', color: `#fff`, margin: '0', backgroundColor: 'black', opacity: '0.7', justifyContent: 'center' }}>
-                        <h1 style={{ color: 'white', margin: '0 auto', paddingTop: '2vh', fontSize: '4em' }}>Contact</h1>
+                        <h1 style={{ fontFamily: 'Poiret One, cursive', color: 'white', margin: '0 auto', paddingTop: '2vh', fontSize: '4em' }}>Contact</h1>
                         <hr />
                         <h2 style={{ fontWeight: '900', color: 'white', fontSize: '4vh', width: '70vw', margin: '0 auto' }}>
                             If you would like more information regarding my work, contact me at the e-mail link below.
