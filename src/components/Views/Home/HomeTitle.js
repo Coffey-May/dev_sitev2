@@ -4,10 +4,12 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 const HomeTitle = () => {
     return (
         <div>
-            <h1 >COFFEY  MAY
-                                    <br />
+            <h1>COFFEY  MAY
+                <br />
                 <hr style={{ width: '85vw', margin: '0 auto' }} className="animated" />
-                                    SOFTWARE DEVELOPER</h1>
+
+            </h1>
+            <h3 className="title" style={{ margin: '0 auto' }} >SOFTWARE DEVELOPER</h3>
             <h3>
                 <AnchorLink className="chi text" style={{
                     color: 'white', textDecoration: 'none',
