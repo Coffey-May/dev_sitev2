@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import pic1 from '../images/Screen Shot 2020-12-10 at 4.40.52 PM.png';
@@ -28,26 +28,27 @@ const slides = [
 ];
 export default function HomeSlides() {
     return (
-
-        <div id="colorBG" style={{ height: '80vh', width: '100vw', margin: '0 auto' }}>
-            <Slider speed={1500} touchDisabled={true}>
-                {slides.map((slide, index) => <div style={{ overflow: 'scroll', color: 'white', padding: '2em' }} key={index}>
-                    <h2 style={{ marginTop: '0vh' }}>{slide.title}</h2>
-                    <img style={imgStyle} src={slide.image} alt="screenshot of computer application" />
-                    <img style={imgStyle} src={slide.image2} alt="screenshot of computer application" />
-                    <img style={imgStyle} src={slide.image3} alt="screenshot of computer application" />
-                    <div style={{ width: '68vw', margin: '0 auto' }}>
-                        <h3 style={{ fontSize: '3vh' }}>{slide.description}</h3>
+        <Suspense>
+            <div id="colorBG" style={{ height: '80vh', width: '100vw', margin: '0 auto' }}>
+                <Slider speed={1500} touchDisabled={true}>
+                    {slides.map((slide, index) => <div style={{ overflow: 'scroll', color: 'white', padding: '2em' }} key={index}>
+                        <h2 style={{ marginTop: '0vh' }}>{slide.title}</h2>
+                        <img style={imgStyle} src={slide.image} alt="screenshot of computer application" />
+                        <img style={imgStyle} src={slide.image2} alt="screenshot of computer application" />
+                        <img style={imgStyle} src={slide.image3} alt="screenshot of computer application" />
+                        <div style={{ width: '68vw', margin: '0 auto' }}>
+                            <h3 style={{ fontSize: '3vh' }}>{slide.description}</h3>
+                        </div>
+                        <h6 className="btncontainer">
+                            <p className="animated-word">
+                                <a target="blank" style={{ textDecoration: 'none', color: 'black', height: '20px', marginTop: '3em' }} href={slide.link}>View</a>
+                            </p>
+                        </h6>
                     </div>
-                    <h6 className="btncontainer">
-                        <p className="animated-word">
-                            <a target="blank" style={{ textDecoration: 'none', color: 'black', height: '20px', marginTop: '3em' }} href={slide.link}>View</a>
-                        </p>
-                    </h6>
-                </div>
-                )}
-            </Slider>
-        </div >
+                    )}
+                </Slider>
+            </div >
+        </Suspense>
 
     )
 }
