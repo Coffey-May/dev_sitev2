@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import HomeSlides from './HomeSlides';
 import { FaCopyright } from 'react-icons/fa';
 
@@ -9,7 +9,9 @@ export default function Projects() {
         <>
             <div id="colorBG">
                 <div style={{ height: '80vh' }} >
-                    <HomeSlides />
+                    <Suspense fallback={<div>Loading...</div>}>
+                        <HomeSlides />
+                    </Suspense>
                 </div>
             </div>
             <footer id="footer2" style={{ border: '1px solid black', height: '10vh', backgroundColor: 'black', color: 'white' }}>

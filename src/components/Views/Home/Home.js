@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Home2 from '../Home2/Home2';
 import { Spring } from "react-spring/renderprops";
 import { useAuth } from "../../../AuthContext";
@@ -29,8 +29,10 @@ export default function Home() {
                     <div style={props}>
                         <div id="main-content-image" className="content-wrapper">
                             <main id="main-content" >
-                                <HomeMarquis />
-                                <HomeTitle />
+                                <Suspense fallback={<div>Loading...</div>}>
+                                    <HomeMarquis />
+                                    <HomeTitle />
+                                </Suspense>
                             </main>
 
                         </div>
