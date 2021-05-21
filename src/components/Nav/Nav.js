@@ -12,7 +12,7 @@ const navstyle = {
 const Nav = () => {
     return (
         <nav id="navTop" className="navbar navbar-inverse  flex-row-between" style={navstyle} >
-            <div className="flex-row-between">
+            <div style={{ width: '100vw' }} className="flex-row-between container">
                 <div >
 
                     <LogoHomeLink />
@@ -20,7 +20,7 @@ const Nav = () => {
                 </div>
                 <Burger />
                 <div className="collapse navbar-collapse" id="myNavbar">
-                    <ul className="nav navbar-nav">
+                    <ul style={{ width: '50vw' }} className="nav navbar-nav">
                         <PrimaryLinks />
 
                     </ul>

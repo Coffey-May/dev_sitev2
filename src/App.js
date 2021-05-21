@@ -25,7 +25,6 @@ function App() {
             <Nav />
             <Switch>
               <Home path="/" exact component={Home} style={{ width: '80vw' }} />
-
               <Route path="/projects" component={Projects} />
               <Route path="/contact" component={Contact} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
