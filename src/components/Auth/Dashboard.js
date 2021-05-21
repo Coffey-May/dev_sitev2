@@ -19,19 +19,21 @@ export default function Dashboard() {
 
         <div className="flex-row-between">
 
-
-            <Link>
-                <li className="chi"
-                    onClick={handleLogout}>
-                    <span className=" chi glyphicon glyphicon-log-out"></span>
+            <div>
+                <Link>
+                    <li className="chi"
+                        onClick={handleLogout}>
+                        <span className=" chi glyphicon glyphicon-log-out"></span>
                   Log Out </li>
-            </Link>
+                </Link>
+            </div>
 
             {error}
-            <Link to="/update-profile" >
-                <li className="chi"><span className=" chi glyphicon glyphicon-user"></span> Profile</li>
-            </Link>
-
+            <div>
+                <Link to="/update-profile" >
+                    <li className="chi"><span className=" chi glyphicon glyphicon-user"></span> Profile</li>
+                </Link>
+            </div>
         </div>
 
 
