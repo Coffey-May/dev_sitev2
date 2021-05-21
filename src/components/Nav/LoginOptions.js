@@ -18,7 +18,7 @@ export const LoginOptions = () => {
         link = <Dashboard />
     }
     return (
-        <div style={{ width: '32%' }}>
+        <div style={{ width: '32.25%' }}>
             {link}
         </div>
     )

@@ -16,11 +16,13 @@ const Nav = () => {
                 <div >
 
                     <LogoHomeLink />
-                    <Burger />
+                    {/* <Burger /> */}
                 </div>
+                <Burger />
                 <div className="collapse navbar-collapse" id="myNavbar">
                     <ul className="nav navbar-nav">
                         <PrimaryLinks />
+
                     </ul>
                 </div>
 
