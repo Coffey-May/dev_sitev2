@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import Resume from '../../../PDFS/Resume2021.pdf';
+import Resume from '../../../PDFS/Coffey May Resume.pdf';
 
 
 const h1Style = { color: 'white', margin: '0 auto', fontWeight: 'bolder', textAlign: 'center', padding: '3px' }

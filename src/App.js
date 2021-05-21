@@ -12,19 +12,20 @@ import ForgotPassword from "./components/Auth/ForgotPassword";
 import UpdateProfile from "./components/Auth/UpdateProfile";
 import Dashboard from "./components/Auth/Dashboard";
 import UserName from "./components/Auth/UserName";
-import WeatherComponent from "./components/Weather/WeatherComponent";
-import ToDoApp from "./components/ToDo/TodoApp";
+// import WeatherComponent from "./components/Weather/WeatherComponent";
+const WeatherComponent = lazy(() => import("./components/Weather/WeatherComponent"));
 const Projects = lazy(() => import('./components/Views/Projects/Projects'));
-
+const ToDoApp = lazy(() => import("./components/ToDo/TodoApp"));
 function App() {
   return (
     <Router>
       <AuthProvider>
         <div className="App">
-          <Nav />
-          <Switch>
-            <Home path="/" exact component={Home} style={{ width: '80vw' }} />
-            <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Nav />
+            <Switch>
+              <Home path="/" exact component={Home} style={{ width: '80vw' }} />
+
               <Route path="/projects" component={Projects} />
               <Route path="/contact" component={Contact} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
@@ -35,8 +36,9 @@ function App() {
               <Route path="/forgot-password" component={ForgotPassword} />
               <Route path="/weather" component={WeatherComponent} />
               <Route path="/todo" component={ToDoApp} />
-            </Suspense>
-          </Switch>
+
+            </Switch>
+          </Suspense>
         </div>
       </AuthProvider>
     </Router >

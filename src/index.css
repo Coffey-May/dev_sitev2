@@ -18,8 +18,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.flex-row-between{
 
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
 
+a{color:white;}
+ul{width: 50vw;}
 
 /* Home Page Styles */
 /* ---------------------------------------------- */
@@ -76,27 +83,27 @@ display:flex;
 /* Navigation Bar Styles */
   /* ---------------------------------------------- */
 
-#navId{
+/* #navId{
   color:white;
   background-color: black;
   height:10vh;
-}
+} */
 
-#myNavbar{
+/* #myNavbar{
   background-color: black;
   width:100vw;
-  }
-
+  } */
+/* 
 .container{
   max-width: 80vw;
   padding: 0 2rem;
   margin: 0 auto;
-}
-ul{
+} */
+/* ul{
   display: flex;
   flex-direction: row;
   width:80vw;
-}
+} */
 
 h1, .title{
   margin-top:12.5vh;
@@ -108,9 +115,7 @@ h1, .title{
   background-color: transparent;
 }
 
-.navbar-header{
-  background-color: black;
-}
+
 .Contact{
   background: linear-gradient(rgba(5, 87, 83, 0.616), rgba(12, 6, 90, 0.582), rgba(81, 4, 100, 0.555)),url("./components//Views/Contact//ContactImages/IMG_20201206_153507.jpg");
   background-size: cover;
