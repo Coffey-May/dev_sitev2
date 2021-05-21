@@ -1,6 +1,6 @@
 import React from 'react';
 import { Burger } from './Burger';
-import { LoginOptions } from './LoginOptions';
+// import { LoginOptions } from './LoginOptions';
 import { LogoHomeLink } from './LogoHomeLink';
 import { PrimaryLinks } from './PrimaryLinks';
 
