@@ -7,12 +7,12 @@ import { PrimaryLinks } from './PrimaryLinks';
 
 
 const navstyle = {
-    margin: '0', borderRadius: '0', position: 'relative', backgroundColor: 'black', color: 'white', zIndex: '10000'
+    margin: '0', borderRadius: '0', position: 'relative', backgroundColor: 'black', zIndex: '10000'
 }
 const Nav = () => {
     return (
         <nav id="navTop" className="navbar navbar-inverse  flex-row-between" style={navstyle} >
-            <div style={{ width: '100vw' }} className="flex-row-between container">
+            <div style={{ width: '100vw' }} className="center flex-row-between container">
                 <div >
 
                     <LogoHomeLink />

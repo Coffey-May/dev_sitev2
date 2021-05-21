@@ -27,6 +27,12 @@ code {
 
 a{color:white;}
 ul{width: 50vw;}
+.center {
+  margin: auto;
+  width: 60%;
+
+  padding: 10px;
+}
 
 /* Home Page Styles */
 /* ---------------------------------------------- */
@@ -37,6 +43,8 @@ display:flex;
 #main-content{
   width:100vw;
   height:80vh;
+  padding:0;
+
 }
 #footer{
   background-color: black;
@@ -55,6 +63,7 @@ display:flex;
   background-size: cover;
   margin-right: 0;
   color:white;
+  padding:0;
 }
 
 
