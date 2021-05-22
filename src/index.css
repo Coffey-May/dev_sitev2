@@ -26,14 +26,29 @@ code {
 }
 
 a{color:white;}
-ul{width: 50vw;}
+ul{width: 40vw;}
 .center {
   margin: auto;
   width: 60%;
 
   padding: 10px;
 }
+@media only screen and (max-width: 770px) {
+  ul{
+    width:80vw;
+  }
+}
+@media only screen and (max-width: 770px) {
+.collapse.in{
+position: absolute;
+ margin-top: 10vh;
+ font-size: larger;
 
+
+
+ 
+}
+}
 /* Home Page Styles */
 /* ---------------------------------------------- */
 

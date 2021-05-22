@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 export const LoginOptions = () => {
     const { currentUser } = useAuth()
     if (currentUser === null) {
-        var link = <div>
+        var link = <div className="flex-row-between">
             <NavLink to="/login" className="chi nav-link">
                 <li><span className="glyphicon glyphicon-log-in"></span> Login</li>
             </NavLink>
