@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const LogoHomeLink = () => {
     return (
-        <div className="chi" style={{ display: "flex", flexDirection: 'row', fontFamily: 'sans-serif', }}>
+        <div className="chi" style={{ display: "flex", flexDirection: 'row', fontFamily: 'sans-serif' }}>
             <NavLink style={{ textDecoration: 'none' }} to="/">
                 <p style={{
                     border: '2px solid white',

@@ -57,29 +57,33 @@ export default function UpdateProfile() {
                                 <Form.Group id="email">
                                     <Form.Label>Email</Form.Label>
                                     <Form.Control
+                                        className="inputStyle"
                                         autoComplete="on"
                                         type="email"
                                         ref={emailRef}
                                         required
                                         defaultValue={currentUser.email}
+                                        placeholder="Email..."
                                     />
                                 </Form.Group>
                                 <Form.Group id="password">
                                     <Form.Label>Password</Form.Label>
                                     <Form.Control
+                                        className="inputStyle"
                                         autoComplete="on"
                                         type="password"
                                         ref={passwordRef}
-                                        placeholder="Leave blank to keep the same"
+                                        placeholder="Password..."
                                     />
                                 </Form.Group>
                                 <Form.Group id="password-confirm">
                                     <Form.Label>Password Confirmation</Form.Label>
                                     <Form.Control
+                                        className="inputStyle"
                                         autoComplete="on"
                                         type="password"
                                         ref={passwordConfirmRef}
-                                        placeholder="Leave blank to keep the same"
+                                        placeholder="Confirm Password..."
                                     />
                                 </Form.Group>
                                 <Button disabled={loading} className="w-100" type="submit">

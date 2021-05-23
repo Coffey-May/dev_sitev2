@@ -8,7 +8,7 @@ export const LoginOptions = () => {
     if (currentUser === null) {
         var link = <div className="flex-row-between">
             <NavLink to="/login" className="chi nav-link">
-                <li><span className="glyphicon glyphicon-log-in"></span> Login</li>
+                <li style={{ paddingRight: '2vw' }}><span className="glyphicon glyphicon-log-in"></span> Login</li>
             </NavLink>
             <NavLink to="/signup" className="chi nav-link">
                 <li><span className="glyphicon glyphicon-user"></span> Sign Up</li>
@@ -18,7 +18,7 @@ export const LoginOptions = () => {
         link = <Dashboard />
     }
     return (
-        <div style={{ width: '30%' }}>
+        <div style={{ width: '30%', marginRight: '1vw' }}>
             {link}
         </div>
     )

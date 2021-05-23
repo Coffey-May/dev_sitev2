@@ -2,13 +2,22 @@
   text-align: center;
   height:100vh;
   background-color: black;
-                                      
+  min-height: "100vh" ;                             
  
 }
+/* @media only screen and (max-width: 770px) {
+  .App{
+
+  
+  }
+  } */
 
 hr.animated {
   width: 80px;
   animation: expand 4s ease-in-out;
+ 
+  
+ 
 }
 
 @keyframes expand {
@@ -19,3 +28,5 @@ hr.animated {
     transform: scaleX(1);
   }
 }
+
+

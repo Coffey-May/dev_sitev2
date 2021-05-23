@@ -21,7 +21,7 @@ export default function Dashboard() {
 
             <div>
                 <Link>
-                    <li className="chi"
+                    <li style={{ paddingRight: '2vw' }} className="chi"
                         onClick={handleLogout}>
                         <span className=" chi glyphicon glyphicon-log-out"></span>
                   Log Out </li>

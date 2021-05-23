@@ -6,6 +6,8 @@ import { FaCopyright } from 'react-icons/fa';
 
 //Log In Component
 
+
+
 export default function Login() {
     const emailRef = useRef()
     const passwordRef = useRef()
@@ -48,11 +50,11 @@ export default function Login() {
                             <Form onSubmit={handleSubmit} autoComplete="on">
                                 <Form.Group id="email">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control autoComplete="on" type="email" ref={emailRef} required />
+                                    <Form.Control placeholder="Email..." className="inputStyle" autoComplete="on" type="email" ref={emailRef} required />
                                 </Form.Group>
                                 <Form.Group id="password">
                                     <Form.Label>Password</Form.Label>
-                                    <Form.Control autoComplete="on" type="password" ref={passwordRef} required />
+                                    <Form.Control placeholder="Password..." className="inputStyle" autoComplete="on" type="password" ref={passwordRef} required />
                                 </Form.Group>
                                 <Button disabled={loading} className=" chi w-100" type="submit">
                                     Log In

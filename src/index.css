@@ -26,7 +26,7 @@ code {
 }
 
 a{color:white;}
-ul{width: 40vw;}
+ul{width: 50vw;}
 .center {
   margin: auto;
   width: 60%;
@@ -43,11 +43,11 @@ ul{width: 40vw;}
 position: absolute;
  margin-top: 10vh;
  font-size: larger;
-
-
-
- 
 }
+}
+
+.inputStyle:focus {
+  width:100%
 }
 /* Home Page Styles */
 /* ---------------------------------------------- */
@@ -100,6 +100,7 @@ display:flex;
   background-repeat: no-repeat;
   border-radius: 50%;
 }
+
 #footer2{
   height:10vh;
 }
@@ -135,6 +136,12 @@ h1, .title{
   /* margin-bottom:3vh; */
 }
 
+  @media only screen and (max-width: 480px) {
+    h1,.title{
+      margin-top:7.5vh;
+     
+    }
+    }
 .overlay{
   background-color: transparent;
 }

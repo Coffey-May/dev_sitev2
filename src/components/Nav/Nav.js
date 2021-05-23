@@ -13,9 +13,9 @@ const navstyle = {
 const Nav = () => {
     return (
         <nav id="navTop" className="navbar navbar-inverse  flex-row-between container" style={navstyle} >
-            <div style={{ width: '100vw' }} className="flex-row-between ">
+            <div style={{ width: '100vw', marginTop: '2.5%' }} className="flex-row-between ">
 
-                <div >
+                <div>
 
                     <LogoHomeLink />
 

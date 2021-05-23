@@ -51,7 +51,7 @@ const Home2Content = () => {
                                             border: '1px solid white',
                                             padding: '1rem',
                                             margin: '0 auto',
-                                            borderRadius: '99rem',
+                                            // borderRadius: '99rem',
                                             textAlign: 'center',
                                             width: '30vw',
                                             fontWeight: 'bolder'
@@ -66,7 +66,7 @@ const Home2Content = () => {
                                                 fontSize: '2vw',
                                                 padding: '1rem',
                                                 margin: '0 auto',
-                                                borderRadius: '99rem',
+                                                // borderRadius: '99rem',
                                                 textAlign: 'center',
                                                 width: '30vw',
                                                 fontWeight: 'bolder'
