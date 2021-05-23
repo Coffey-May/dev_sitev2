@@ -8,10 +8,10 @@ export const LoginOptions = () => {
     if (currentUser === null) {
         var link = <div className="flex-row-between">
             <NavLink to="/login" className="chi nav-link">
-                <li style={{ paddingRight: '2vw' }}><span className="glyphicon glyphicon-log-in"></span> Login</li>
+                <li style={{ paddingRight: '2vw' }}><span className="glyphicon glyphicon-log-in acyive"></span> Login</li>
             </NavLink>
             <NavLink to="/signup" className="chi nav-link">
-                <li><span className="glyphicon glyphicon-user"></span> Sign Up</li>
+                <li className="active"><span className="glyphicon glyphicon-user"></span> Sign Up</li>
             </NavLink>
         </div>
     } else if (currentUser != null) {

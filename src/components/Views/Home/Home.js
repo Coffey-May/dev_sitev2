@@ -33,7 +33,7 @@ export default function Home() {
                             <main id="main-content" >
                                 <Suspense fallback={<div>Loading...</div>}>
                                     <HomeMarquis />
-                                    <HomeTitle />
+                                    <HomeTitle footer={footerMessage} />
 
                                 </Suspense>
                             </main>
@@ -43,7 +43,7 @@ export default function Home() {
                 )}
             </Spring>
             <footer className="container" id="footer" style={{ justifyContent: 'left' }}>
-                <h4 >{footerMessage}</h4>
+                {/* <h4 >{footerMessage}</h4> */}
             </footer>
             <Home2 />
         </div >

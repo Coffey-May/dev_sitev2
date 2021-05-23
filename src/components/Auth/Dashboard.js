@@ -21,7 +21,7 @@ export default function Dashboard() {
 
             <div>
                 <Link>
-                    <li style={{ paddingRight: '2vw' }} className="chi"
+                    <li style={{ paddingRight: '2vw' }} className="chi active"
                         onClick={handleLogout}>
                         <span className=" chi glyphicon glyphicon-log-out"></span>
                   Log Out </li>
@@ -31,7 +31,7 @@ export default function Dashboard() {
             {error}
             <div>
                 <Link to="/update-profile" >
-                    <li className="chi"><span className=" chi glyphicon glyphicon-user"></span> Profile</li>
+                    <li className="chi active"><span className=" chi glyphicon glyphicon-user"></span> Profile</li>
                 </Link>
             </div>
         </div>
