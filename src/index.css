@@ -49,6 +49,9 @@ position: absolute;
 .inputStyle:focus {
   width:100%
 }
+
+
+
 /* Home Page Styles */
 /* ---------------------------------------------- */
 
@@ -133,6 +136,9 @@ display:flex;
 h1, .title{
   margin-top:12.5vh;
   letter-spacing: .5em;
+  font-weight:900;
+  -webkit-text-stroke: 1px white;
+  /* -webkit-text-fill-color: transparent; */
   /* margin-bottom:3vh; */
 }
 

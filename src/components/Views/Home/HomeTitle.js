@@ -3,21 +3,22 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const HomeTitle = () => {
     return (
-        <div className="container " style={{ textAlign: 'left' }}>
+
+        <div className="container " style={{ paddingLeft: '1vw', textAlign: 'left', lineHeight: '3em' }}>
             <h1>COFFEY  MAY
                 <br />
                 <hr style={{ width: '50%', margin: '0 ' }} className="animated" />
 
             </h1 >
-            <h4 className="title" style={{ margin: '0 auto' }} >SOFTWARE DEVELOPER</h4>
-
+            <h4 className="title" style={{ margin: '0 auto' }} >FULL STACK SOFTWARE DEVELOPER</h4>
             <br />
             <h3>
                 <AnchorLink className="chi text" style={{
-                    color: 'white', textDecoration: 'none',
+                    color: 'white',
+                    textDecoration: 'none',
                     border: '1px solid white',
                     padding: '1rem',
-                    // borderRadius: '99rem'
+                    fontWeight: '900',
                 }}
                     href='#page2'>
                     LEARN MORE
@@ -25,6 +26,7 @@ const HomeTitle = () => {
             </h3>
 
         </div >
+
     )
 }
 

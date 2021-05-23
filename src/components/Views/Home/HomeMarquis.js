@@ -8,7 +8,7 @@ const HomeMarquis = () => {
     return (
 
         <div style={{ marginTop: '14vh', fontFamily: 'Poiret One, cursive' }}>
-            <Marquee style={{ fontWeight: 'bolder', fontSize: '1.35em' }} gradient={false} speed={100} >
+            <Marquee className="marquee" style={{ fontWeight: 'bolder', fontSize: '1.35em' }} gradient={false} speed={100} >
                 <FaHtml5 size={50} /><p> &nbsp;•HTML5•&nbsp;</p>
                 <FaCss3 size={50} /><p>&nbsp;•CSS3•&nbsp;</p>
                 <FaJs size={50} /><p>&nbsp;•JavaScript•&nbsp;<br />ES6</p>
