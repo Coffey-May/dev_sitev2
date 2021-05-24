@@ -12,16 +12,18 @@ const Home2Content = () => {
             <div id=" main-content2" className="content-wrapper2">
                 <div style={{ height: '4vh' }}>
                 </div>
-                <div style={{
-                    marginBottom: '-2vh',
-                    textAlign: 'left',
-                    padding: '1em',
-                    width: '95vw',
-                    height: '74vh',
-                    overflow: 'scroll',
-                    margin: '0 auto',
-                    background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
-                }}>
+                <div
+                    style={{
+                        marginBottom: '-2vh',
+                        textAlign: 'left',
+                        padding: '1em',
+                        width: '95vw',
+                        height: '74vh',
+                        overflow: 'scroll',
+                        margin: '0 auto',
+                        background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
+                    }}
+                >
 
                     <h1 style={h1Style}>ABOUT ME</h1>
                     <hr style={{ margin: '10px' }} />
@@ -42,20 +44,7 @@ const Home2Content = () => {
                                 <div className="picOfMe" style={{ position: 'relative', width: '10em', height: '10em' }} ></div>
 
                                 <div style={{ margin: '0 auto' }} >
-                                    <a className=" chi" style={{ ZIndex: '99' }}
-                                        href={Resume} target="blank">
-                                        <h4 style={{
-                                            color: 'white',
-                                            textDecoration: 'none',
-                                            fontSize: '2vw',
-                                            border: '1px solid white',
-                                            padding: '1rem',
-                                            margin: '0 auto',
-                                            // borderRadius: '99rem',
-                                            textAlign: 'center',
-                                            width: '30vw',
-                                            fontWeight: 'bolder'
-                                        }}>Download Resume</h4></a><br />
+
 
                                     <NavLink className=" chi" to="/projects" >
                                         <h4

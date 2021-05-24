@@ -52,7 +52,7 @@ ul{width: 50vw;}
 .collapse.in{
 position: absolute;
  margin-top: 7vh;
- font-size:xx-small;
+ font-size:xx-small !important;
  width:90vw;
  padding:0em;
 
@@ -71,16 +71,14 @@ position: absolute;
     }
   } 
 
-  /* #objective{
-    padding-left: 7em;
-  }
-   */
+  
   
   @media only screen and (min-width: 1140px) {
     #objective{
-    width:40vw;
-    margin-top:5.5vh;
-    padding-left: 5em;
+    width:42vw;
+    margin-top:10vh;
+    padding-left: 9em;
+  
   
     }
     } 
@@ -88,7 +86,7 @@ position: absolute;
      
   @media only screen and (max-width: 1140px) {
     #objective{
-    width:40vw;
+    width:60vw;
     margin-top:5vh;
     font-size: xx-small;
     padding-left: 0em;

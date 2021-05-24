@@ -20,12 +20,12 @@ export default function Dashboard() {
         <div className="flex-row-between">
 
             <div>
-                <Link>
-                    <li style={{ paddingRight: '2vw' }} className="chi active"
-                        onClick={handleLogout}>
-                        <span className=" chi glyphicon glyphicon-log-out"></span>
+                {/* <Link> */}
+                <li style={{ paddingRight: '2vw', color: 'white' }} className="chi active"
+                    onClick={handleLogout}>
+                    <span className=" chi glyphicon glyphicon-log-out"></span>
                   Log Out </li>
-                </Link>
+                {/* </Link> */}
             </div>
 
             {error}
