@@ -57,13 +57,14 @@ const HomeTitle = ({ footer }) => {
                                 and I hope you enjoy...
                     </h5>
                         </strong>
+                        <hr />
                         <div >
                             <em>
-                                <p style={{ margin: '0 auto', color: '#FBE9C1', fontSize: 'xx-small', fontWeight: 'lighter', lineHeight: '8px' }}>"Mathematical science shows what is. It is the language of unseen relations between things.
-                 But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."</p>
+                                <h4 style={{ margin: '0 auto', color: 'whitesmoke', fontWeight: 'lighter', fontSize: 'xx-small', lineHeight: '8px' }}>"Mathematical science shows what is. It is the language of unseen relations between things.
+                 But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."</h4>
                             </em>
                             <br />
-                            <p style={{ color: '#FBE9C1', margin: '0 auto' }}>~Ada Lovelace~</p>
+                            <p style={{ color: '#FBE9C1', margin: '0 auto', fontSize: 'xx-small' }}> <a target="blank" href="https://en.wikipedia.org/wiki/Ada_Lovelace">~Ada Lovelace~</a> </p>
                         </div>
                     </div>
 
