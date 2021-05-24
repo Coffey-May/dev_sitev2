@@ -75,9 +75,9 @@ position: absolute;
   
   @media only screen and (min-width: 1140px) {
     #objective{
-    width:42vw;
+    width:44vw;
     margin-top:10vh;
-    padding-left: 9em;
+    padding-left: 11em;
   
   
     }
