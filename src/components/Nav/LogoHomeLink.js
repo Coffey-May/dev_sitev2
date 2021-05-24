@@ -6,7 +6,7 @@ export const LogoHomeLink = () => {
         <div className="chi" style={{ display: "flex", flexDirection: 'row', fontFamily: 'sans-serif' }}>
             <NavLink style={{ textDecoration: 'none' }} to="/">
                 <p style={{
-                    border: '2px solid white',
+                    border: '2px solid goldenrod',
                     padding: '2px',
                     color: 'white',
 

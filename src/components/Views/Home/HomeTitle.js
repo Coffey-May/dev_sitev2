@@ -9,7 +9,7 @@ const HomeTitle = ({ footer }) => {
         <Parallax speed={3}>
             <div className="flex-row-around container">
                 <div style={{ textAlign: 'left' }}>
-                    <h1>COFFEY  MAY
+                    <h1>COFFEY MAY
                 <br />
                         <hr style={{ textAlign: 'center', width: '50%', margin: '0 ' }} className="animated title" />
 
@@ -22,7 +22,7 @@ const HomeTitle = ({ footer }) => {
                             <AnchorLink className="chi text" style={{
                                 color: 'white',
                                 textDecoration: 'none',
-                                border: '1px solid white',
+                                border: '1px solid goldenrod',
                                 padding: '.5rem',
 
                             }}
@@ -34,7 +34,7 @@ const HomeTitle = ({ footer }) => {
                             <a className="chi text" style={{
                                 color: 'white',
                                 textDecoration: 'none',
-                                border: '1px solid white',
+                                border: '1px solid goldenrod',
                                 padding: '.5rem',
                             }}
                                 href={Resume} target="blank">
@@ -52,7 +52,7 @@ const HomeTitle = ({ footer }) => {
                             <h5 style={{ color: '#F7D37A' }}>
                                 Is your development team looking for an enthusiatic junior developer to help your company grow in todays evolving tech landscape?
                                 My name is Coffey May, and I am a full stack ReactJS and C# developer.I have been coding for two years and am eager to work in
-                                an agile environment.This website showcases a portfolio of my projects as well as my resume and contact info.Feel free to explore
+                                an agile environment. This website showcases a portfolio of my projects as well as my resume and contact info.Feel free to explore
                                 and I hope you enjoy...
                     </h5>
                         </strong>
