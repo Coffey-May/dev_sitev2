@@ -35,7 +35,6 @@ code {
 
 a{color:white;}
 
-  
 
 ul{width: 50vw;}
 .center {
@@ -62,6 +61,45 @@ position: absolute;
 }
 
 
+@media only screen and (max-width: 770px) {
+    .marquee,hr{
+  display:none;
+    }
+  } 
+
+  /* #objective{
+    padding-left: 7em;
+  }
+   */
+  
+  @media only screen and (min-width: 1140px) {
+    #objective{
+    width:40vw;
+    margin-top:5.5vh;
+    padding-left: 5em;
+  
+    }
+    } 
+
+     
+  @media only screen and (max-width: 1140px) {
+    #objective{
+    width:40vw;
+    margin-top:5vh;
+    font-size: xx-small;
+    padding-left: 0em;
+
+    }
+    } 
+    @media only screen and (max-width: 780px) {
+      #objective{
+      width:100vw;
+      margin-top:0vh;
+      font-size: xx-small;
+      padding-left: 0em;
+  
+      }
+      } 
 
 /* Home Page Styles */
 /* ---------------------------------------------- */
@@ -147,18 +185,28 @@ display:flex;
 h1, .title{
   margin-top:12.5vh;
   letter-spacing: .2em;
-  font-weight:900;
+  /* font-weight:900; */
   -webkit-text-stroke: 1px white;
-  /* -webkit-text-fill-color: transparent; */
-  /* margin-bottom:3vh; */
+
 }
 
-  @media only screen and (max-width: 480px) {
-    h1,.title{
-      margin-top:7.5vh;
+  @media only screen and (max-width: 1140px) {
+    h1,.title,.text{
+      margin-top:7.5vh 0 0 0  auto;
+      text-align: center;
+      /* font-weight: 200 !important; */
+    
+
      
     }
     }
+    @media only screen and (max-width: 1140px) {
+    .text{
+        margin-top:7.5vh 0 0 0  auto;
+        text-align: center;
+        font-size:medium;
+           }
+      }
 .overlay{
   background-color: transparent;
 }
@@ -195,11 +243,11 @@ h1, .title{
 }
 .chi :active{
   color: #FFFFFF;
-  text-shadow:  #971455c5 0px 0px 10px, #ce1b74af 0px 0px 15px, #bd1569bb 0px 0px 20px, #b31664be 0px 0px 25px, #b1045bbe 0px 0px 38px;
+  text-shadow:  #973d14c5 0px 0px 10px, #973d14c5 0px 0px 15px, #973d14c5 0px 0px 20px, #973d14c5 0px 0px 25px, #973d14c5 0px 0px 38px;
 }
 .chi:hover{
   color: #FFFFFF;
-  text-shadow: #FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 38px;
+  text-shadow: #ff5e2d 0px 0px 10px, #ff5e2d 0px 0px 15px, #ff5e2d 0px 0px 20px,#ff5e2d 0px 0px 25px, #ff5e2d 0px 0px 38px;
 }
 
 /* Homeslides Button */

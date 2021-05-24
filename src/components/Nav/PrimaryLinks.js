@@ -9,7 +9,7 @@ export const PrimaryLinks = () => {
                 <li className="active" ><span className="glyphicon glyphicon-home"></span> Home</li>
             </NavLink>
             <NavLink to="/projects" className="chi">
-                <li className="active"> <span class="glyphicon glyphicon-th-list"></span> Projects </li>
+                <li className="active"> <span className="glyphicon glyphicon-th-list"></span> Projects </li>
             </NavLink>
             <NavLink to="/contact" className=" chi">
                 <li className="active"> <span className=" glyphicon glyphicon-envelope"></span>  Contact </li>

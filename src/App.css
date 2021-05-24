@@ -1,14 +1,16 @@
 .App {
   text-align: center;
-  height:100vh;
+  /* height:100vh; */
   background-color: black;
-  /* min-height: "100vh" ;                              */
+  /* max-height: "100vh" ;                              */
  
 }
-
+html{
+  background-color: black;
+}
 
 hr.animated {
-  width: 80px;
+  width: 500px;
   animation: expand 4s ease-in-out;
  
   

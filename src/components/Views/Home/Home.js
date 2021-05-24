@@ -6,13 +6,14 @@ import HomeMarquis from "./HomeMarquis";
 import HomeTitle from "./HomeTitle";
 
 
+
 //Home Page Component
 
 export default function Home() {
     const { currentUser } = useAuth();
     var footerMessage = ''
     if (currentUser === null) {
-        footerMessage = <h4>Welcome, log in for access to more features</h4>
+        footerMessage = <h4>Welcome, please log in for access to more features.</h4>
     } else if (currentUser != null) {
         footerMessage = <><h4>Welcome, {currentUser.name} | {currentUser.email}</h4>
 
