@@ -31,7 +31,7 @@ const Home2Content = () => {
                         <div>
                             <div style={{ height: '60vh', display: 'flex', msFlexDirection: 'row', flexWrap: 'wrap', margin: '0 auto', width: '80vw', justifyContent: 'space-between' }}>
 
-                                <p style={{ paddingLeft: '2em', fontWeight: '500', color: 'white', fontSize: '3.25vh', }}>
+                                <p className="home2" style={{ paddingLeft: '2em', fontWeight: '500', color: 'white', fontSize: '3.25vh', }}>
                                     &nbsp; &nbsp; &nbsp; &nbsp; As a recent graduate of the Nashville Software School, I am
                                     eager to apply my training as a Full Stack Software
                                     Developer. As an entry-level or junior programmer, I hope to

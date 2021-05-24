@@ -37,14 +37,19 @@ export default function Home() {
                                     <HomeTitle footer={footerMessage} />
 
                                 </Suspense>
+
                             </main>
 
+
                         </div>
+
                     </div>
+
                 )}
             </Spring>
+
             <footer className="container" id="footer" style={{ justifyContent: 'left' }}>
-                {/* <h4 >{footerMessage}</h4> */}
+
             </footer>
             <Home2 />
         </div >

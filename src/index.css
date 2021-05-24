@@ -93,6 +93,9 @@ position: absolute;
 
     }
     } 
+
+ 
+ 
     @media only screen and (max-width: 780px) {
       #objective{
       width:100vw;
@@ -192,6 +195,7 @@ h1, .title{
 
 }
 
+
   @media only screen and (max-width: 1140px) {
     h1,.title,.text{
       margin-top:7.5vh 0 0 0  auto;
@@ -245,11 +249,11 @@ h1, .title{
 }
 .chi :active{
   color: #FFFFFF;
-  text-shadow:  #973d14c5 0px 0px 10px, #973d14c5 0px 0px 15px, #973d14c5 0px 0px 20px, #973d14c5 0px 0px 25px, #973d14c5 0px 0px 38px;
+  text-shadow:  #F7D37A 0px 0px 10px, #F7D37A 0px 0px 15px, #F7D37A 0px 0px 20px, #F7D37A 0px 0px 25px, #F7D37A 0px 0px 38px;
 }
 .chi:hover{
   color: #FFFFFF;
-  text-shadow: #ff5e2d 0px 0px 10px, #ff5e2d 0px 0px 15px, #ff5e2d 0px 0px 20px,#ff5e2d 0px 0px 25px, #ff5e2d 0px 0px 38px;
+  text-shadow: #F7D37A 0px 0px 10px, #F7D37A 0px 0px 15px, #F7D37A 0px 0px 20px,#F7D37A 0px 0px 25px, #F7D37A 0px 0px 38px;
 }
 
 /* Homeslides Button */

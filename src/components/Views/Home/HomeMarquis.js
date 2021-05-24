@@ -8,7 +8,7 @@ const HomeMarquis = () => {
     return (
 
         <div className="marquee" style={{ marginTop: '14vh', fontFamily: 'Poiret One, cursive' }}>
-            <Marquee className="marquee" style={{ fontWeight: 'bolder', fontSize: '1.35em', position: 'relative' }} gradient={false} speed={30} >
+            <Marquee className="marquee" style={{ color: '#FBE9C1', fontWeight: 'bolder', fontSize: '1.35em', position: 'relative' }} gradient={false} speed={30} >
                 <FaHtml5 size={50} /><p> &nbsp;•HTML5•&nbsp;</p>
                 <FaCss3 size={50} /><p>&nbsp;•CSS3•&nbsp;</p>
                 <FaJs size={50} /><p>&nbsp;•JavaScript•&nbsp;<br />ES6</p>
@@ -21,7 +21,7 @@ const HomeMarquis = () => {
                 <DiNpm style={{ marginTop: '-1.5vh' }} size={70} />&nbsp;<p>&nbsp;•NPM•&nbsp;</p>
                 <DiVisualstudio style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Visual•&nbsp;<br />&nbsp;Studio</p>&nbsp;&nbsp;
                 <DiSass style={{ marginTop: '-1.5vh' }} size={70} /><p>&nbsp;•Sass•&nbsp;</p>
-                <img style={{ height: '6rem', marginTop: '-1.5vh' }} src={cSharp} alt="c sharp logo" /><p>•CSharp•&nbsp;</p>
+                <img style={{ height: '6rem', marginTop: '-1.5vh', color: '#FBE9C1' }} src={cSharp} alt="c sharp logo" /><p >•CSharp•&nbsp;</p>
             </Marquee>
         </div>
 
