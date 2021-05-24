@@ -7,7 +7,7 @@ import cSharp from '../Home/HomeImages/csharpBE.png'
 const HomeMarquis = () => {
     return (
 
-        <div style={{ marginTop: '14vh', fontFamily: 'Poiret One, cursive' }}>
+        <div className="marquee" style={{ marginTop: '14vh', fontFamily: 'Poiret One, cursive' }}>
             <Marquee className="marquee" style={{ fontWeight: 'bolder', fontSize: '1.35em', position: 'relative' }} gradient={false} speed={30} >
                 <FaHtml5 size={50} /><p> &nbsp;•HTML5•&nbsp;</p>
                 <FaCss3 size={50} /><p>&nbsp;•CSS3•&nbsp;</p>
