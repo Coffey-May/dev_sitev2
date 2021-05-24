@@ -44,18 +44,16 @@ const HomeTitle = ({ footer }) => {
                     </div>
                 </div >
 
-                <div id="objective" >
-                    <h6>
+                <div id="objective"  >
+
+                    <h6 style={{ border: '1px solid white', padding: '1em' }}>
                         Is your development team looking for an enthusiatic junior developer to help your company grow in todays evolving tech landscape?
                         My name is Coffey May, and I am a full stack ReactJS and C# developer.  I have been coding for two years and am eager to work in
                         an agile environment. This website showcases a portfolio of my projects as well as my resume and contact info. Feel free to explore
                         and I hope you enjoy...
                     </h6>
-                    <hr className="animated" />
-                    <code style={{ backgroundColor: 'transparent', color: 'white' }}>
+                    {/* <hr className="animated" /> */}
 
-
-                    </code >
 
                 </div>
             </div>

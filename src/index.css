@@ -51,8 +51,12 @@ ul{width: 50vw;}
 @media only screen and (max-width: 770px) {
 .collapse.in{
 position: absolute;
- margin-top: 10vh;
- font-size: larger;
+ margin-top: 7vh;
+ font-size:xx-small;
+ width:90vw;
+ padding:0em;
+
+
 }
 }
 
@@ -63,7 +67,7 @@ position: absolute;
 
 @media only screen and (max-width: 1140px) {
     .marquee,hr{
-  display:none;
+  display:none !important;
     }
   } 
 
