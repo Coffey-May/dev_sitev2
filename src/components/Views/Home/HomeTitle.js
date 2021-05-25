@@ -59,7 +59,7 @@ const HomeTitle = ({ footer }) => {
                         </strong>
                         <div style={{ margin: '0 auto', color: '#F7D37A', border: '1px solid goldenrod', padding: '.5em', backgroundColor: 'rgba(0, 0, 0, 0.155)' }}>
                             <em>
-                                <p style={{ lineHeight: '3em', fontWeight: 'bolder', margin: '0 auto', color: 'whitesmoke', fontWeight: 'lighter', fontSize: 'xx-small', lineHeight: '8px' }}>"Mathematical science shows what is. It is the language of unseen relations between things.
+                                <p style={{ fontWeight: 'bolder', margin: '0 auto', color: 'whitesmoke', fontSize: 'xx-small', lineHeight: '8px' }}>"Mathematical science shows what is. It is the language of unseen relations between things.
                  But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."</p>
                             </em>
                             <br />
