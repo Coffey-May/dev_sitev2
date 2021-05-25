@@ -46,18 +46,18 @@ const HomeTitle = ({ footer }) => {
 
 
                 <div id="objective"  >
-                    <div style={{ border: '9px solid goldenrod', padding: '1em', backgroundColor: 'rgba(0, 0, 0, 0.455)' }}>
+                    <div style={{ border: '7px solid goldenrod', padding: '.5em', backgroundColor: 'rgba(0, 0, 0, 0.455)' }}>
                         <strong>
-                            <h1 style={{ margin: '0 auto ', color: '#F7D37A', letterSpacing: '.2em', fontSize: '2em' }}> WHAT I DO  </h1>
-                            <hr style={{ color: 'goldenrod', margin: '0 auto' }} />
+                            <h2 style={{ margin: '0 auto ', color: '#white', letterSpacing: '.2em', fontSize: '2em' }}> WHAT I DO  </h2>
+                            <hr style={{ margin: '0 auto' }} />
                             <h5 style={{ color: '#F7D37A' }}>
                                 Do you like finding elegant and simple solutions for real time challanges? Is your development team looking for an enthusiatic junior developer to help your company grow in todays evolving tech landscape?
-                                My name is Coffey May, and I am a full stack ReactJS and C# developer.I have been coding for two years and am eager to work in
+                                My name is Coffey May, and I am a full stack ReactJS and C# developer. I have been coding for two years and am eager to work in
                                 an agile environment. This website showcases a portfolio of my projects as well as my resume and contact info.Feel free to explore
                                 and I hope you enjoy...
                     </h5>
                         </strong>
-                        <div style={{ margin: '0 auto', color: '#F7D37A', marginTop: '2vh', border: '1px solid goldenrod', padding: '1em', backgroundColor: 'rgba(0, 0, 0, 0.155)' }}>
+                        <div style={{ margin: '0 auto', color: '#F7D37A', border: '1px solid goldenrod', padding: '.5em', backgroundColor: 'rgba(0, 0, 0, 0.155)' }}>
                             <em>
                                 <p style={{ lineHeight: '3em', fontWeight: 'bolder', margin: '0 auto', color: 'whitesmoke', fontWeight: 'lighter', fontSize: 'xx-small', lineHeight: '8px' }}>"Mathematical science shows what is. It is the language of unseen relations between things.
                  But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."</p>

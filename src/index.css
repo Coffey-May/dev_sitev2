@@ -75,12 +75,10 @@ position: absolute;
   
   @media only screen and (min-width: 1140px) {
     #objective{
-    width:44vw;
-    margin-top:10vh;
+    width:43vw;
+    margin-top:12vh;
     padding-left: 11em;
-  
-  
-    }
+  }
     } 
 
      
@@ -94,8 +92,6 @@ position: absolute;
     }
     } 
 
- 
- 
     @media only screen and (max-width: 780px) {
       #objective{
       width:100vw;
@@ -105,6 +101,35 @@ position: absolute;
   
       }
       } 
+
+      @media only screen and (min-width: 1140px) {
+        #about{
+        width:43vw;
+        /* margin-top:12vh; */
+        /* padding-left: 7em; */
+      }
+        } 
+    
+         
+      @media only screen and (max-width: 1140px) {
+        #about{
+        width:60vw;
+        /* margin-top:5vh; */
+        font-size: xx-small;
+        /* padding-left: 0em; */
+    
+        }
+        } 
+    
+        @media only screen and (max-width: 780px) {
+          #about{
+          width:90vw;
+       
+          font-size: xx-small;
+          /* padding-left: 0em; */
+      
+          }
+          } 
 
 /* Home Page Styles */
 /* ---------------------------------------------- */
