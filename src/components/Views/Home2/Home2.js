@@ -11,7 +11,7 @@ export default function Home2() {
         <Parallax speed={8}>
             <div id="page2" >
                 <Home2Content />
-                <footer id="footer2" style={{ border: '1px solid black', height: '12vh', backgroundColor: 'black', color: 'white' }}>
+                <footer id="footer2" style={{ border: 'none', height: '12vh', backgroundColor: 'rgba(20,20,20)', color: 'white' }}>
                     <h4>
                         <br />
                         <FaCopyright /> COPYRIGHT{new Date().getFullYear()}

@@ -64,6 +64,12 @@ position: absolute;
   width:100%
 }
 
+/* .marquee{
+  -webkit-box-reflect:below 1px linear-gradient(transparent,rgba(125, 125, 126, 0.158));
+margin-top: 3.65em;
+position:fixed;
+animation:  linear infinite;
+} */
 
 @media only screen and (max-width: 1140px) {
     .marquee,hr,.text{
@@ -105,8 +111,12 @@ position: absolute;
       @media only screen and (min-width: 1140px) {
         #about{
         width:40vw;
-        /* margin-top:12vh; */
-        /* padding-left: 7em; */
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-left: 8vw;
+       
       }
         } 
     
@@ -114,21 +124,19 @@ position: absolute;
       @media only screen and (max-width: 1140px) {
         #about{
         width:60vw;
-        /* margin-top:5vh; */
+
         font-size: xx-small;
-        /* padding-left: 0em; */
+      
     
         }
         } 
     
         @media only screen and (max-width: 780px) {
           #about{
-          width:90vw;
-       
-          font-size: xx-small;
-          /* padding-left: 0em; */
-      
-          }
+          width:89vw;
+        font-size: xx-small;
+
+         }
           } 
 
 .curve{
@@ -151,7 +159,7 @@ display:flex;
 
 }
 #footer{
-  background-color: black;
+  background-color: rgba(20,20,20);
   color:white;
 }
 #footer, #header{
@@ -193,6 +201,8 @@ display:flex;
 #footer2{
   height:10vh;
 }
+
+
 
 /* Navigation Bar Styles */
   /* ---------------------------------------------- */

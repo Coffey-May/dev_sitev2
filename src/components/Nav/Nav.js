@@ -7,8 +7,8 @@ import { PrimaryLinks } from './PrimaryLinks';
 
 
 const navstyle = {
-    margin: '0 auto', borderRadius: '0', position: 'relative', backgroundColor: 'black', zIndex: '10000',
-    height: '10vh'
+    margin: '0 auto', borderRadius: '0', position: 'relative', backgroundColor: 'rgba(20,20,20)', zIndex: '10000',
+    height: '10vh', border: 'none'
 }
 const Nav = () => {
     return (

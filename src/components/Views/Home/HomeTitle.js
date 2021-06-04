@@ -46,7 +46,7 @@ const HomeTitle = ({ footer }) => {
 
 
                 <div id="objective"  >
-                    <div style={{ border: '7px solid goldenrod', padding: '.5em', backgroundColor: 'rgba(0, 0, 0, 0.455)' }}>
+                    <div style={{ border: '5px solid goldenrod', padding: '.5em', backgroundColor: 'rgba(0, 0, 0, 0.455)' }}>
                         <strong>
                             <h2 style={{ margin: '0 auto ', color: '#white', letterSpacing: '.2em', fontSize: '2em' }}> WHAT I DO  </h2>
                             <hr style={{ margin: '0 auto' }} />
@@ -57,16 +57,17 @@ const HomeTitle = ({ footer }) => {
                                 and I hope you enjoy...
                     </h5>
                         </strong>
-                        <div style={{ margin: '0 auto', color: '#F7D37A', border: '1px solid goldenrod', padding: '.5em', backgroundColor: 'rgba(0, 0, 0, 0.155)' }}>
-                            <em>
-                                <p style={{ fontWeight: 'bolder', margin: '0 auto', color: 'whitesmoke', fontSize: 'xx-small', lineHeight: '8px' }}>"Mathematical science shows what is. It is the language of unseen relations between things.
-                 But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."</p>
-                            </em>
-                            <br />
-                            <p style={{ color: '#FBE9C1', margin: '0 auto', fontSize: 'xx-small' }}> <a target="blank" href="https://en.wikipedia.org/wiki/Ada_Lovelace">~Ada Lovelace~</a> </p>
-                        </div>
+
                     </div>
                 </div>
+                {/* <div style={{ width: '29.5vw', color: '#F7D37A', border: '1px solid goldenrod', padding: '.5em', backgroundColor: 'rgba(0, 0, 0, 0.155)' }}>
+                    <em>
+                        <p style={{ fontWeight: 'lighter', margin: '0 auto', color: 'whitesmoke', fontSize: 'smaller', lineHeight: '14px' }}>"Mathematical science shows what is. It is the language of unseen relations between things.
+                 But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."</p>
+                    </em>
+                    <br />
+                    <p style={{ color: '#FBE9C1', margin: '0 auto', fontSize: 'xx-small' }}> <a target="blank" href="https://en.wikipedia.org/wiki/Ada_Lovelace">~Ada Lovelace~</a> </p>
+                </div> */}
             </div>
 
         </Parallax >

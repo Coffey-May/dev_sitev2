@@ -3,7 +3,10 @@ const h1Style = { color: 'white', margin: '0 auto', fontWeight: 'bolder', textAl
 
 export const BioCardInfo = () => {
     return (
-        <div id="about" style={{ columnCount: '1', border: '7px solid goldenrod', padding: '1em' }}>
+        <div id="about" style={{
+            columnCount: '1', border: '7px solid goldenrod', padding: '1em', backgroundColor: 'rgba(0, 0, 0, 0.5)'
+
+        }}>
             <div className="picOfMe" style={{
                 borderRadius: '50%',
                 width: '7em',
@@ -11,14 +14,14 @@ export const BioCardInfo = () => {
                 backgroundColor: '#2badd9',
                 float: 'left',
                 shapeOutside: 'inset(1% round 50%)',
-                padding: '2em',
-                margin: '2em'
+                padding: '1em',
+                margin: '1em'
             }} ></div>
-            < h1 style={h1Style} > ABOUT ME</h1>
+            <h2 style={h1Style} > ABOUT ME</h2>
             <hr />
             <p style={{
-                color: '#F7D37A',
-
+                color: 'white',
+                fontSize: '1.5em'
             }}>
                 &nbsp; &nbsp; &nbsp; &nbsp; As a recent graduate of the Nashville Software School, I am
                 eager to apply my training as a Full Stack Software

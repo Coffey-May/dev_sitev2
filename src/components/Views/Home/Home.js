@@ -7,6 +7,7 @@ import HomeTitle from "./HomeTitle";
 
 
 
+
 //Home Page Component
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
     if (currentUser === null) {
         footerMessage = <h4 className="text">Welcome, please log in for access to more features.</h4>
     } else if (currentUser != null) {
-        footerMessage = <><h4 className="text">Welcome, {currentUser.name}  {currentUser.email}. <br /> Can you discover the easter egg?</h4>
+        footerMessage = <><h4 className="text">Welcome, {currentUser.name}  {currentUser.email}. <br /> Thanks for visiting... </h4>
 
         </>
     }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BioCardInfo } from "./BioCardInfo";
+import { ProjectsCard } from "./ProjectsCard";
 
 export const BioCard = () => {
     return (
@@ -7,7 +8,7 @@ export const BioCard = () => {
             <div id=" main-content2" className="content-wrapper2">
                 <div style={{ height: '4vh' }}>
                 </div>
-                <div
+                <div className="flex-row-between"
                     style={{
                         marginBottom: '-2vh',
                         textAlign: 'left',
@@ -22,7 +23,9 @@ export const BioCard = () => {
                     <div>
                         <BioCardInfo />
                     </div>
-
+                    <div>
+                        <ProjectsCard />
+                    </div>
 
                 </div>
                 <div style={{ height: '2vh' }}>
