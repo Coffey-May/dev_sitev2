@@ -35,6 +35,7 @@ export default function Home() {
                             <main id="main-content" >
                                 <Suspense fallback={<div>Loading...</div>}>
                                     <HomeMarquis />
+                                    {/* <div style={{ height: '22vh' }}></div> */}
                                     <HomeTitle footer={footerMessage} />
 
                                 </Suspense>

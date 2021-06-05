@@ -64,12 +64,7 @@ position: absolute;
   width:100%
 }
 
-/* .marquee{
-  -webkit-box-reflect:below 1px linear-gradient(transparent,rgba(125, 125, 126, 0.158));
-margin-top: 3.65em;
-position:fixed;
-animation:  linear infinite;
-} */
+
 
 @media only screen and (max-width: 1140px) {
     .marquee,hr,.text{
@@ -77,19 +72,36 @@ animation:  linear infinite;
     }
   } 
 
-  
+  .circle {
+    position: relative;
+
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    background: linear-gradient( rgba(255, 243, 69, 0.473),rgba(248, 60, 255, 0.507));
+  }
+  .circle__inner {
+    position: absolute;
+    width: 46px; height: 46px;
+    top: 2px; left: 2px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
   
   @media only screen and (min-width: 1140px) {
     #objective{
-    width:43vw;
-    margin-top:12vh;
-    padding-left: 11em;
+    width:67vw;
+    position:relative;
+    top:-41.5vh;
+    left:10vw;
+    margin-top:7.5vh;
+    padding-left: 25em;
   }
     } 
+   
 
      
-  @media only screen and (max-width: 1140px) {
-    #objective{
+  @media only screen and (max-width: 1023px) {
+    #objective, .homeTitle{
     width:60vw;
     margin-top:5vh;
     font-size: xx-small;
@@ -99,7 +111,7 @@ animation:  linear infinite;
     } 
 
     @media only screen and (max-width: 780px) {
-      #objective{
+      #objective, .homeTitle{
       width:100vw;
       margin-top:0vh;
       font-size: xx-small;
@@ -170,7 +182,7 @@ display:flex;
 }
 #main-content-image{
   padding:.5rem;
-  background: linear-gradient(rgba(83, 82, 5, 0.356), rgba(94, 6, 102, 0.267), rgba(50, 9, 59, 0.993)),url("./components//Views/images/sun.gif");
+  background: linear-gradient(rgba(253, 102, 1, 0.479), rgba(204, 16, 221, 0.144), rgb(31, 0, 30)),url("./components//Views/images/sun.gif");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 0;

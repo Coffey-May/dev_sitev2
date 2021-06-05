@@ -2,16 +2,21 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Parallax from "react-rellax";
 import Resume from '../../../PDFS/Coffey May Resume.pdf';
+import { FaGithub, FaEnvelope, FaInstagram, FaLinkedin } from 'react-icons/fa';
+
+
 
 
 const HomeTitle = ({ footer }) => {
     return (
         <Parallax speed={-1}>
             <div className="flex-row-around container">
-                <div style={{ textAlign: 'left' }}>
-                    <h1>COFFEY MAY
+
+                <div className="homeTitle" style={{ textAlign: 'left' }}>
+
+                    <h1 style={{ fontSize: '3.5em', marginTop: '85px' }}>COFFEY MAY
                 <br />
-                        <hr style={{ textAlign: 'center', width: '50%', margin: '0 ' }} className="animated title" />
+                        <hr style={{ textAlign: 'center', margin: '0 ', width: '70%' }} className="animated title" />
 
                     </h1 >
                     <h4 className="title" style={{ margin: '0 auto' }} >FULL STACK SOFTWARE DEVELOPER</h4>
@@ -41,34 +46,41 @@ const HomeTitle = ({ footer }) => {
                                 DOWNLOAD RESUME
                             </a>
                         </h3>
+
                     </div>
+                    <div >
+                        <ol className="flex-row-between" style={{ listStyle: 'none', color: `#fff`, width: '15vw', marginTop: '2vh' }}>
+                            <a className="chi" rel="noreferrer" target="_blank" href="mailto: jcoffeymay6@gmail.com"><li className="contact-li "><FaEnvelope size={25} /></li></a>
+                            <a className="chi" rel="noreferrer" target="_blank" href="https://github.com/Coffey-May"><li className=" contact-li"><FaGithub size={25} /></li></a>
+                            <a className="chi" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/jonathan-coffey-may/"> <li className="contact-li"><FaLinkedin size={25} /></li></a>
+                            <a className="chi" rel="noreferrer" target="_blank" href="https://www.instagram.com/coffeymay1/"><li className="contact-li"><FaInstagram size={25} /></li></a>
+
+                        </ol>
+                    </div>
+
                 </div >
 
 
+
                 <div id="objective"  >
-                    <div style={{ border: '5px solid goldenrod', padding: '.5em', backgroundColor: 'rgba(0, 0, 0, 0.455)' }}>
+                    <div style={{ border: '5px solid goldenrod', padding: '1.3em', backgroundColor: 'rgba(0, 0, 0, 0.255)' }}>
                         <strong>
-                            <h2 style={{ margin: '0 auto ', color: '#white', letterSpacing: '.2em', fontSize: '2em' }}> WHAT I DO  </h2>
+                            <h2 style={{ margin: '0 auto ', color: '#white', letterSpacing: '.2em', fontSize: '2em' }}> SOFTWARE SOLUTIONS</h2>
                             <hr style={{ margin: '0 auto' }} />
-                            <h5 style={{ color: '#F7D37A' }}>
+                            <h4 style={{ color: 'white', textAlign: 'left', fontWeight: 'lighter' }}>
                                 Do you like finding elegant and simple solutions for real time challanges? Is your development team looking for an enthusiatic junior developer to help your company grow in todays evolving tech landscape?
-                                My name is Coffey May, and I am a full stack ReactJS and C# developer. I have been coding for two years and am eager to work in
-                                an agile environment. This website showcases a portfolio of my projects as well as my resume and contact info.Feel free to explore
-                                and I hope you enjoy...
-                    </h5>
+                                I am a junior software developer looking to join an agile team to develop clean and reliable code.
+                    </h4>
                         </strong>
 
                     </div>
                 </div>
-                {/* <div style={{ width: '29.5vw', color: '#F7D37A', border: '1px solid goldenrod', padding: '.5em', backgroundColor: 'rgba(0, 0, 0, 0.155)' }}>
-                    <em>
-                        <p style={{ fontWeight: 'lighter', margin: '0 auto', color: 'whitesmoke', fontSize: 'smaller', lineHeight: '14px' }}>"Mathematical science shows what is. It is the language of unseen relations between things.
-                 But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."</p>
-                    </em>
-                    <br />
-                    <p style={{ color: '#FBE9C1', margin: '0 auto', fontSize: 'xx-small' }}> <a target="blank" href="https://en.wikipedia.org/wiki/Ada_Lovelace">~Ada Lovelace~</a> </p>
-                </div> */}
+
+
             </div>
+
+
+
 
         </Parallax >
     )

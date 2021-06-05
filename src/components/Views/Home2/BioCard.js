@@ -6,6 +6,7 @@ export const BioCard = () => {
     return (
         <div >
             <div id=" main-content2" className="content-wrapper2">
+
                 <div style={{ height: '4vh' }}>
                 </div>
                 <div className="flex-row-between"
@@ -20,7 +21,9 @@ export const BioCard = () => {
                         background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
                     }}
                 >
+
                     <div>
+
                         <BioCardInfo />
                     </div>
                     <div>
