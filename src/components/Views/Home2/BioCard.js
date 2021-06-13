@@ -15,8 +15,8 @@ export const BioCard = () => {
                         textAlign: 'left',
                         padding: '1em',
                         width: '95vw',
-                        height: '74vh',
-                        overflow: 'scroll',
+                        height: 'auto',
+                        overflow: 'auto',
                         margin: '0 auto',
                         background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
                     }}
