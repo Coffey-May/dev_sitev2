@@ -49,7 +49,7 @@ const HomeTitle = ({ footer }) => {
 
                     </div>
                     <div >
-                        <ol className="flex-row-between" style={{ listStyle: 'none', color: `#fff`, width: '15vw', marginTop: '2vh' }}>
+                        <ol className="flex-row-between" style={{ paddingTop: '3.5vh', listStyle: 'none', color: `#fff` }}>
                             <a className="chi" rel="noreferrer" target="_blank" href="mailto: jcoffeymay6@gmail.com"><li className="contact-li "><FaEnvelope size={25} /></li></a>
                             <a className="chi" rel="noreferrer" target="_blank" href="https://github.com/Coffey-May"><li className=" contact-li"><FaGithub size={25} /></li></a>
                             <a className="chi" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/jonathan-coffey-may/"> <li className="contact-li"><FaLinkedin size={25} /></li></a>
@@ -63,7 +63,7 @@ const HomeTitle = ({ footer }) => {
 
 
                 <div id="objective"  >
-                    <div style={{ border: '5px solid goldenrod', padding: '1.3em', backgroundColor: 'rgba(0, 0, 0, 0.255)' }}>
+                    <div style={{ borderTop: '5px solid goldenrod', padding: '1.3em', backgroundColor: 'rgba(0, 0, 0, 0.255)' }}>
                         <strong>
                             <h2 style={{ margin: '0 auto ', color: '#white', letterSpacing: '.2em', fontSize: '2em' }}> SOFTWARE SOLUTIONS</h2>
                             <hr style={{ margin: '0 auto' }} />

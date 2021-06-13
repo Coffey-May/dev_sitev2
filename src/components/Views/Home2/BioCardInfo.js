@@ -4,7 +4,7 @@ const h1Style = { color: 'white', margin: '0 auto', fontWeight: 'bolder', textAl
 export const BioCardInfo = () => {
     return (
         <div id="about" style={{
-            columnCount: '1', border: '7px solid goldenrod', padding: '1em', backgroundColor: 'rgba(0, 0, 0, 0.5)'
+            borderTop: '5px solid goldenrod', padding: '1em', backgroundColor: 'rgba(0, 0, 0, 0.5)'
 
         }}>
             <div className="picOfMe" style={{

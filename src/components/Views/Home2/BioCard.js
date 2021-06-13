@@ -1,6 +1,6 @@
 import React from 'react';
 import { BioCardInfo } from "./BioCardInfo";
-import { ProjectsCard } from "./ProjectsCard";
+import { Projects1 } from "./Projects1";
 
 export const BioCard = () => {
     return (
@@ -22,13 +22,12 @@ export const BioCard = () => {
                     }}
                 >
 
-                    <div>
 
-                        <BioCardInfo />
-                    </div>
-                    <div>
-                        <ProjectsCard />
-                    </div>
+
+                    <BioCardInfo />
+
+                    <Projects1 />
+
 
                 </div>
                 <div style={{ height: '2vh' }}>

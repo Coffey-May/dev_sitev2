@@ -75,7 +75,7 @@ position: absolute;
   .circle {
     position: relative;
 
-    width: 220px; height: 220px;
+    /* width: 220px; height: 220px; */
     border-radius: 50%;
     background: linear-gradient( rgba(255, 243, 69, 0.473),rgba(248, 60, 255, 0.507));
   }
@@ -91,7 +91,7 @@ position: absolute;
     #objective{
     width:67vw;
     position:relative;
-    top:-41.5vh;
+    top:-43vh;
     left:10vw;
     margin-top:7.5vh;
     padding-left: 25em;
@@ -121,21 +121,25 @@ position: absolute;
       } 
 
       @media only screen and (min-width: 1140px) {
-        #about{
-        width:40vw;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        margin-left: 8vw;
-       
-      }
+        #about {
+        width:36vw;
+        height:auto;
+        margin-left: 6vw;
+            }
         } 
+        @media only screen and (min-width: 1140px) {
+          #projects {
+          width:46vw;
+          height:auto;
+   
+              }
+          } 
     
          
       @media only screen and (max-width: 1140px) {
-        #about{
-        width:60vw;
+        #about,#projects{
+        width:80vw;
+       
 
         font-size: xx-small;
       
@@ -144,7 +148,7 @@ position: absolute;
         } 
     
         @media only screen and (max-width: 780px) {
-          #about{
+          #about,#projects{
           width:89vw;
         font-size: xx-small;
 
