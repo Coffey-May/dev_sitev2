@@ -14,9 +14,9 @@ export const ProjectsCard = ({ slide }) => {
                     <h3>{slide.title}</h3>
                 </header>
                 <div style={{ height: '5em' }}>
-                    <img style={{ width: '5em', height: 'auto' }} src={slide.image} alt="image of website" />
-                    <img style={{ width: '5em', height: 'auto' }} src={slide.image2} alt="image of website" />
-                    <img style={{ width: '5em', height: 'auto' }} src={slide.image3} alt="image of website" />
+                    <img style={{ width: '5em', height: 'auto' }} src={slide.image} alt=" website" />
+                    <img style={{ width: '5em', height: 'auto' }} src={slide.image2} alt=" website" />
+                    <img style={{ width: '5em', height: 'auto' }} src={slide.image3} alt="website" />
                 </div>
 
                 <p > {slide.description} </p>
