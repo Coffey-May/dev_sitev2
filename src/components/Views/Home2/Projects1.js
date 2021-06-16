@@ -38,9 +38,6 @@ export const Projects1 = () => {
                 <h2 >Projects</h2>
                 <div className="flex-row-between">
 
-
-
-                    {console.log(slides)}
                     {slides.map((slide, index) => {
                         return (
                             <ProjectsCard slide={slide} key={index} />
@@ -52,13 +49,6 @@ export const Projects1 = () => {
                 </div>
             </div>
 
-            {/* <div id="projects" style={{ color: "white" }} className="flex-row-between">
-                
-                <div>jdkjasbd</div>
-                <div>jdkjasbd</div>
-                <div>jdkjasbd</div>
-                <div>jdkjasbd</div>
-            </div> */}
 
 
 

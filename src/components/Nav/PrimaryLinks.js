@@ -1,19 +1,20 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
 import { LoginOptions } from "./LoginOptions"
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export const PrimaryLinks = () => {
     return (
         <div className="flex-row-between">
-            <NavLink to="/" className="chi" >
-                <li className="active" ><span className="glyphicon glyphicon-home"></span> Home</li>
-            </NavLink>
-            <NavLink to="/projects" className="chi">
-                <li className="active"> <span className="glyphicon glyphicon-th-list"></span> Projects </li>
-            </NavLink>
-            <NavLink to="/contact" className=" chi">
-                <li className="active"> <span className=" glyphicon glyphicon-envelope"></span>  Contact </li>
-            </NavLink>
+
+
+
+
+            <AnchorLink id="projLink" style={{
+                color: 'white', textDecoration: 'none'
+            }} href='#home2'>
+
+            </AnchorLink>
+
             <LoginOptions />
 
         </div>

@@ -3,6 +3,7 @@ import { useAuth } from "../../AuthContext";
 import Dashboard from '../Auth/Dashboard';
 import { NavLink } from "react-router-dom";
 
+
 export const LoginOptions = () => {
     const { currentUser } = useAuth()
     if (currentUser === null) {

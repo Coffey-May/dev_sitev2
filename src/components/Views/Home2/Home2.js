@@ -21,7 +21,7 @@ export default function Home2() {
                             color: 'white', textDecoration: 'none',
                         }} href='#navTop'>
                             Return to top
-                    </AnchorLink>
+                        </AnchorLink>
                     </h4>
                 </footer>
             </div>
