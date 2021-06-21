@@ -67,7 +67,7 @@ position: absolute;
 
 
 @media only screen and (max-width: 1140px) {
-    .marquee,hr,.text{
+    .marquee,hr{
   display:none !important;
     }
   } 
@@ -86,7 +86,7 @@ position: absolute;
     position:relative;
     top:-43vh;
     left:10vw;
-    margin-top:7.5vh;
+    margin-top:16vh;
     padding-left: 25em;
   }
     } 

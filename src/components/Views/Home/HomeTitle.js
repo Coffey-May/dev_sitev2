@@ -2,7 +2,7 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Parallax from "react-rellax";
 import Resume from '../../../PDFS/Coffey May Resume.pdf';
-import { FaGithub, FaEnvelope, FaInstagram, FaLinkedin } from 'react-icons/fa';
+
 
 
 
@@ -15,7 +15,7 @@ const HomeTitle = ({ footer }) => {
                 <div className="homeTitle" style={{ textAlign: 'left' }}>
 
                     <h1 style={{ fontSize: '3.5em', marginTop: '85px' }}>COFFEY MAY
-                <br />
+                        <br />
                         <hr style={{ textAlign: 'center', margin: '0 ', width: '70%' }} className="animated title" />
 
                     </h1 >
@@ -33,7 +33,7 @@ const HomeTitle = ({ footer }) => {
                             }}
                                 href='#page2'>
                                 LEARN MORE
-            </AnchorLink>
+                            </AnchorLink>
                         </h3>
                         <h3>
                             <a className="chi text" style={{
@@ -48,15 +48,7 @@ const HomeTitle = ({ footer }) => {
                         </h3>
 
                     </div>
-                    <div >
-                        <ol className="flex-row-between" style={{ paddingTop: '3.5vh', listStyle: 'none', color: `#fff` }}>
-                            <a className="chi" rel="noreferrer" target="_blank" href="mailto: jcoffeymay6@gmail.com"><li className="contact-li "><FaEnvelope size={25} /></li></a>
-                            <a className="chi" rel="noreferrer" target="_blank" href="https://github.com/Coffey-May"><li className=" contact-li"><FaGithub size={25} /></li></a>
-                            <a className="chi" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/jonathan-coffey-may/"> <li className="contact-li"><FaLinkedin size={25} /></li></a>
-                            <a className="chi" rel="noreferrer" target="_blank" href="https://www.instagram.com/coffeymay1/"><li className="contact-li"><FaInstagram size={25} /></li></a>
 
-                        </ol>
-                    </div>
 
                 </div >
 
@@ -70,7 +62,7 @@ const HomeTitle = ({ footer }) => {
                             <h4 style={{ color: 'white', textAlign: 'left', fontWeight: 'lighter' }}>
                                 Do you like finding elegant and simple solutions for real time challanges? Is your development team looking for an enthusiatic junior developer to help your company grow in todays evolving tech landscape?
                                 I am a junior software developer looking to join an agile team to develop clean and reliable code.
-                    </h4>
+                            </h4>
                         </strong>
 
                     </div>

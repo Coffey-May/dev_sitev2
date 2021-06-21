@@ -23,7 +23,7 @@ export const ProjectsCard = ({ slide }) => {
             </div>
             <div>
                 <p className="animated-word chi" >
-                    <a target="blank" style={{ textDecoration: 'none', color: 'white' }} href={slide.link}>View</a>
+                    <a className="chi" target="blank" style={{ textDecoration: 'none', color: 'white' }} href={slide.link}>View</a>
                 </p>
             </div>
         </div >

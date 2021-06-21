@@ -9,22 +9,24 @@ import Home2Content from "./Home2Content";
 export default function Home2() {
     return (
         <Parallax speed={8}>
-            <div id="page2" >
-                <Home2Content />
-                <footer id="footer2" style={{ border: 'none', height: '10vh', backgroundColor: 'rgba(20,20,20)', color: 'white' }}>
-                    <h4>
-                        <br />
-                        <FaCopyright /> COPYRIGHT{new Date().getFullYear()}
-                        <br />
 
-                        <AnchorLink className="chi" style={{
-                            color: 'white', textDecoration: 'none',
-                        }} href='#navTop'>
-                            Return to top
-                        </AnchorLink>
-                    </h4>
-                </footer>
-            </div>
+            <header id="page2" style={{ height: '10vh', backgroundColor: 'rgba(20,20,20) ', color: 'white' }} >
+            </header>
+            <Home2Content />
+            <footer id="footer2" style={{ border: 'none', height: '10vh', backgroundColor: 'rgba(20,20,20)', color: 'white' }}>
+                <h4>
+                    <br />
+                    <FaCopyright /> COPYRIGHT{new Date().getFullYear()}
+                    <br />
+
+                    <AnchorLink className="chi" style={{
+                        color: 'white', textDecoration: 'none',
+                    }} href='#navTop'>
+                        Return to top
+                    </AnchorLink>
+                </h4>
+            </footer>
+
         </Parallax >
     )
 }
