@@ -116,8 +116,6 @@ position: absolute;
       @media only screen and (min-width: 1140px) {
         #about {
         width:36vw;
-        /* height:auto; */
-        margin-left: 6vw;
             }
         } 
         @media only screen and (min-width: 1140px) {
@@ -135,7 +133,7 @@ position: absolute;
        
 
         font-size: xx-small;
-      
+        margin-bottom: 1.5em;
     
         }
         } 
@@ -144,6 +142,7 @@ position: absolute;
           #about,#projects{
           width:89vw;
         font-size: xx-small;
+       
 
          }
           } 
@@ -157,7 +156,7 @@ position: absolute;
 }
 @media only screen and (max-width: 780px) {
   .project-card {
-    width:90vw;
+    width:80vw;
      font-size: 1.75em;
       }
   } 

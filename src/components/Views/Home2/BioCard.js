@@ -9,26 +9,23 @@ export const BioCard = () => {
 
                 <div style={{ height: '4vh' }}>
                 </div>
-                <div className="flex-row-between"
-                    style={{
-                        marginBottom: '-2vh',
-                        textAlign: 'left',
-                        padding: '1em',
-                        width: '95vw',
-                        height: 'auto',
-                        overflow: 'auto',
-                        margin: '0 auto',
-                        background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
-                    }}
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    flexWrap: 'wrap',
+                    justifyContent: 'space-evenly',
+                    marginBottom: '-2vh',
+                    textAlign: 'left',
+                    padding: '1em',
+                    width: '95vw',
+                    height: 'auto',
+                    overflow: 'auto',
+                    margin: '0 auto',
+                    background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
+                }}
                 >
-
-
-
                     <BioCardInfo />
-
                     <Projects1 />
-
-
                 </div>
                 <div style={{ height: '2vh' }}>
                 </div>
