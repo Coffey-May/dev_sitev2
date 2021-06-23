@@ -60,7 +60,7 @@ const HomeTitle = ({ footer }) => {
                             <h2 style={{ margin: '0 auto ', color: '#white', letterSpacing: '.2em', fontSize: '2em' }}> SOFTWARE SOLUTIONS</h2>
                             <hr style={{ margin: '0 auto' }} />
                             <h4 style={{ color: 'white', textAlign: 'left', fontWeight: 'lighter' }}>
-                                Do you like finding elegant and simple solutions for real time challanges? Is your development team looking for an enthusiatic junior developer to help your company grow in todays evolving tech landscape?
+                                Do you like finding elegant and simple solutions for real time challenges? Is your development team looking for an enthusiatic junior developer to help your company grow in todays evolving tech landscape?
                                 I am a junior software developer looking to join an agile team to develop clean and reliable code.
                             </h4>
                         </strong>
