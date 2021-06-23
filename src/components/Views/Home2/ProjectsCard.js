@@ -13,7 +13,7 @@ export const ProjectsCard = ({ slide }) => {
                 <header>
                     <h3>{slide.title}</h3>
                 </header>
-                <div style={{ height: '40px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+                <div style={{ height: '30px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
                     <img style={{ border: '1px solid goldenrod' }} src={slide.image} alt=" website" />
                     <img style={{ border: '1px solid goldenrod' }} src={slide.image2} alt=" website" />
                     <img style={{ border: '1px solid goldenrod' }} src={slide.image3} alt="website" />
