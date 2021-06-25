@@ -82,10 +82,10 @@ position: absolute;
   
   @media only screen and (min-width: 1140px) {
     #objective{
-    width:67vw;
+    width:57vw;
     position:relative;
     top:-43vh;
-    left:10vw;
+    left:21vw;
     margin-top:16vh;
     padding-left: 25em;
   }
