@@ -10,19 +10,21 @@ export const Recipe = () => {
     const [recipes, setRecipes] = useState([]);
 
     useEffect(() => {
-        getRecipesCallback()
+
+        const getRecipes = async () => {
+            const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${API_KEY}&from=0&to=10&calories=591-722&health=alcohol-free`)
+            const data = await response.json()
+
+            setRecipes(data.hits)
+
+        }
+        getRecipes()
     }, [query])
 
-    const getRecipes = async () => {
-        const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${API_KEY}&from=0&to=10&calories=591-722&health=alcohol-free`)
-        const data = await response.json()
 
-        setRecipes(data.hits)
-
-    }
-    const getRecipesCallback = () => {
-        getRecipes()
-    }
+    // const getRecipesCallback = () => {
+    //     getRecipes()
+    // }
 
 
     const getSearch = (e) => {
