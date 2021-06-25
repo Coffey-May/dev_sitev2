@@ -16,10 +16,11 @@ export const RecipeComponent = (recipe) => {
                     <h2>{recipe.recipe.recipe.label}</h2>
                 </div>
                 <div>
-                    <p>Calories:{parseInt(recipe.recipe.recipe.calories)}</p>
-                    <p>{recipe.recipe.recipe.cuisineType}</p>
+                    <p>Calories: {parseInt(recipe.recipe.recipe.calories)}</p>
+                    <p>Cuisine Type: {recipe.recipe.recipe.cuisineType}</p>
                 </div>
                 <div >
+                    INGREDIENTS:
                     {recipe.recipe.recipe.ingredients.map((item, index) => (<Ingredients key={index} item={item} />))}
                 </div>
 
