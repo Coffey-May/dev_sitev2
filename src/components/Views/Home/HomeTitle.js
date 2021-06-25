@@ -14,7 +14,7 @@ const HomeTitle = ({ footer }) => {
 
                 <div className="homeTitle" style={{ textAlign: 'left' }}>
 
-                    <h1 style={{ fontSize: '3.5em', marginTop: '85px' }}>COFFEY MAY
+                    <h1 style={{ fontSize: '3.5em', marginTop: '85px' }}>COFFEY  MAY
                         <br />
                         <hr style={{ textAlign: 'center', margin: '0 ', width: '70%' }} className="animated title" />
 

@@ -4,6 +4,8 @@ import { Spring } from "react-spring/renderprops";
 import { useAuth } from "../../../AuthContext";
 import HomeMarquis from "./HomeMarquis";
 import HomeTitle from "./HomeTitle";
+import Parallax from "react-rellax";
+
 
 
 
@@ -34,8 +36,12 @@ export default function Home() {
                         <div id="main-content-image" className="content-wrapper">
                             <main id="main-content" >
                                 <Suspense fallback={<div>Loading...</div>}>
-                                    <HomeMarquis />
+                                    <Parallax >
+                                        <HomeMarquis />
+                                    </Parallax>
+                                    {/* <Parallax speed={-2}> */}
                                     <HomeTitle footer={footerMessage} />
+                                    {/* </Parallax> */}
                                 </Suspense>
 
                             </main>

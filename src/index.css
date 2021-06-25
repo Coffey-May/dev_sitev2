@@ -95,7 +95,7 @@ position: absolute;
      
   @media only screen and (max-width: 1023px) {
     #objective, .homeTitle{
-    width:60vw;
+    width:80vw;
     margin-top:5vh;
     font-size: xx-small;
     padding-left: 0em;
@@ -265,7 +265,7 @@ h1, .title{
   margin-top:12.5vh;
   letter-spacing: .2em;
   /* font-weight:900; */
-  -webkit-text-stroke: 1px white;
+  /* -webkit-text-stroke: 1px white; */
 
 }
 
