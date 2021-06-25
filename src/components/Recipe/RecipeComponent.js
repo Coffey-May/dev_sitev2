@@ -24,7 +24,7 @@ export const RecipeComponent = (recipe) => {
                     {recipe.recipe.recipe.ingredients.map((item, index) => (<Ingredients key={index} item={item} />))}
                 </div>
 
-                <a target="_blank" href={recipe.recipe.recipe.url}>Full Link to cooking directions</a>
+                <a rel="noreferrer" target="_blank" href={recipe.recipe.recipe.url}>Full Link to cooking directions</a>
             </div>
         </div >
     )
