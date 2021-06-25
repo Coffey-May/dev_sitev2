@@ -7,7 +7,7 @@ export const ProjectsCard = ({ slide }) => {
 
 
 
-        <div className="project-card" style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '.5em', height: 'auto', border: '2px solid goldenrod', marginBottom: '1.5em' }}>
+        <div className="project-card" style={{ zIndex: '99', backgroundColor: 'rgba(0, 0, 0, 0.8)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '.5em', height: 'auto', border: '2px solid goldenrod', marginBottom: '1.5em' }}>
 
             <div>
                 <header>
@@ -22,9 +22,9 @@ export const ProjectsCard = ({ slide }) => {
                 <p > {slide.description} </p>
             </div>
             <div>
-                <p className="animated-word chi" >
-                    <a className="chi" target="blank" style={{ textDecoration: 'none', color: 'white' }} href={slide.link}>View</a>
-                </p>
+
+                <a className="chi animated-word " target="blank" style={{ textDecoration: 'none', color: 'white' }} href={slide.link}> <p className="animated-word chi" >View </p></a>
+
             </div>
         </div >
 
