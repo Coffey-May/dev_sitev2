@@ -38,9 +38,9 @@ const onClose = () => {
 const Weather = props => (
 
 
-    <div style={{ fontSize: '1vh', display: "flex", FlexDirection: 'row', flexWrap: 'wrap', overflow: '  scroll' }} className="weather__info">
+    <div style={{ fontSize: '.15em', display: "flex", FlexDirection: 'row', flexWrap: 'wrap', overflow: '  scroll' }} className="weather__info">
 
-        <div style={{ paddingTop: '2em', width: '30vw', margin: '0 auto' }}>
+        <div style={{ paddingTop: '2em', width: '30vw', fontSize: '.15em', margin: '0 auto' }}>
             <h2 style={{ margin: '0 auto' }}>Currently: {time}<br />{date} </h2>
             <hr />
 
@@ -48,26 +48,26 @@ const Weather = props => (
             {
                 props.city && props.country &&
                 <h2 style={{ margin: '0 auto' }} className="weather__key"> Location:
-	 		<span className="weather__value"> {props.city}, {props.country}</span>
+                    <span className="weather__value"> {props.city}, {props.country}</span>
                 </h2>
             }
 
             {
                 props.temperature && <h3 style={{ margin: '0 auto' }} className="weather__key"> Temperature:
-	 		<span className="weather__value"> {props.temperature} °F	</span>
+                    <span className="weather__value"> {props.temperature} °F	</span>
                 </h3>
             }
 
             {
                 props.humidity && <h3 style={{ margin: '0 auto' }} className="weather__key"> Humidity:
-	 		<span className="weather__value"> {props.humidity}% </span>
+                    <span className="weather__value"> {props.humidity}% </span>
                 </h3>
             }
 
             {
 
                 props.description && <h2 style={{ margin: '0 auto' }} className="weather__key"> Conditions:
-	 		<span className="weather__value"> {props.description} </span>
+                    <span className="weather__value"> {props.description} </span>
                 </h2>
             }
         </div>
@@ -84,7 +84,7 @@ const Weather = props => (
         {
             props.error && <h3 style={{ marginLeft: '3em' }} className="weather__error">{props.error}</h3>
         }
-        <button style={{ fontWeight: '200', margin: '1em', width: '3em', height: '3em', color: 'black' }} onClick={onClose}>X</button>
+        <button style={{ fontWeight: 'bolder', margin: '1em', width: '8em', height: '8em', color: 'black' }} onClick={onClose}>X</button>
     </div>
 );
 

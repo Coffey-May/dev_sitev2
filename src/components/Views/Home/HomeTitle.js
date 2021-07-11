@@ -19,8 +19,8 @@ const HomeTitle = ({ footer }) => {
                         <hr style={{ textAlign: 'center', margin: '0 ', width: '70%' }} className="animated title" />
 
                     </h1 >
-                    <h4 className="title" style={{ margin: '0 auto' }} >FULL STACK SOFTWARE DEVELOPER</h4>
-                    <br />
+                    <h4 className="title" style={{ margin: '0 auto' }} >SOFTWARE DEVELOPER</h4>
+
                     {footer}
                     <div className="flex-row-between">
                         <h3>
@@ -35,6 +35,7 @@ const HomeTitle = ({ footer }) => {
                                 LEARN MORE
                             </AnchorLink>
                         </h3>
+                        <p>&nbsp;</p>
                         <h3>
                             <a className="chi text" style={{
                                 color: 'white',

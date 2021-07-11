@@ -375,6 +375,7 @@ h1, .title{
 }
 .weather-wrapper{
   height:72vh;
+  /* font-size: .25em; */
   background:linear-gradient(rgba(0, 0, 0, 0.658),rgba(128, 128, 128, 0.658), rgba(255, 255, 255, 0.644))
 }
 .weatherInput{
