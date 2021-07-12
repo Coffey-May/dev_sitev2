@@ -14,6 +14,7 @@ import UpdateProfile from "./components/Auth/UpdateProfile";
 import Dashboard from "./components/Auth/Dashboard";
 import UserName from "./components/Auth/UserName";
 import { Recipe } from './components/Recipe/Recipe';
+import { Bp } from './components/Bp/Bp';
 
 const WeatherComponent = lazy(() => import("./components/Weather/WeatherComponent"));
 // const Projects = lazy(() => import('./components/Views/Projects/Projects'));
@@ -36,6 +37,7 @@ function App() {
               <Route path="/weather" component={WeatherComponent} />
               <Route path="/todo" component={ToDoApp} />
               <Route path="/recipe" component={Recipe} />
+              <Route path="/bp" component={Bp} />
 
             </Switch>
           </Suspense>

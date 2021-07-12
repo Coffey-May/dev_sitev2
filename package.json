@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.2.2",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
+    "date-fns": "^2.22.1",
     "dotenv": "^8.2.0",
     "firebase": "^8.3.0",
     "react": "^17.0.1",
@@ -26,6 +27,7 @@
     "react-scripts": "4.0.1",
     "react-spring": "^8.0.27",
     "react-text-marquee": "^1.0.1",
+    "recharts": "^2.0.9",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

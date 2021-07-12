@@ -21,8 +21,10 @@ import pic12 from '../images/Screen Shot 2021-03-11 at 11.53.32 AM.png';
 let link1 = '/weather'
 let link2 = '/todo'
 let link3 = "/recipe"
+let link4 = "/bp"
 
 const slides = [
+    { title: 'Blood Pressure Tracker', image: `${pic4}`, image2: `${pic5}`, image3: `${pic6}`, description: 'Blood Pressure Tracker', link: `${link4}` },
     { title: 'Weather Search', image: `${pic4}`, image2: `${pic5}`, image3: `${pic6}`, description: 'This feature allows a logged in User the affordances to perform api calls to the national weather service, in order to get up to date weather information based on city and country.', link: `${link1}` },
     { title: 'MERN Stack', image: `${pic10}`, image2: `${pic11}`, image3: `${pic12}`, description: 'This Full stack application was built using NodeJS, and interacts with a MongoDB database.  State is managed Client side via Redux, after authentication via Google OAuth or local sign/signup is completed. This project performs crud opertations on posts made by users sharing travel locales or events. ', link: 'https://coffey-may-coffey-may-merntime.zeet.app/' },
     { title: 'Painting Gallery', image: `${pic1}`, image2: `${pic2}`, image3: `${pic3}`, description: 'This Project was built using ReactJS. It showcases my oil paintings by dynamically populating a list of cards with detail modals. This project also impliments Routing, and Several NPM packages to achieve Parallax effect, and UI composition.', link: 'http://coffeymayart.com/' },
