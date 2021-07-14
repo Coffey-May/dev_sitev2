@@ -7,30 +7,31 @@ import {
     Area,
     Tooltip,
     CartesianGrid,
+    Legend
 } from "recharts";
 import { format, parseISO, subDays } from "date-fns";
 
-const data = [];
-for (let num = 30; num >= 0; num--) {
-    data.push({
-        date: subDays(new Date(), num).toISOString().substr(0, 10),
-        value: 1 + Math.random(),
-    });
-}
+// const data = [];
+// for (let num = 300; num >= 0; num--) {
+//     data.push({
+//         date: subDays(new Date(), num).toISOString().substr(0, 10),
+
+//     });
+// }
 
 export const Chart = ({ bpData }) => {
-    console.log(bpData)
+    // console.log(bpData)
     return (
         <ResponsiveContainer width="70%" height={500}>
             <AreaChart data={bpData}>
                 <defs>
                     <linearGradient id="color" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="0%" stopColor="#2451B7" stopOpacity={0.4} />
-                        <stop offset="75%" stopColor="#2451B7" stopOpacity={0.05} />
+                        <stop offset="95%" stopColor="#2451B7" stopOpacity={0.05} />
                     </linearGradient>
                 </defs>
 
-                <Area dataKey="value" stroke="#2451B7" fill="url(#color)" />
+                {/* <Area dataKey="value" stroke="#2451B7" fill="url(#color)" /> */}
 
                 <XAxis
                     dataKey="date"
@@ -46,29 +47,39 @@ export const Chart = ({ bpData }) => {
                 />
 
                 <YAxis
-                    datakey="value"
-                    axisLine={false}
-                    tickLine={false}
-                    tickCount={8}
-                    tickFormatter={(number) => `${number.toFixed(2)}`}
+                    datakey="number"
+                    axisLine={true}
+                    tickLine={true}
+                    ticks={[0, 50, 100, 150, 200, 250, 300]}
+                // tickCount={8}
+                // tickFormatter={(number) => `${number.toFixed(2)}`}
                 />
+                <Tooltip content={<CustomTooltip />} />
+                {/* <Tooltip data={bpData} /> */}
 
-                {/* <Tooltip content={<CustomTooltip />} /> */}
-
-                <CartesianGrid opacity={0.1} vertical={false} />
+                <CartesianGrid opacity={0.2} vertical={false} />
+                <Legend verticalAlign="top" height={36} />
+                <Area type="monotone" dataKey="systolic" stroke="#8184d8" fillOpacity={1} fill="url(#colorUv)" />
+                <Area type="monotone" dataKey="diastolic" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
+                <Area type="monotone" dataKey="heartRate" stroke="#f00" fillOpacity={1} fill="url(#colorPv)" />
             </AreaChart>
         </ResponsiveContainer>
     );
 }
 
-// function CustomTooltip({ active, payload, label }) {
-//     if (active) {
-//         return (
-//             <div className="tooltip">
-//                 <h4>{format(parseISO(label), "eeee, d MMM, yyyy")}</h4>
-//                 <p>${payload[0].value.toFixed(2)} CAD</p>
-//             </div>
-//         );
-//     }
-//     return null;
-// }
+function CustomTooltip({ active, payload, label }) {
+
+    if (active && payload && payload.length) {
+        // let dateLabel = payload[0].payload.date
+        console.log(payload[0].payload.date)
+        return (
+
+            < div className="tooltip" >
+
+
+                <h4>hello</h4>
+            </div >
+        );
+    }
+    return null;
+}

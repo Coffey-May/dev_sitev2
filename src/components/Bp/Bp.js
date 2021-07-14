@@ -1,22 +1,43 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import { Form } from './Form'
 import { Chart } from './Chart'
+import BarChart from './DataChart';
 
 import './style.css';
 
-const data = [
-    { id: "1", Systolic: "99", Diastolic: "130", HeartRate: "89bpm" },
-    { id: "2", Systolic: "87", Diastolic: "100", HeartRate: "73bpm" },
-    { id: "3", Systolic: "82", Diastolic: "80", HeartRate: "100bpm" },
-]
-
 export const Bp = () => {
+
+
+
+
+
     const [bpReading, setBpReading] = useState([])
-    console.log(bpReading)
+    useEffect(() => {
+        getLocalBpReading()
+    }, [])
+    useEffect(() => {
+        setLocalBpReading()
+    }, [bpReading])
+
+
+    const setLocalBpReading = () => {
+        localStorage.setItem("bpReading", JSON.stringify(bpReading))
+    }
+    const getLocalBpReading = () => {
+        if (localStorage.getItem("bpReading") === null) {
+            localStorage.setItem("bpReading", JSON.stringify([]))
+        } else {
+            const localBpReading = JSON.parse(localStorage.getItem("bpReading"))
+            setBpReading(localBpReading)
+        }
+    }
+
+
     return (
         <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
-            <Form setBpReading={setBpReading} data={data} />
-            <Chart bpData={data} />
+            <Form setBpReading={setBpReading} bpReading={bpReading} />
+            <Chart bpData={bpReading} />
+            {/* <BarChart bpData={bpReading} /> */}
         </div>
     )
 }
