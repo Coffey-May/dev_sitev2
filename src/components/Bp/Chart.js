@@ -9,15 +9,7 @@ import {
     CartesianGrid,
     Legend
 } from "recharts";
-import { format, parseISO, subDays } from "date-fns";
-
-// const data = [];
-// for (let num = 300; num >= 0; num--) {
-//     data.push({
-//         date: subDays(new Date(), num).toISOString().substr(0, 10),
-
-//     });
-// }
+import { format, parseISO } from "date-fns";
 
 export const Chart = ({ bpData }) => {
     // console.log(bpData)

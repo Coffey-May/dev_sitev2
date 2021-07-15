@@ -1,5 +1,4 @@
 import { React, useState } from 'react'
-import { CustomInput } from './CustomInput'
 import { List } from './List'
 
 

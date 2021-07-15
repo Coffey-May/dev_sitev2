@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from 'react'
 import { Form } from './Form'
 import { Chart } from './Chart'
-import BarChart from './DataChart';
+
 
 import './style.css';
 
@@ -37,7 +37,6 @@ export const Bp = () => {
         <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
             <Form setBpReading={setBpReading} bpReading={bpReading} />
             <Chart bpData={bpReading} />
-            {/* <BarChart bpData={bpReading} /> */}
         </div>
     )
 }
