@@ -54,11 +54,12 @@ export const Chart = ({ bpData }) => {
                 // tickCount={8}
                 // tickFormatter={(number) => `${number.toFixed(2)}`}
                 />
-                <Tooltip content={<CustomTooltip />} />
-                {/* <Tooltip data={bpData} /> */}
+                <Tooltip content={<CustomTooltip data={bpData} />} />
+
 
                 <CartesianGrid opacity={0.2} vertical={false} />
                 <Legend verticalAlign="top" height={36} />
+
                 <Area type="monotone" dataKey="systolic" stroke="#8184d8" fillOpacity={1} fill="url(#colorUv)" />
                 <Area type="monotone" dataKey="diastolic" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
                 <Area type="monotone" dataKey="heartRate" stroke="#f00" fillOpacity={1} fill="url(#colorPv)" />
@@ -67,18 +68,23 @@ export const Chart = ({ bpData }) => {
     );
 }
 
-function CustomTooltip({ active, payload, label }) {
+
+
+function CustomTooltip({ active, payload, label, data }) {
 
     if (active && payload && payload.length) {
-        // let dateLabel = payload[0].payload.date
-        console.log(payload[0].payload.date)
+
+        // console.log(data, payload[0].payload.id)
+
         return (
 
-            < div className="tooltip" >
+            <div>
+                <p>Date: {payload[0].payload.date}</p>
+                <p>Systolic: {payload[0].payload.systolic}</p>
+                <p>Diastolic: {payload[0].payload.diastolic}</p>
+                <p>Heart Rate: {payload[0].payload.heartRate}</p>
+            </div>
 
-
-                <h4>hello</h4>
-            </div >
         );
     }
     return null;

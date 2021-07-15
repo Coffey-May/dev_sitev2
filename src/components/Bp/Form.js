@@ -7,16 +7,52 @@ export const Form = ({ bpReading, setBpReading, data }) => {
     const [recordedDaily, setRecordedDaily] = useState({ date: '', systolic: '', diastolic: '', heartRate: '' })
 
 
+    const dateInPast = function (selectedD, TodayD) {
+
+        //    let sel =  selectedD.setDate(selectedD.getDate() - 1);
+        // let first = firstDate.setHours(0, 0, 0, 0)
+        // let second = secondDate.setHours(0, 0, 0, 0)
+        let t = TodayD.setDate(TodayD.getDate() - 1);
+        if (selectedD <= t) {
+            console.log(selectedD, TodayD)
+            alert("date is in past")
+            return true;
+        }
+
+        return false;
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        const { systolic, diastolic, heartRate } = recordedDaily
-        if (systolic > 300 || diastolic > 300 || heartRate > 150) { alert("Please choose a number within range...") }
+        const { systolic, diastolic, heartRate, date } = recordedDaily
+        // console.log(date)
+
+        const selectedDate = new Date(date);
+        let today = new Date();
+
+        if (dateInPast(selectedDate, today)) {
+            return
+
+        }
+
+        else if (systolic > 300 || diastolic > 300 || heartRate > 150) { alert("Please choose a number within range...") }
         else {
             recordedDaily.id = Math.random() * 1000
             setBpReading([...bpReading, recordedDaily])
             setRecordedDaily({ date: '', systolic: '', diastolic: '', heartRate: '' })
         }
     };
+
+
+
+
+
+
+
+    // console.log(dateInPast(isPast, today));
+
+
+
 
 
     return (
