@@ -17,7 +17,7 @@ export const Bp = () => {
     }, [])
     useEffect(() => {
         setLocalBpReading()
-    }, [bpReading])
+    }, [bpReading, setLocalBpReading])
 
 
     const setLocalBpReading = () => {
