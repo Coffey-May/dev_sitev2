@@ -21,7 +21,7 @@ export const Bp = () => {
         }
 
         setLocalBpReading()
-    }, [bpReading, setLocalBpReading])
+    }, [bpReading])
 
 
     const getLocalBpReading = () => {
