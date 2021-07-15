@@ -16,13 +16,14 @@ export const Bp = () => {
         getLocalBpReading()
     }, [])
     useEffect(() => {
+        const setLocalBpReading = () => {
+            localStorage.setItem("bpReading", JSON.stringify(bpReading))
+        }
+
         setLocalBpReading()
     }, [bpReading, setLocalBpReading])
 
 
-    const setLocalBpReading = () => {
-        localStorage.setItem("bpReading", JSON.stringify(bpReading))
-    }
     const getLocalBpReading = () => {
         if (localStorage.getItem("bpReading") === null) {
             localStorage.setItem("bpReading", JSON.stringify([]))
