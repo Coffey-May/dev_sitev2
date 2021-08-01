@@ -6,18 +6,6 @@ export const ListComponent = ({ d, setBpReading, data }) => {
         setBpReading(data.filter((el) => (el.id !== d.id)))
 
     }
-    // const editHandler = (e) => {
-    //     data.map((item) => {
-    //         if (item.id === d.id) {
-    //             setEditMessage(true)
-    //             setInputText(item.text)
-    //             setCurrentId(item.id)
-    //             console.log('single:', item.id)
-    //             console.log(item.id, d.id)
-    //         }
-    //         return item
-    //     })
-    // }
 
     return (
         <>
@@ -28,10 +16,9 @@ export const ListComponent = ({ d, setBpReading, data }) => {
                     <p style={pStyle}>Systolic: {d.systolic}</p>
                     <p style={pStyle}>Heart Rate: {d.heartRate}</p>
                 </div>
-            </div>
-            <div>
-                <button onClick={deleteOne} style={{ color: 'black' }}>Delete</button>
-                {/* <button onClick={editHandler} style={{ color: 'black' }}>Edit</button> */}
+                <div>
+                    <button onClick={deleteOne} style={{ color: 'black' }}>Delete</button>
+                </div>
             </div>
         </>
     )

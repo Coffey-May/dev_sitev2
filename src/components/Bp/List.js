@@ -7,10 +7,15 @@ export const List = ({ data, setBpReading }) => {
     }
 
     return (
-        <div>
-            <h2>List</h2>
-            {data.map((d) => (<ListComponent d={d} key={d.id} setBpReading={setBpReading} data={data} />))}
-            <button style={{ color: 'black' }} onClick={clearAll}>Clear All</button>
-        </div>
+        <>
+            {!data.length ? "" :
+                <div>
+                    <h2>History</h2>
+                    <button style={{ color: 'black' }} onClick={clearAll}>Clear All</button>
+                    {data.map((d) => (<ListComponent d={d} key={d.id} setBpReading={setBpReading} data={data} />))}
+
+                </div>
+            }
+        </>
     )
 }

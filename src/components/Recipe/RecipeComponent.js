@@ -13,18 +13,18 @@ export const RecipeComponent = (recipe) => {
                 </div>
 
                 <div>
-                    <h2>{recipe.recipe.recipe.label}</h2>
+                    <h2 style={{ color: 'black' }}>{recipe.recipe.recipe.label}</h2>
                 </div>
                 <div>
-                    <p>Calories: {parseInt(recipe.recipe.recipe.calories)}</p>
-                    <p>Cuisine Type: {recipe.recipe.recipe.cuisineType}</p>
+                    <p style={{ color: 'black' }}>Calories: {parseInt(recipe.recipe.recipe.calories)}</p>
+                    <p style={{ color: 'black' }}>Cuisine Type: {recipe.recipe.recipe.cuisineType}</p>
                 </div>
-                <div >
+                <div style={{ color: 'black' }} >
                     INGREDIENTS:
                     {recipe.recipe.recipe.ingredients.map((item, index) => (<Ingredients key={index} item={item} />))}
                 </div>
 
-                <a rel="noreferrer" target="_blank" href={recipe.recipe.recipe.url}>Full Link to cooking directions</a>
+                <a style={{ color: 'blue' }} rel="noreferrer" target="_blank" href={recipe.recipe.recipe.url}>Full Link to cooking directions</a>
             </div>
         </div >
     )

@@ -35,7 +35,7 @@ export const Bp = () => {
 
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+        <div className="container" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
             <Form setBpReading={setBpReading} bpReading={bpReading} />
             <Chart bpData={bpReading} />
         </div>

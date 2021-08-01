@@ -1,7 +1,7 @@
 import React from 'react';
 const h1Style = { color: 'white', margin: '0 auto', fontWeight: 'bolder', textAlign: 'center' }
 
-export const BioCardInfo = () => {
+export const BioCardInfo = ({ pic }) => {
     return (
         <div id="about" style={{
             borderTop: '5px solid goldenrod', padding: '1em', backgroundColor: 'rgba(0, 0, 0, 0.5)'
@@ -32,6 +32,8 @@ export const BioCardInfo = () => {
                 my experience with agile methodologies, larger codebases,
                 and emerging technologies.
             </p>
+
+            {pic ? <img style={{ width: '95% ', border: '1px solid goldenrod' }} src={pic} alt=" website" /> : ''}
         </div>
     )
 }

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BioCardInfo } from "./BioCardInfo";
 import { Projects1 } from "./Projects1";
 
+
 export const BioCard = () => {
+    const [pic, setPic] = useState('')
     return (
         <div >
             <div id=" main-content2" className="content-wrapper2">
@@ -24,8 +26,8 @@ export const BioCard = () => {
                     background: 'linear-gradient( #1b1b1bd7,#3d3d3dc4,#fcfcfc31)'
                 }}
                 >
-                    <BioCardInfo />
-                    <Projects1 />
+                    <BioCardInfo pic={pic} />
+                    <Projects1 setPic={setPic} />
                 </div>
                 <div style={{ height: '2vh' }}>
                 </div>
